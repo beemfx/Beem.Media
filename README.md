@@ -1,6 +1,10 @@
 QBasic-Games
 ============
-Beem Software's early QBasic code including games!
+Beem Software's early QBasic code including games! Beem's first game every was
+also a QBasic game but it isn't featured in this repository. The game was called
+Castle, and it evolved to a Windows game, so it has it's own repository at
+
+https://github.com/beemfx/Castle
 
 Bomb (Bomb)
 ===========
