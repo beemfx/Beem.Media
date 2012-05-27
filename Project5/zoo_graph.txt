@@ -1,0 +1,13 @@
+12
+Aardvark  0 4 0 0 0 0 0 0 0 0 0 6
+Hippo     4 0 5 0 0 0 0 0 0 0 9 0
+Lizard    0 0 0 6 0 0 0 0 0 0 6 0
+Jackal    0 0 0 0 8 0 0 0 0 0 0 0
+Elephant  0 0 4 8 0 4 0 0 0 0 5 0
+Baboon    0 0 0 0 0 0 9 0 8 0 0 0
+Giraffe   0 0 0 0 0 9 0 5 0 0 0 0
+Frog      0 0 0 0 0 0 5 0 0 5 0 9
+Cheetah   0 0 0 0 8 8 7 0 0 4 3 0
+Dodo      0 0 0 0 0 0 0 5 4 0 5 0
+Kangaroo  8 9 6 0 5 0 0 0 0 5 0 9
+Iguana    6 0 0 0 0 0 0 9 0 6 0 0
