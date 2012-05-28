@@ -1,0 +1,1 @@
+This is the second readme file.  Shows that a directory can be copied.
