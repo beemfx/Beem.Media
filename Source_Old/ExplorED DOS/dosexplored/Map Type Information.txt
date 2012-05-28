@@ -1,0 +1,28 @@
+Current type Beta 3 or 3.
+
+Explor type 3 maps are read in the following manner:
+
+Every map begins with the header in the following format:
+
+typedef struct eMapHeader {
+	unsigned int mapType;              //The Type of the map EM as an integer value
+	unsigned int mapVersion;           //The version of the map 3 for type 3 maps
+	unsigned long mapFileSize;         //The size of the file
+	unsigned int mapReserved1;         //Reserved for future purposes
+	unsigned int mapReserved2;         //Same as above
+	unsigned int mapWidth;             //How many blocks wide the map is
+	unsigned int mapHeight;            //How many blocks tall the map is
+	unsigned long mapDataSize;         //The size of the map database
+	unsigned long mapTileDataSize;     //Data Size of tiles width*height*2bytes
+        unsigned long mapPropertyDataSize; //Data size of propertys NumProperty * mapTileDataSize
+	unsigned int mapNumProperty;       //How many property datas are available
+} MAPHEADER;
+
+Following that is a block of code the size of mapTileDataSize containing information about the tiles that should be place on the board starting from the top left going across each row until it gets to the bottom right.
+
+Following that is the (number in mapNumProperty) blocks of code each the same size as the tileData size containing an integer with a property for a particular tile in the same manner as the tiles.
+ 
+1 type maps can be converted to 2 with update1to2.exe
+2 type maps can be converted to 3 with update2to3.exe
+
+Note: Because of the sloppy map format in type 1 and 2 maps it is impossible to detect whether a map is valid to be updated.  For this purpose only update maps you know to be type 1 or 2.
