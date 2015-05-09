@@ -16,7 +16,7 @@
 */
 
 
-//#define NOCHILD
+#define NOCHILD
 
 #define MAXFILENAMELEN _MAX_PATH
 
@@ -24,7 +24,7 @@
 //#define MAXY 15
 #define MAXX explormap.getMapWidth()
 #define MAXY explormap.getMapHeight()
-#define EDWNDSIZE 10
+#define EDWNDSIZE 15
 #define TWIDTH 40
 
 #include <windows.h>
@@ -104,8 +104,8 @@ int WINAPI WinMain(HINSTANCE hInstance, HINSTANCE hPrevInstance, LPSTR lpszCmdLi
 	#ifdef NOCHILD
 	hEditWnd=CreateWindow(edEditWinName,
 							"ExplorED",
-							WS_DLGFRAME|WS_SYSMENU|WS_CAPTION|WS_MINIMIZEBOX|WS_SIZEBOX|
-							WS_MAXIMIZEBOX|WS_THICKFRAME,
+							WS_DLGFRAME|WS_SYSMENU|WS_CAPTION|WS_MINIMIZEBOX,//|WS_SIZEBOX|
+							//WS_MAXIMIZEBOX|WS_THICKFRAME,
 							CW_USEDEFAULT,
 							CW_USEDEFAULT,
 							TWIDTH*EDWNDSIZE+GetSystemMetrics(SM_CXSIZEFRAME)+GetSystemMetrics(SM_CXHSCROLL),

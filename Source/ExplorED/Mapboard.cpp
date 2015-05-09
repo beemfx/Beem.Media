@@ -9,8 +9,8 @@
 
 ExplorMap::ExplorMap()
 {
-	tiles=new USHORT;
-	prop=new USHORT;
+	tiles=new USHORT[1];
+	prop=new USHORT[1];
 }
 ExplorMap::~ExplorMap()
 {
@@ -70,6 +70,9 @@ int ExplorMap::boardEdit(int x, int y, unsigned int propnum, unsigned int newval
 
 int ExplorMap::boardEdit(int x, int y)
 {
+		if(x<1||x>fileHeader.mapWidth)return 0;
+		if(y<1||y>fileHeader.mapHeight)return 0;
+
 		switch (tiles[tbase(x, y)]){
 			case 0:
 				tiles[tbase(x, y)] = 10;
