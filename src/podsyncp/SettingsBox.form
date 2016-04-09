@@ -1,0 +1,120 @@
+<?xml version="1.1" encoding="UTF-8" ?>
+
+<Form version="1.5" maxVersion="1.7" type="org.netbeans.modules.form.forminfo.JDialogFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="2"/>
+    <Property name="title" type="java.lang.String" resourceKey="Form.title"/>
+    <Property name="modal" type="boolean" value="true"/>
+    <Property name="name" type="java.lang.String" value="Form" noResource="true"/>
+    <Property name="resizable" type="boolean" value="false"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="2"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="102" alignment="0" attributes="0">
+                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                      <EmptySpace max="-2" attributes="0"/>
+                      <Component id="m_txtWorkingDir" min="-2" pref="228" max="-2" attributes="0"/>
+                      <EmptySpace min="10" pref="10" max="-2" attributes="0"/>
+                      <Component id="m_btnBrowse" min="-2" max="-2" attributes="0"/>
+                  </Group>
+                  <Component id="m_cboxDate" alignment="0" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" alignment="1" attributes="0">
+              <EmptySpace pref="287" max="32767" attributes="0"/>
+              <Component id="m_btnCancel" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+              <Component id="m_btnOkay" min="-2" max="-2" attributes="0"/>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="jLabel1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="m_txtWorkingDir" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="m_btnBrowse" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace type="unrelated" max="-2" attributes="0"/>
+              <Component id="m_cboxDate" min="-2" max="-2" attributes="0"/>
+              <EmptySpace pref="30" max="32767" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="m_btnOkay" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="m_btnCancel" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace max="-2" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JButton" name="m_btnOkay">
+      <Properties>
+        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+          <action class="podsyncp.SettingsBox" id="onBtnOkay" methodName="onBtnOkay"/>
+        </Property>
+        <Property name="text" type="java.lang.String" resourceKey="m_btnOkay.text"/>
+        <Property name="name" type="java.lang.String" value="m_btnOkay" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="m_txtWorkingDir">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="m_txtWorkingDir.text"/>
+        <Property name="name" type="java.lang.String" value="m_txtWorkingDir" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="jLabel1">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="jLabel1.text"/>
+        <Property name="name" type="java.lang.String" value="jLabel1" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JCheckBox" name="m_cboxDate">
+      <Properties>
+        <Property name="text" type="java.lang.String" resourceKey="m_cboxDate.text"/>
+        <Property name="name" type="java.lang.String" value="m_cboxDate" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="m_btnBrowse">
+      <Properties>
+        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+          <action class="podsyncp.SettingsBox" id="onBtnBrowse" methodName="onBtnBrowse"/>
+        </Property>
+        <Property name="text" type="java.lang.String" resourceKey="m_btnBrowse.text"/>
+        <Property name="name" type="java.lang.String" value="m_btnBrowse" noResource="true"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JButton" name="m_btnCancel">
+      <Properties>
+        <Property name="action" type="javax.swing.Action" editor="org.netbeans.modules.swingapp.ActionEditor">
+          <action class="podsyncp.SettingsBox" id="onBtnCancel" methodName="onBtnCancel"/>
+        </Property>
+        <Property name="text" type="java.lang.String" resourceKey="m_btnCancel.text"/>
+        <Property name="name" type="java.lang.String" value="m_btnCancel" noResource="true"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
