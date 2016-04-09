@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TexView3", "TexView3\TexView3.vcxproj", "{D5C22E0D-CCD5-4544-8346-20969B6C413A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "img_lib_base", "img_lib2\img_lib\img_lib.vcxproj", "{2C804A11-6C20-4FC2-A020-5C28B09424BC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D5C22E0D-CCD5-4544-8346-20969B6C413A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D5C22E0D-CCD5-4544-8346-20969B6C413A}.Debug|Win32.Build.0 = Debug|Win32
+		{D5C22E0D-CCD5-4544-8346-20969B6C413A}.Release|Win32.ActiveCfg = Release|Win32
+		{D5C22E0D-CCD5-4544-8346-20969B6C413A}.Release|Win32.Build.0 = Release|Win32
+		{2C804A11-6C20-4FC2-A020-5C28B09424BC}.Debug|Win32.ActiveCfg = Debug|Win32
+		{2C804A11-6C20-4FC2-A020-5C28B09424BC}.Debug|Win32.Build.0 = Debug|Win32
+		{2C804A11-6C20-4FC2-A020-5C28B09424BC}.Release|Win32.ActiveCfg = Release|Win32
+		{2C804A11-6C20-4FC2-A020-5C28B09424BC}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
