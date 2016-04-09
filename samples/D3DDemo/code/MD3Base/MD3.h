@@ -14,12 +14,6 @@ extern "C" {
 
 #define MD3BASE_EXPORTS
 
-#ifdef D3D_MD3
-#if (!defined(WIN32) && !defined(WIN64))
-#undef D3D_MD3
-#endif /* (!defined(WIN32) && !defined(WIN64)) */
-#endif /* D3D_MD3 */
-
 #include "md3file.h"
 
 #ifdef D3D_MD3

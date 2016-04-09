@@ -1,3 +1,4 @@
 *.sdf
 *.vcxproj.user
+*.opendb
 .vs/*
