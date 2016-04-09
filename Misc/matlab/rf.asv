@@ -1,0 +1,26 @@
+%First create our normal vector and our position.
+%Note since this is to test math that will be used in direct3d we
+%are working with column vectors instead of row vectors.
+clc;
+
+P = [0, 1.5, 5.0]
+
+N = [0, 0, -1]
+
+Rot = rotY(pi/4)
+
+%To effectively rotate the norm we rotate it by the 3x3 portion.
+N = N*Rot(1:3,1:3)
+
+%Now let us create the plane from the points.
+pln = [N -dot(N,P)]
+
+x=-10:1:10;
+a=pln(1); b=pln(2); c=pln(3); d=pln(4);
+z = (-d - a*x)/c;
+plot(x, z);
+hold on
+%also want to plot the norm.
+
+
+hold off
