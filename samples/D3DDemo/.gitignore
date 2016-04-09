@@ -1,2 +1,3 @@
 *.sdf
+*.vcxproj.user
 .vs/*
