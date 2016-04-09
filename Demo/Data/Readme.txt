@@ -1,0 +1,1 @@
+This demo was designed to show how QInstall works.
