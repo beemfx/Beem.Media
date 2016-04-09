@@ -1,0 +1,157 @@
+// Howdy this line is ignored
+// these credits optimized for screen 13 320X200X256
+// particularly the cast.
+COLOR 14
+    E.X.P.L.O.R.
+
+        A New World
+
+  Copyright(c) 2001, Beem Software
+                   by Blaine Myers
+
+
+
+
+
+
+
+
+
+COLOR 4
+	PROGRAMMING
+COLOR 2
+
+     Lead Programmer:
+COLOR 15
+
+      Blaine Myers
+//
+//
+COLOR 2
+//
+//     Assistant Programmers:
+//
+COLOR 15
+//      Hirobi Shicoby
+//      Atasha Yensuki
+//      Joe Gillis (Joface)
+//      Hakeem Alajuan
+//      The Grey Cat
+//      U.C.L.A. Team Red
+//      Backup Team
+//      Bond, James Bond
+//      Alec Guiness
+//      John Cassidy Parker
+//      and The Blue Baby
+//
+
+
+COLOR 4
+	ARTWORK
+
+COLOR 2
+     Lead Artist:
+COLOR 15
+
+      Blaine Myers
+COLOR 2
+//
+
+
+     3D Art Director:
+COLOR 15
+
+      Blaine Myers
+
+
+
+COLOR 4
+      STORY DEVELOPMENT
+
+COLOR 2
+     Story By:
+
+COLOR 15
+      Blaine Myers
+
+COLOR 2
+     Story Programming:
+
+COLOR 15
+      Blaine Myers
+
+
+
+COLOR 4
+       CONSULTING
+
+COLOR 2
+      Head Consultant:
+
+COLOR 15
+      Kevin Decker
+
+
+
+COLOR 4
+//	CAST
+COLOR 15
+//  Jean Luc Picard.....Star of the Game
+//  James Bond..........The Planet
+//  Luke Skywalker......The Holy One
+//  Bill Clinton........Leader of the Pack
+//  Queen Elizabeth.....Enslaved Woman
+//  Tom Cruise..........Friendly Spy
+//  Power Rangers.......Super Friends
+//  The Beatles.........Concert Stars
+//  Blaine Myers........The One
+//  Leonardo DiCaprio...The Corps Lev. 2
+//  John................Unknown
+COLOR 4
+//	STUNT MEN
+COLOR 15
+//      Brandon (Shorty) Bellows
+//      David Ninja
+//      Crazy Lou
+//      B the Bomb
+COLOR 4
+	SPECIAL THANKS TO
+COLOR 15
+
+//      Hacksoft
+//      LaPeste
+//      Star Trek
+//      Star Fox
+//      Star Wars
+//      StarGate
+//      Star 102.7
+//      and Any other Stars
+//      T.T.G. Tattle Tail Gargoyle
+//      Travis the Green
+//      (Blade) Michael Sharp
+      Craig Decker
+      Brian Thalman
+      Tony Zhang
+      Kamal B. Rojiani
+      Aaron Lund
+      William Myers
+
+COLOR 4
+//
+//	NOT SO SPECIAL THANKS TO
+COLOR 15
+//      Adam Kay
+COLOR 5
+//
+      SUPER SPECIAL THANKS TO
+COLOR 15
+
+	Jon Van Caneghem:
+
+	  for creating the
+          inspiring
+          Might and Magic
+          Series
+//      Craig Decker
+//      for Getting Me Started
+END

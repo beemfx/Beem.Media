@@ -1,0 +1,109 @@
+About ExplorSCRIPT:
+
+ExplorSCRIPT is not under development but it will be after the 2nd BETA release of Explor and the completion of ExplorED.
+
+ExplorSCRIPT is a fully customizable programming language compiled by Explor.exe.  Any user familiar with the details of ExplorSCRIPT will be able to completely customize their own game using Explor's 3D engine.  ExplorSCIPT should be written using a flat text ascii editor with absolutely no formating.
+
+What ExplorSCRIPT will include.
+
+The main file - Game.EXS which will function as a guide to all exlor abilities.  It will contain general information about the game as well as a list of all other ExplorSCRIPTS to use.
+
+EXAMPLE:
+GAMENAME
+{
+   genscript="GENERALSCIPT.EXS"
+   MAPLABLE MAPNAME "EVENTSCRIPT"
+   //eg.
+   //city "city.map" "city.EXS"
+}
+
+General Script - working.EXS (maybe) will have general information as to what the different usable files are such as where artwork is kept, where scripts are kept, where maps are stored.  May actually be merged with game.EXS
+
+EXAMPLE:
+GAMENAME
+{
+  scriptdir="SCRIPTDIR\"
+  mapdir="MAPDIR\"
+  soundir="SOUNDER\"
+  artdir="ARTDIR\"
+}
+
+Event Script - eventMAPNAME.EXS  file names will be given in game.EXS these files are used to declare what will happen when the player lands on an event file.  An event script should be written for each map.
+
+MAPNAME1
+{
+   maptoughness = 5 // tells how tough the map is for monsters
+   select property1
+   {
+        case 01:
+             showpic "oldman.bmp"
+             disptext "An old man introduces himself as hagar the ugly"
+             disptext "Beware the fucking snowmonster"
+        case 200:
+            gold+10
+        case 50:
+            battle
+        case 70:
+            health-20
+        case 80:
+            quest FINDJEM
+   }
+}
+
+MAPNAME2
+{
+   //same type of thing as above
+}
+
+Quest Script - quest.EXS a script containing all numbered quests as well as particular dialogues for quests.  Quests can be in 3 stats haven't got it yet.  Completed task. and completed task rewarded.  The savegame will probably number them 0 for not yet given 10 for completed 20 for completed and rewarded.
+
+EXAMPLE:
+FINDJEM // the name of the quest
+{
+Princess Castella // the character that hands out the quest
+"You see a beautiful princess she speaks to you in a soft
+voice 'Oh me I've lost my prized wedding ring that
+my husband Earl gave to me please help me find it.
+I'll reward you on a sexual level if you do.'"
+// What the character that hands out the quest says initially
+
+FOUNDJEM=TRUE //The following must have happened for quest to be completed
+
+"You haven't found my Ring don't come back until you do!" 
+
+//What CHARACTER says when you talk to him after
+//receiving his quest but you haven't completed it yet
+
+"Thank you so much for finding my weding ring
+I owe you something.  How about some sex.  What's that?
+Yes you say.  Forget it you bastard.  How about some cash
+instead."
+//What CHARACTER says when you talk to him and have completed
+//his quest.
+
+Gold+1000  
+//List of rewards received after completing quest
+
+"Thank you so much for finding my ring.  Come and vist
+any time.  But remember don't ask for sex."  
+//What the character says to you after you've completed his quest
+}
+
+Monster Script - monster.EXS a scipt which handles all the types of monsters available
+EXAMPLE:
+
+Monstername
+{
+   class = 2  //class of toughness.   Random onsters will only be called in maps that allow
+              //this class of toughness or lower.
+   life=100
+   damagerange=30 to 50 //the range of damage the monster can do
+   armorclass = 30 // chance to doge
+   accuracy = 3 // chance to hit
+}
+MOnstername2
+{
+   //same as above
+}
+
+Spell Script - spells.EXS available spells in the game.

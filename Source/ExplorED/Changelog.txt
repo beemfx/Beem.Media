@@ -1,0 +1,200 @@
+/*
+	Log:
+
+	October 30, 2001
+
+	Began Development of ExplorED for Windows, only created a window.
+
+	October 31, 2001
+
+	WinExplorED is really coming along.  The interface works fairly correctly.
+	I'm having trouble dealing with file input output so I haven't implimented
+	most features yet.
+
+	File input is now working.  I had to specifie certain variables as being
+	short rather than defaulting to int.  Now if the program is started
+	default.map is loaded.  Or you can used a filname as a command line perameter
+	if you do that that map will be loaded.  I have not implimented either
+	the ability to save or the ability to load when not loading from the start.
+
+	Developing the win port wasn't nearly as hard as I thought it would be.
+
+	November 7, 2001
+
+   Implemented save and save as feature, both work fine.
+
+	December 5, 2001
+
+	Open feature now works.  I need to impliment the new command, and the
+	ability to change a property value.
+
+	February 21, 2002
+
+	The tiles[] array is now a pointer.  I use new to allocate  certain amount
+	of memory to it.  That way it will have better support for random map sizes.
+
+	I want to do the same for the property[] array, but I know I'm going to have
+	more trouble, becuase it is a two dimensional array, rather than one (like the
+	tiles array).
+
+	March 06, 2002
+
+	Significant improvments.  The edit board is now a child window.  Bitmaps are displayed
+	instead of just painting some stupid tiles.  The GetMessage loop has been changed so
+	it works much better, and exits properly.
+
+	I intend to do the property as one long pointer array, all sets together, and gettilestat
+	will know how to get the correct values.
+
+	March 07, 2002
+
+	Now the prop is a pointer, all property data is stored in the same pointer.  The first
+	set of properties is followed by the second set and so forth.
+
+	Implemented Scroll bars, I'm pretty damn proud of myself.  Now the editor will support
+	many sized maps with little difficulty.  a definition called EDWNDSIZE gives
+	the square size of the visible editing board.  I've set it to 10 for now.
+
+	March 29, 2002
+
+	Now using CreateFile() to open files instead of fopen().
+
+	Algorithm for calculating which coordinates have been edited has been greatly
+	improved.
+
+	The size of the Editwindow has been change to fit 10 40x40 bitmap images.  And the tile
+	bitmaps have been changed to 40x40.
+
+	June 01, 2002
+
+	The scroll bars have been greatly improved.
+
+	June 02, 2002
+
+	Finally fixed that damn bug while running under WindowsXP, the problem was
+	that I had the window procs described using WORD instead of WPARAM and long
+	instead of LPARAM.  On that note I fixed WinCastle as well.
+*/
+
+/*
+	NOTE: The following Log applies to the dos version of ExplorED
+
+	January 12, 2001
+	I've created a GUI and I'm pretty satisfied.  I'm having troubles dealing
+	with sprites and moving them from one function to another.  Using the arrow
+	keys is really crappy.  If you press a capitol of the corresponding letter
+	it reads it as the up arrow.
+
+	My next goal will be to write a program similar to my QBasic Moveen program
+	once I have completed that I may continue to develop this one.
+
+	January 13, 2001
+	I perfected the location of the placement of the cursor.  Now it needs an
+	input consistent with a x, y format. The cursor now moves fine except that
+	it leaves behind a lot of funny pixel formations.
+
+	What needs to be done now is design sprites for different tiles and then
+	impliment them by placing them on the map when certain buttons are pressed.
+
+	January 14, 2001
+	Now if you press 'T' it places a tile sprite on the screen it doesn't it
+	will need to activate the fact that there is a tile at that location for
+	the save feature.
+
+	I'm facing many issues with the buffered memory.  I've perfected the binary
+	writing but now the cursor disapears for an unexplained reason. My goodness
+	I think it's working!  I believe open works correctly it just doesn't
+	re-display the tileset. It now opens the tileset fine, but the cursor doesn't
+	work quite right.
+
+	The file commands are really screwy.  Save seems to work fine. The rest of
+	them create visual errors.
+
+	July 21, 2001
+	Removed the necessity for the temb.buf file which cleared up a lot of the
+	memory issues.
+
+	But still a lot of memory issues remain.  If you only edit the first map
+	loaded and then us SaveAs you can make multiple maps.  NewMap and LoadMap
+	cause a lot of errors.  Probably need to redo the graphicsloading to fix
+	that.  OpenMap will load the screen correctly but after that the cursor
+	gets very screwed up.
+
+	<no longer keeping track of dates>
+
+	BoardEdit has been slighly altered for greater effect.  Updated to map
+	type 2.  0's instead of 1's.
+
+	Changed tiles to 'D' 's and 'W' 's for Door and Wall correspondingly.
+	Improved the algorithm for mapping out the board when initial map load
+	happens.  This improved some of the memory issues.
+
+	Fixed a damn good portion of the memory issues.  I'm not even sure if any
+	are left.  Have expiramented quite a bit.
+
+	Updated to map type 3 it took a damn bit of a long time but I am so fucking
+	satisfied now.  There are a lot of bugs it will take time to fix them. Most
+	bugs are fixed.  I know memory issues exist when saving.  Need to make it so
+	alternate tile properties may be altered besides 1 and 2.  To do that need
+	to make it so you can change the size of fileHeader.mapNumProperty.
+
+	Wrote a new function that takes input.  It is used to take input for property
+	and for new map names, as well as save as.  Works pretty damn good.
+
+	Greatly increased the LoadMap function now scrolls down when more than 23
+	maps are present.  It supports a maximum number of maps described by a
+	definition in openmap.h.
+
+	Preforming a Save causes memory issues.
+
+	One thing to implement.  If escape is pressed while in the LoadMap menu
+	the program should return to the previous map, as it was right before the
+	LoadMap was called.  Right now it will return to the previous map, but in the
+	state it was in when it was last saved.
+
+	I'd also like to implement a screenshot feature.
+
+	Now supports mouse, the mouse doesn't actually do anything yet though.
+
+	October 18, 2001
+	I have implemented the EXPLORMAP class which contains all the variables of
+	an explor type map, as well as the functions to load an explormap into memory,
+	save an explor map on the disk, and edit and explor map.  Mapboard.cpp and
+	mapboard.h contain this class and work independently of any other programs.
+	Just include #include "mapboard.h" in the file that uses the EXPLORMAP class
+   and include the mapboard.cpp as part of the project.
+
+	With this new class it should be much easier to port the code to windows.
+	The code in now C++ rather than C language.
+
+	I also separated the source into 3 parts.  One for the defintion of the
+	CASTLEMAP class: mapboard.cpp.  Another for the openfile process: openfile.cpp.
+	And finally the main program; explored.cpp.
+
+   I also implemented overlaoding functions for the input for easier usage.
+
+*/
+
+/*
+	About Explor Map Type 3:
+
+	Explor Maps are read in the following manner:
+	The first bytes are the fileheader described by the typedef MAPHEADER.
+	Directly after the map data is the tile data.  Each tile is an unsigned int
+	which represents the type of tile (see below).  Directly after the tile
+	type is the property data.  They are unsigned ints as well.  There may be
+	as many properties as you wish per tile.
+
+	Tile types:
+		 0: Nothing - Means nothing is there
+		10: Wall - Regular wall represented by 'W' on the display
+		20: Door - A Door represented by 'D' on the display
+	Possible Future Tile types:
+		xx: Invisible Wall - Wall you cannot see but cannot pass through
+		xx: Visible Emptiness - You see a wall but can pass through
+
+	Property values:
+		The property values can be incremented by 1 and 2 on the keyboard.
+		They have not been assigned to any specific functions yet.  But may
+		either in explor source code or ExplorSCRIPT.
+*/
