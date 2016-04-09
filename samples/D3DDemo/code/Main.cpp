@@ -9,7 +9,11 @@
 #include "resource.h"
 
 #pragma comment(lib, "d3d9.lib")
+#if defined(_WIN64)
+#pragma comment(lib, "d3dx9_x64.lib")
+#else
 #pragma comment(lib, "d3dx9_x86.lib")
+#endif
 #pragma comment(lib, "winmm.lib")
 
 LPDIRECT3DDEVICE9 g_lpDevice=NULL;
@@ -51,6 +55,36 @@ HD3DFONT TestFont=NULL;
 HD3DIMAGE TestImage=NULL;
 HD3DIMAGE TestBG=NULL;
 #endif //TESTIMAGE
+
+
+typedef unsigned __int64 i64;
+
+static BOOL SyncTime( float* FrameTime )
+{
+	i64 CurrentTime = 0;
+
+	static i64 LastUpdate = 0;
+	static i64 Frequency = 0;
+
+	QueryPerformanceCounter( reinterpret_cast<LARGE_INTEGER*>( &CurrentTime ) );
+	if( 0 == Frequency )
+	{
+		QueryPerformanceFrequency( reinterpret_cast<LARGE_INTEGER*>( &Frequency ) );
+		LastUpdate = CurrentTime;
+		
+	}
+
+	i64 Elapsed = CurrentTime - LastUpdate;
+	double ElapsedSeconds = static_cast<double>(Elapsed)/Frequency;
+	*FrameTime = static_cast<float>(ElapsedSeconds);
+	if( *FrameTime > 1/120.f )
+	{
+		LastUpdate = CurrentTime;
+		return TRUE;
+	}
+
+	return FALSE;
+}
 
 
 BOOL ConsoleParse(LPSTR szCommand, LPSTR szParams, HBEEMCONSOLE hConsole)
@@ -781,6 +815,14 @@ void GameShutdown()
 
 BOOL Render()
 {
+	float DeltaTime = 0;
+	BOOL Continue = SyncTime( &DeltaTime );
+
+	if( !Continue )
+	{
+		return TRUE;
+	}
+
 	if(!ValidateDevice(
 		&g_lpDevice, 
 		NULL,//&g_lpBackSurface, 
@@ -811,45 +853,20 @@ BOOL Render()
 	#define TESTROTATE
 	#ifdef TESTROTATE
 	/* The following rotates the world around, just to show that the enviro is 3D */
-	D3DXMATRIX WorldMatrix, RotationMatrix;
-	/* Set world matrix to identity. */
-	D3DXMatrixIdentity(&WorldMatrix);
 
-	unsigned __int64 CurrentTime;
-	unsigned __int64 TimeFrequency;
-	QueryPerformanceFrequency( reinterpret_cast<LARGE_INTEGER*>(&TimeFrequency) );
-	QueryPerformanceCounter( reinterpret_cast<LARGE_INTEGER*>(&CurrentTime) );
-	double TimeElapsed = CurrentTime/static_cast<double>(TimeFrequency);
-	/* Create a rotation matrix to rotate the world matrix. */
-	float SecondsElapsed = static_cast<float>(TimeElapsed);
-	D3DXMatrixRotationY(&RotationMatrix, SecondsElapsed);
-	WorldMatrix=RotationMatrix;
-	//D3DXMatrixScaling(&RotationMatrix, 1.0f, 1.0f, 1.0f);
-	//WorldMatrix=RotationMatrix*WorldMatrix;
-	//D3DXMatrixRotationAxis(&RotationMatrix, &D3DXVECTOR3(0.0f, 1.0f, 0.0f), timeGetTime()/900.0f);
-	//RotationMatrix._41=20.0f * cosf(timeGetTime()/-900.0f);
-	//RotationMatrix._43=20.0f * sinf(timeGetTime()/-900.0f);
-
-	//WorldMatrix=RotationMatrix;
+	static float Seconds = 0.f;
+	Seconds += DeltaTime;
+	if( Seconds > 5.f )
+	{
+		Seconds = 0.f;
+	}
+	D3DXMATRIX WorldMatrix;
+	D3DXMatrixRotationY(&WorldMatrix, (Seconds/5.f)*D3DX_PI*2.f);
 
 	g_lpDevice->SetTransform(D3DTS_WORLD, &WorldMatrix);
 	#endif //TESTROTATE
 	#ifdef TESTPRIM
-	/*
-	{
-	D3DXMATRIX matProjection, matView, matWorld;
-	D3DXMatrixIdentity(&matProjection);
-	D3DXMatrixIdentity(&matView);
-	D3DXMatrixIdentity(&matWorld);
-	D3DXMatrixPerspectiveFovLH(&matProjection, D3DX_PI/4.0f, 4.0f/3.0f, 1.0f, 1000.0f);
-	g_lpDevice->SetTransform(D3DTS_PROJECTION, &matProjection);
-	matView._43=100;
-	g_lpDevice->SetTransform(D3DTS_VIEW, &matView);
-	D3DXMatrixIdentity(&matWorld);
-	//D3DXMatrixRotationY(&matWorld, timeGetTime()/900.0f);
-	g_lpDevice->SetTransform(D3DTS_WORLD, &matWorld);
-	}
-	*/
+
 	//D3DXMatrixIdentity(&WorldMatrix);
 	g_lpDevice->SetVertexShader(NULL);
 	g_lpDevice->SetFVF(CUSTOMVERTEX_TYPE);
