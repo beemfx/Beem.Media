@@ -1,6 +1,7 @@
-EXPLOR-Game
-===========
+E.X.P.L.O.R. 2002
+=================
 
-E.X.P.L.O.R. was to be an old school RPG dungeon crawler. The project was
-scrapped because 3D seemed to be a better alternative than this FAUX 2D.
-Legends of Grimrock pretty much proved that.
+This is the 2002 (and all previous versions of the engine meant to power Beem
+Media's "E.X.P.L.O.R.: A New World". The project is in active development using
+modern technology. The old versions of the game are only kept around for novelty
+purposes.
