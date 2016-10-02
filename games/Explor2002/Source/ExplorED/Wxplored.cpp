@@ -253,7 +253,7 @@ LRESULT EditWindowProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam)
 		case WM_CREATE:
 			UpdateScrollBar(hWnd);
 			#ifdef NOCHILD
-			char* bufmsg;
+			char bufmsg[1024];
 			sprintf(bufmsg, "ExplorED - [%s]", explormap.boardname);
 			SetWindowText(hWnd, bufmsg);break;
 			#endif //NOCHILD
