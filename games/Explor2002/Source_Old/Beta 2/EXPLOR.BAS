@@ -50,7 +50,7 @@ DECLARE SUB loadmap (mapname$)
 'That's old news I'm going to reincorporate EXPLOR and start the project
 'it may end up junk anyways.
 
-'Damn!!! It works perfectly.
+'Dang!!! It works perfectly.
 
 'Well since the ASCII graphics interface didn't work right I changed
 'To regular VGA graphics.  I also incorporated the loadmap from venture.bas
@@ -104,12 +104,12 @@ DECLARE SUB loadmap (mapname$)
 '
 'Need to make it so one cannot pass through a wall.
 'Made walls now not possible to pass through, unless you are inside one.
-'Also fixed a bug where facing north fucked up on tfront%(10) and a bug
+'Also fixed a bug where facing north messed up on tfront%(10) and a bug
 'where direction was displayed wrong.
 '
 'Explor is just about where it was before I redid the engine.  An automap
 'as well as the menu's are still missing.  When I redo the credits I will
-'probably drop most of the bullshit and do a more reasonable list of
+'probably drop most of the stuff and do a more reasonable list of
 'creators.  Namely me with a special thanks to Jon Van Caneghem and Craig
 'Decker.
 '
@@ -122,7 +122,7 @@ DECLARE SUB loadmap (mapname$)
 'Updated some code deficiencies, to make future developments easier.
 'What I need to do now is further the ExplorED Editor to do more things
 'then come back to this code.
-'Damn I love this code it just works so fucking well.
+'I love this code it just works so well.
 '
 'Now supports Map version beta2: That is 0's instead of 1's for empty space
 '
@@ -130,10 +130,10 @@ DECLARE SUB loadmap (mapname$)
 'and backward.  As well as automap display.
 '
 'Expected memory issues discovered when dimensioning the doors.  Its just too
-'damn big.  So now for doors it simply places the preset version of the
-'wall image.  There is no fucking way we're going to leave that final.  We'll
+'big.  So now for doors it simply places the preset version of the
+'wall image.  There is no way we're going to leave that final.  We'll
 'figure something out.  We don't know what yet maybe we should invent a
-'fucking bitmap loader.  BLOAD and BSAVE may also work !!! I'll look into
+'bitmap loader.  BLOAD and BSAVE may also work !!! I'll look into
 'what they are capable of doing.  Current skyground is really sloppy this can
 'easily be fixed when we fix the door sprites.
 '
@@ -144,7 +144,7 @@ DECLARE SUB loadmap (mapname$)
 'check out render3D to see exactly how it is done.  I'm pretty satisfied
 'with it.
 '
-'I'm pretty fucking satisfied that I learned how to use BLOAD and BSAVE
+'I'm pretty satisfied that I learned how to use BLOAD and BSAVE
 'the program wallgen generates the wallimages.
 '
 'Now use CHDIR to set the current directory istead of using dir$ + ""

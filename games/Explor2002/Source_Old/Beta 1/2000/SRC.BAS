@@ -38,7 +38,7 @@ DECLARE SUB load (wallchoice!)
 'That's old news I'm going to reincorporate EXPLOR and start the project
 'it may end up junk anyways.
 
-'Damn!!! It works perfectly.
+'Dang!!! It works perfectly.
 'Well since the ASCII graphics interface didn't work right I changed
 'To regular VGA graphics.  I also incorporated the loadmap from venture.bas
 'I'm sure the loser author won't care. Too much! Anyways he'll never know.
