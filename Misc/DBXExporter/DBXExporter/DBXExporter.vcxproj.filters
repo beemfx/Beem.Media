@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="oedbx">
+      <UniqueIdentifier>{c8d93e1b-742e-4312-8a25-2fe8c26bedf3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oedbx\library">
+      <UniqueIdentifier>{5783b6d8-f9b8-45f2-b282-3d09d9f56833}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oedbx\library\oedbx">
+      <UniqueIdentifier>{702f358f-c029-4a1a-825c-f839ca2820c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="oedbx\examples">
+      <UniqueIdentifier>{32a95034-4307-4b3a-9fee-d69857dfd72b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="oedbx\library\dbxCommon.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxConditions.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxFileHeader.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxFileInfo.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxFolderInfo.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxFolderList.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxIndexedInfo.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxMessage.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxMessageInfo.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\library\dbxTree.cpp">
+      <Filter>oedbx\library</Filter>
+    </ClCompile>
+    <ClCompile Include="oedbx\examples\ex1.cpp">
+      <Filter>oedbx\examples</Filter>
+    </ClCompile>
+    <ClCompile Include="DBXExporter.cpp">
+      <Filter>oedbx</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="oedbx\library\oedbx\dbxCommon.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxConditions.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxFileHeader.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxFileInfo.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxFolderInfo.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxFolderList.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxIndexedInfo.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxMessage.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxMessageInfo.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\library\oedbx\dbxTree.h">
+      <Filter>oedbx\library\oedbx</Filter>
+    </ClInclude>
+    <ClInclude Include="oedbx\examples\ex1.h">
+      <Filter>oedbx\examples</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
