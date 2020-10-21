@@ -2,6 +2,7 @@
 
 DECLARE SUB GraphicsInit()
 DECLARE SUB GraphicsLoadSprites()
+DECLARE SUB GraphicsSetDefaultViewport()
 
 DECLARE SUB GraphicsDrawFaceN(x,y)
 DECLARE SUB GraphicsDrawFaceE(x,y)

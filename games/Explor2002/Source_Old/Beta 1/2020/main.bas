@@ -311,7 +311,6 @@ SUB credits
 END SUB
 
 SUB game
-	WINDOW SCREEN (0, 0)-(160, 100)
 	gbQuit = 0
 	loadmap
 	
@@ -582,7 +581,6 @@ SUB software
 END SUB
 
 SUB story
-	SCREEN 13
 	WINDOW (0, 0)-(100, 100)
 	CLS
 	LINE (0, 30)-(100, 30)
@@ -650,7 +648,8 @@ SUB story
 	LOCATE 20, 1: PRINT "   E.X.P.L.O.R.: TRANSMISSION COMPLETE"
 	LOCATE 22, 15: PRINT "(Press Space)"
 	DO: LOOP UNTIL INKEY$ = " "
-
+	
+	GraphicsSetDefaultViewport
 END SUB
 
 SUB title
@@ -692,6 +691,7 @@ SUB title
 	PAINT (232, 131), 38
 	LOCATE 17, 15: COLOR 40: PRINT "A New World"
 	DO: LOOP UNTIL INKEY$ = " "
+	GraphicsSetDefaultViewport
 END SUB
 
 SUB turnleft
