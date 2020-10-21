@@ -1,0 +1,20 @@
+' (c) 2020 Beem Media
+
+DECLARE SUB GraphicsInit()
+DECLARE SUB GraphicsLoadSprites()
+
+DECLARE SUB GraphicsDrawFaceN(x,y)
+DECLARE SUB GraphicsDrawFaceE(x,y)
+DECLARE SUB GraphicsDrawFaceS(x,y)
+DECLARE SUB GraphicsDrawFaceW(x,y)
+
+DECLARE SUB GraphicsDrawFaceNA(x,y)
+DECLARE SUB GraphicsDrawFaceEA(x,y)
+DECLARE SUB GraphicsDrawFaceSA(x,y)
+DECLARE SUB GraphicsDrawFaceWA(x,y)
+
+DECLARE SUB GraphicsDrawWall(x,y)
+DECLARE SUB GraphicsDrawBlank(x,y)
+DECLARE SUB GraphicsDrawBlack(x,y)
+DECLARE SUB GraphicsDrawWallX(x,y)
+DECLARE SUB GraphicsDrawBlankX(x,y)
