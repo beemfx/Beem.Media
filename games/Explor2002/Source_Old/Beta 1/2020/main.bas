@@ -401,8 +401,8 @@ SUB loadauto
 	FOR j = 1 TO 20
 	 FOR k = 1 TO 20
 	  SELECT CASE MID$(board$(j), k, 1)
-		CASE "X": CALL GraphicsDrawWallX(k * con, j * con)
-		CASE " ": CALL GraphicsDrawBlankX(k * con, j * con)
+		CASE "X": CALL GraphicsDrawWallX(k * con, 95 - j * con)
+		CASE " ": CALL GraphicsDrawBlankX(k * con, 95 - j * con)
 	  END SELECT
 	 NEXT
 	NEXT
@@ -488,10 +488,9 @@ SUB moveinput
 			  calcbackward
 	ELSEIF m$ = "M" OR m$ = "m" THEN
 			  IF autom = true THEN
-			  loadauto
-			  placechara
-			  automap
-			 
+				  loadauto
+				  placechara
+				  automap
 			  ELSEIF autom = false THEN
 			  END IF
 	ELSEIF m$ = CHR$(27) THEN
@@ -519,13 +518,13 @@ SUB placechara
 	LET xcord = (x * con) / con
 	LET ycord = (maxy - (y * con) / con)
 	IF direction = n THEN
-		CALL GraphicsDrawFaceNA(x * con, y * con)
+		CALL GraphicsDrawFaceNA(x * con, 95 - y * con)
 	ELSEIF direction = e THEN  
-		CALL GraphicsDrawFaceEA(x * con, y * con)
+		CALL GraphicsDrawFaceEA(x * con, 95 - y * con)
 	ELSEIF direction = s THEN
-		CALL GraphicsDrawFaceSA(x * con, y * con)
+		CALL GraphicsDrawFaceSA(x * con, 95 - y * con)
 	ELSEIF direction = w THEN 
-		CALL GraphicsDrawFaceWA(x * con, y * con)
+		CALL GraphicsDrawFaceWA(x * con, 95 - y * con)
 	END IF
 
 END SUB

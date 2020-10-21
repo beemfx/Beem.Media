@@ -1,11 +1,14 @@
 '$INCLUDE: 'walls.bh'
+'$INCLUDE: 'graphics.bh'
 '$INCLUDE: 'consts.bh'
 
-DIM SHARED wall1(1300), wall2(1350), wall3(4400), wall5(1000)
-DIM SHARED wall6(1100), wall7(1100), wall8(600), wall9(600), wall10(1300)
-DIM SHARED wall11(400), wall12(400), wall13(300), wall14(200), wall15(200)
+DIM SHARED wall1(800), wall2(750), wall3(2300), wall5(600)
+DIM SHARED wall6(650), wall7(650), wall8(400), wall9(400), wall10(750)
+DIM SHARED wall11(300), wall12(300), wall13(250), wall14(150), wall15(150)
 
 SUB WallsDrawWall (wallchoice)
+	WINDOW (0,0)-(640,400)
+	
 	IF wallchoice = 1 THEN
 			  LINE (1, 2)-(14, 21 * con), 0, BF
 			  PUT (1, 2), wall1
@@ -76,10 +79,14 @@ SUB WallsDrawWall (wallchoice)
 			  LINE ((21 * con) - 30, 30)-((21 * con) - 15, (21 * con) - 30), 0, BF
 			  PUT ((21 * con) - 30, 30), wall9
 	END IF
+	
+	GraphicsSetDefaultViewport
 END SUB
 
 SUB WallsLoad
 
+	WINDOW (0,0)-(640,400)
+	
 	LINE (1, 1)-(21 * con, 21 * con), 15, B
 	LINE (2, 2)-(2, (21 * con) - 1)
 	LINE (2, 2)-(15, 15)
@@ -203,5 +210,6 @@ SUB WallsLoad
 	GET ((21 * con) - 40, 40)-((21 * con) - 30, (21 * con) - 40), wall15
 	CLS
 
-
+	GraphicsSetDefaultViewport
+	
 END SUB
