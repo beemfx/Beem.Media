@@ -9,10 +9,14 @@ DIM SHARED facesa(25), facena(25), faceea(25), facewa(25)
 
 SUB GraphicsInit
 	SCREEN 13 '320x200 8-bit
-	WINDOW SCREEN (1, 1)-(160, 100) ' Not sure why I picked this...
+	WINDOW (0, 0)-(160, 100) ' Not sure why I picked this...
 	CLS
 	
 	CALL GraphicsLoadSprites
+END SUB
+
+SUB GraphicsSetDefaultViewport
+	WINDOW (0, 0)-(160, 100) ' Not sure why I picked this...
 END SUB
 
 SUB GraphicsDrawFaceN(x,y)
