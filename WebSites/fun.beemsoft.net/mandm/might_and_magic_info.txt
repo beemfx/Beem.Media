@@ -1,0 +1,1632 @@
+Might and Magic I FAQ/Walkthrough including Items/Monsters/Spells 
+listing
+(formerly monsters/items/spells listing)
+(from Apple IIe version)
+
+Version 0.6.1
+
+Copyright 2000 Andrew Schultz schultza@earthlink.net.
+
+Please do not redistribute for profit without my consent.  This took 
+time to write and would have taken more without a lot of experience 
+parsing Apple disk data.  However, if you contact me with a *SPECIFIC* 
+query to post this FAQ on your site I will, after performing a certain 
+amount of research, probably be in an agreeable mood.
+
+This document does reveal the special abilities(not including puzzles) 
+of every item in the game, so there is a potential for spoiling aside 
+from walkthroughs.  As MM1 doesn't tell you these things 
+specifically(well, there's a lot it doesn't tell you, which adds to the 
+challenge in some ways,) perhaps people who still enjoy poking around in 
+this game(or who wondered about certain things in the game) will enjoy 
+this chart.
+
+Disclaimer:  This FAQ is not associated with 3DO/New World Computing in 
+any way.  The ideas for monster names, items, etc. are originally New 
+World's and this document is intended as analysis.  If any relevant 
+parties wish me to take down this document I have no problem with it.  
+This FAQ also contains material taken with permission from 
+project64.c64.org.
+
+****AD SPACE****
+
+My home page:
+http://www.geocities.com/SoHo/Exhibit/2762
+My games page:
+http://www.geocities.com/SoHo/Exhibit/2762/games/games.htm
+
+------------------------------
+Outline:
+
+FAQ stuff
+  QUICK START
+  DRAGONS
+
+ITEMS
+
+MONSTERS
+
+SPELLS
+
+QUICK WALKTHROUGH[NECESSARY STUFF]
+
+SIDE QUESTS
+
+CHEATS
+
+BUGS
+------------------------------
+
+FAQ stuff
+
+  This is woefully underdeveloped right now.  The only info currently 
+here is:
+  QUICK START:  Get one character with each trait.  It helps if they are 
+all women(see Portsmith) but as that is later in the game and not really 
+necessary(and can be switched!) don't worry about it too much.
+  To get the best possible non-magic items, I recommend that you create 
+a bunch of characters that will get deleted--but first rip off the 200 
+gold each one gets!  Plate mail for all who can....
+  DRAGONS: who breathes what?
+BLACK-ACID
+BLUE-LIGHTNING
+GOLD-ENERGY
+GRAY-SPIKES
+GREEN-POISON
+RED-FIRE
+SILVER-ENERGY
+WHITE-COLD
+
+ITEMS(all 256 including "Useless item" which occurs when a person uses 
+an unequippable item and its charges run out)
+
+The reason so much of the charts is in ALL CAPS is because I derived the 
+info.
+directly from byte codes on the disk.  Future versions may be able to 
+modify
+this with a stub function, but for now I just wanted to be able to get 
+it out
+there--when I do so, I'm more motivated to update/revise.  I suspect the 
+current version is more than functional enough.
+
+Here's a rough key:  "Used by" contains class abbreviations, R for 
+robber, S
+for sorceror, C for cleric, A for archer, P for paladin, and K for 
+knight.  E/G
+denotes which alignment can use it.  "EG" means that neutrals can use 
+it, too.
+
+SPECIAL determines if the item has special features, increases 
+protection or
+attributes.  EQUIP means it can be equipped, NONE means it can't be, and 
+anything else means it is equippable and either provides protection 
+against something or adds to an attribute.
+AMT says how much those attributes are increased by.  For instance, 
+COLD/50 increases cold resistance by 50 per cent.
+MAGIC indicates if the item can cast magic spells--if so, the number of 
+charges is indicated.
+COST means the cost in gold.
+DMG gives the item's maximum base damage.  This is only relevant for 
+weapons.  A club, for instance, would do 1-3 damage, notwithstanding 
+calculations regarding the character's might.
+AC/DMG tells of the armor class bonus to the character if the item is 
+armor, or extra damage added to DMG.  For instance, a spear +1 would do 
+1-6 damage PLUS 1.
+
+General observations:  a lot of these items have arbitrary evil/good 
+alignments, and the cursed "Bracers AC 8" and "Large Shield +2" are 
+nasty tricks, although some of the other cursed items are funny.  In 
+Might and Magic II, the magic pluses were not part of the item, which 
+made the item list more flexible and allowed for more items(Chain Mail 
++1 and Chain Mail have the same item number in the sequel.)  Also, the 
+extra attributes added by magic items are arbitrary.  And some items 
+which are useless for combat and spell purpose are critical to solve the 
+game.
+
+Note that many columns do not apply for many items.
+
+ITEM NAME     |USED BY |SPECIAL|AMT|MAGIC|COST |DMG|AC/DMG|
+--------------+--------+-------+---+-----+-----+---+------+
+CLUB          |RSCAPKEG|EQUIP  |0  |N 0  |1    |3  |0     |
+DAGGER        |RS APKEG|EQUIP  |0  |N 0  |5    |4  |0     |
+HAND AXE      |R  APKEG|EQUIP  |0  |N 0  |10   |5  |0     |
+SPEAR         |   APKEG|EQUIP  |0  |N 0  |15   |6  |0     |
+SHORT SWORD   |R  APKEG|EQUIP  |0  |N 0  |20   |6  |0     |
+MACE          |R CAPKEG|EQUIP  |0  |N 0  |25   |6  |0     |
+FLAIL         |R CAPKEG|EQUIP  |0  |N 0  |40   |7  |0     |
+SCIMITAR      |R  APKEG|EQUIP  |0  |N 0  |40   |7  |0     |
+BROAD SWORD   |R  APKEG|EQUIP  |0  |N 0  |50   |7  |0     |
+BATTLE AXE    |R  APKEG|EQUIP  |0  |N 0  |60   |0  |0     |
+LONG SWORD    |R  APKEG|EQUIP  |0  |N 0  |60   |8  |0     |
+CLUB +1       |RSCAPKEG|EQUIP  |0  |N 0  |30   |3  |1     |
+CLUB +2       |RSCAPKEG|EQUIP  |0  |N 0  |100  |3  |2     |
+DAGGER +1     |RS APKEG|EQUIP  |0  |N 0  |50   |4  |1     |
+HAND AXE +1   |R  APKE |LUCK   |1  |N 0  |75   |5  |1     |
+SPEAR +1      |   APK G|LUCK   |1  |N 0  |100  |6  |1     |
+SHORT SWORD +1|R  APKEG|EQUIP  |0  |N 0  |100  |6  |1     |
+MACE +1       |R CAPKEG|EQUIP  |0  |N 0  |125  |6  |1     |
+FLAIL +1      |R CAPKEG|EQUIP  |0  |N 0  |200  |7  |1     |
+SCIMITAR +1   |R  APK G|LUCK   |2  |N 0  |250  |7  |1     |
+BROAD SWORD +1|R  APKE |LUCK   |2  |N 0  |300  |7  |1     |
+BATTLE AXE +1 |R  APKEG|EQUIP  |0  |N 0  |300  |8  |1     |
+LONG SWORD +1 |R  APKEG|EQUIP  |0  |N 0  |300  |8  |1     |
+FLAMING CLUB  |RSCAPKEG|FIRE   |20 |Y 30 |500  |3  |3     |
+CLUB OF NOISE |RSCAPKEG|CURSE  |0  |N 0  |100  |3  |0     |
+DAGGER +2     |RS APKEG|EQUIP  |0  |Y 25 |200  |4  |2     |
+HAND AXE +2   |R  APK G|LUCK   |2  |N 0  |225  |5  |2     |
+SPEAR +2      |   APKE |LUCK   |2  |N 0  |250  |6  |2     |
+SHORT SWORD +2|R  APKEG|EQUIP  |0  |Y 15 |300  |6  |2     |
+MACE +2       |R CAPKEG|PERS   |1  |Y 10 |325  |6  |2     |
+FLAIL +2      |R CAPKEG|PERS   |1  |Y 15 |350  |7  |2     |
+SCIMITAR +2   |R  APKE |MIGHT  |1  |N 0  |400  |7  |2     |
+BROAD SWORD +2|R  APK G|MIGHT  |1  |N 0  |400  |7  |2     |
+BATTLE AXE +2 |R  APKEG|FIRE   |20 |Y 10 |500  |8  |2     |
+LONG SWORD +2 |R  APKEG|ELEM   |20 |Y 10 |550  |8  |2     |
+ROYAL DAGGER  |RS APK  |EQUIP  |0  |N 0  |2500 |4  |0     |
+DAGGER OF MIND| S    EG|INT    |3  |Y 20 |750  |4  |3     |
+DIAMOND DAGGER| S    EG|MIGHT  |4  |N 0  |800  |160|4     |
+ELECTRIC SPEAR|   APKEG|ELEC   |40 |Y 16 |1200 |6  |3     |
+HOLY MACE     |  C    G|PERS   |3  |Y 5  |2000 |6  |4     |
+UN-HOLY MACE  |  C   E |PERS   |3  |Y 5  |2000 |6  |4     |
+DARK FLAIL    |  CAPKE |CURSE  |0  |Y 10 |600  |3  |0     |
+FLAIL OF FEAR |  C   EG|FEAR   |40 |Y 8  |1600 |7  |3     |
+LUCKY SCIMITAR|R  APKEG|LUCK   |5  |N 0  |2200 |7  |4     |
+MACE OF UNDEAD|  CAPK G|CURSE  |0  |Y 5  |500  |6  |0     |
+COLD AXE      |    PKEG|COLD   |40 |Y 10 |2500 |8  |3     |
+ELECTRIC SWORD|   APKEG|ELEC   |40 |Y 10 |2200 |8  |3     |
+FLAMING SWORD |   APKEG|FIRE   |50 |Y 10 |2200 |8  |3     |
+SWORD OF MIGHT|     KEG|MIGHT  |6  |Y 30 |8000 |8  |5     |
+SWORD OF SPEED|   APKEG|SPEED  |6  |Y 20 |7000 |8  |5     |
+SHARP SWORD   |    PKE |MAGIC  |21 |Y 5  |6500 |10 |4     |
+ACCURATE SWORD|   APK G|ACCY   |6  |Y 10 |6500 |8  |6     |
+SWORD OF MAGIC|R  APKEG|MAGIC  |30 |Y 15 |10000|8  |5     |
+IMMORTAL SWORD|R  APK G|LUCK   |5  |Y 25 |7000 |8  |4     |
+AXE PROTECTOR |   APKEG|MAGIC  |25 |Y 15 |8013 |8  |5     |
+AXE DESTROYER |    PKE |MIGHT  |4  |Y 6  |8000 |8  |5     |
+X!XX!X'S SWORD|R  APK  |LUCK   |15 |Y 10 |6000 |8  |4     |
+ADAMANTINE AXE|   APKEG|LUCK   |8  |Y 5  |12000|8  |5     |
+ULTIMATE SWORD|R  APKEG|MIGHT  |10 |Y 20 |15000|20 |6     |
+ELEMENT SWORD |R  APKEG|MAGIC  |25 |Y 10 |12000|8  |5     |
+SLING         |R  APKEG|EQUIP  |0  |N 0  |10   |4  |0     |
+CROSSBOW      |R  APKEG|EQUIP  |0  |N 0  |50   |6  |0     |
+SHORT BOW     |   APKEG|EQUIP  |0  |N 0  |75   |8  |0     |
+LONG BOW      |   APKEG|EQUIP  |0  |N 0  |100  |10 |0     |
+GREAT BOW     |   APKEG|EQUIP  |0  |N 0  |250  |12 |0     |
+SLING +1      |R  APKEG|EQUIP  |0  |N 0  |50   |4  |1     |
+CROSSBOW +1   |R  APKEG|EQUIP  |0  |N 0  |250  |6  |1     |
+SHORT BOW +1  |   APKEG|EQUIP  |0  |N 0  |375  |8  |1     |
+LONG BOW +1   |   APKEG|EQUIP  |0  |N 0  |500  |10 |1     |
+GREAT BOW +1  |   APKEG|EQUIP  |0  |N 0  |1250 |12 |1     |
+MAGIC SLING   |R  APKEG|MAGIC  |10 |Y 10 |800  |4  |3     |
+CROSSBOW +2   |R  A  EG|ACCY   |2  |N 0  |1003 |6  |2     |
+SHORT BOW +2  |   APKE |HOLY   |10 |N 0  |1000 |8  |2     |
+LONG BOW +2   |   APK G|HOLY   |10 |N 0  |1200 |10 |2     |
+GREAT BOW +2  |   APKEG|FEAR   |30 |N 0  |2000 |12 |2     |
+CROSSBOW LUCK |R  A  EG|LUCK   |3  |Y 20 |2000 |6  |3     |
+CROSSBOW SPEED|R  APKEG|SPEED  |4  |Y 10 |2000 |6  |3     |
+LIGHTNING BOW |   APK G|ELEC   |20 |Y 10 |3000 |10 |3     |
+FLAMING BOW   |   APKE |FIRE   |20 |Y 10 |3000 |10 |3     |
+GIANT'S BOW   |   APKEG|EQUIP  |0  |N 0  |2000 |20 |3     |
+THE MAGIC BOW |   APK G|MAGIC  |20 |Y 5  |6000 |16 |4     |
+BOW OF POWER  |   APKE |FEAR   |40 |Y 15 |6000 |16 |4     |
+ROBBER'S X-BOW|R     EG|SPEED  |4  |Y 10 |8000 |10 |5     |
+ARCHER'S BOW  |   A  EG|ACCY   |5  |Y 10 |12000|20 |5     |
+STAFF         | SCAPKEG|EQUIP  |0  |N 0  |30   |8  |0     |
+GLAIVE        |   APKEG|EQUIP  |0  |N 0  |80   |10 |0     |
+BARDICHE      |   APKEG|EQUIP  |0  |N 0  |80   |10 |0     |
+HALBERD       |   APKEG|EQUIP  |0  |N 0  |100  |12 |0     |
+GREAT HAMMER  |  CAPKEG|EQUIP  |0  |N 0  |150  |12 |0     |
+GREAT AXE     |   APKEG|EQUIP  |0  |N 0  |150  |12 |0     |
+FLAMBERGE     |   APKEG|EQUIP  |0  |N 0  |250  |14 |0     |
+STAFF +1      | SCAPKEG|INT    |1  |N 0  |200  |8  |1     |
+GLAIVE +1     |   APKE |SPEED  |1  |N 0  |350  |10 |1     |
+BARDICHE +1   |   APK G|SPEED  |1  |N 0  |350  |10 |1     |
+HALBERD +1    |   APKEG|EQUIP  |0  |N 0  |500  |12 |1     |
+GREAT HAMMER+1|  CAPKEG|PERS   |1  |N 0  |550  |12 |1     |
+GREAT AXE +1  |   APKEG|EQUIP  |0  |N 0  |500  |12 |1     |
+FLAMBERGE +1  |   APKEG|EQUIP  |0  |N 0  |600  |14 |1     |
+STAFF +2      | SCAPKEG|LUCK   |2  |Y 10 |600  |8  |2     |
+GLAIVE +2     |   APKE |SPEED  |2  |N 0  |900  |10 |2     |
+BARDICHE +2   |   APK G|SPEED  |2  |N 0  |900  |10 |2     |
+HALBERD +2    |   APKEG|SPEED  |3  |Y 20 |1200 |12 |2     |
+GREAT HAMMER+2|  CAPKEG|PERS   |2  |Y 20 |1200 |12 |2     |
+GREAT AXE +2  |   APKEG|MIGHT  |2  |Y 10 |1200 |12 |2     |
+FLAMBERGE +2  |   APKEG|MIGHT  |2  |Y 10 |2000 |14 |2     |
+STAFF OF LIGHT| SCAPKEG|HOLY   |40 |Y 20 |1500 |8  |3     |
+COLD GLAIVE   |   APKE |COLD   |40 |Y 20 |2500 |10 |3     |
+CURING STAFF  | SC    G|POISN  |30 |Y 12 |2500 |8  |3     |
+MINOTAUR'S AXE|   APKEG|CURSE  |0  |N 0  |2000 |3  |0     |
+THUNDER HAMMER|  C   EG|ELEC   |40 |Y 15 |3500 |12 |4     |
+GREAT AXE +3  |   APKEG|MIGHT  |4  |Y 10 |3500 |12 |3     |
+FLAMBERGE +3  |   APKEG|MIGHT  |4  |Y 10 |5000 |14 |3     |
+SORCERER STAFF| S    EG|INT    |4  |Y 10 |8000 |8  |5     |
+STAFF OF MAGIC| SCAPKEG|MAGIC  |25 |Y 10 |5000 |8  |4     |
+DEMON'S GLAIVE|   A K  |ELEM   |50 |Y 40 |10000|10 |5     |
+DEVIL'S GLAIVE|   A K  |COLD   |50 |Y 40 |10000|10 |5     |
+THE FLAMBERGE |   APKEG|MIGHT  |10 |Y 10 |15000|30 |6     |
+HOLY FLAMBERGE|    P  G|MAGIC  |50 |Y 15 |20000|20 |6     |
+EVIL FLAMBERGE|    P E |MAGIC  |50 |Y 15 |20000|20 |6     |
+PADDED ARMOR  |RSCAPKEG|EQUIP  |0  |N 0  |10   |0  |1     |
+LEATHER ARMOR |R CAPKEG|EQUIP  |0  |N 0  |20   |0  |2     |
+SCALE ARMOR   |R CAPKEG|EQUIP  |0  |N 0  |50   |0  |3     |
+RING MAIL     |R CAPKEG|EQUIP  |0  |N 0  |100  |0  |4     |
+CHAIN MAIL    |  CAPKEG|EQUIP  |0  |N 0  |200  |0  |5     |
+SPLINT MAIL   |    PKEG|EQUIP  |0  |N 0  |400  |0  |6     |
+PLATE MAIL    |    PKEG|EQUIP  |0  |N 0  |1000 |0  |7     |
+PADDED +1     |RSCAPKEG|EQUIP  |0  |N 0  |25   |0  |2     |
+LEATHER +1    |R CAPKEG|EQUIP  |0  |N 0  |60   |0  |3     |
+SCALE +1      |R CAPKEG|EQUIP  |0  |N 0  |120  |0  |4     |
+RING MAIL +1  |R CAPKEG|FIRE   |5  |N 0  |250  |0  |5     |
+CHAIN MAIL +1 |  CAPKEG|FIRE   |5  |N 0  |500  |0  |6     |
+SPLINT MAIL +1|    PKEG|FIRE   |10 |N 0  |1000 |0  |7     |
+PLATE MAIL +1 |    PKEG|FIRE   |10 |N 0  |2500 |0  |8     |
+LEATHER +2    |R CAPKEG|ELEC   |10 |N 0  |150  |0  |4     |
+SCALE +2      |R CAPKEG|COLD   |10 |N 0  |300  |0  |5     |
+RING MAIL +2  |R CAPKEG|FIRE   |15 |N 0  |750  |0  |6     |
+CHAIN MAIL +2 |  CAPKEG|FIRE   |15 |N 0  |1500 |0  |7     |
+SPLINT MAIL +2|    PKEG|FIRE   |20 |N 0  |2500 |0  |8     |
+PLATE MAIL +2 |    PKEG|FIRE   |20 |N 0  |7500 |0  |9     |
+BRACERS AC 4  |RS A  EG|EQUIP  |0  |N 0  |1000 |0  |4     |
+RING MAIL +3  |R CAPKEG|SPEED  |2  |N 0  |2000 |0  |7     |
+CHAIN MAIL +3 |  CAPKEG|LUCK   |4  |N 0  |4500 |0  |8     |
+SPLINT MAIL +3|    PKEG|MIGHT  |2  |N 0  |7500 |0  |9     |
+PLATE MAIL +3 |    PKEG|FIRE   |50 |N 0  |15000|0  |10    |
+BRACERS AC 6  |RS A  EG|FEAR   |20 |Y 20 |2500 |0  |6     |
+CHAIN MAIL +3 |  CAPKEG|CURSE  |0  |N 0  |4500 |0  |0     |
+BRACERS AC 8  |RSCAPKEG|CURSE  |0  |N 0  |7500 |0  |0     |
+BLUE RING MAIL|R CAPKEG|ELEC   |60 |Y 30 |10000|0  |9     |
+RED CHAIN MAIL|  CAPKEG|FIRE   |60 |Y 30 |15000|0  |10    |
+X!XX!X'S PLATE|    PK  |LUCK   |10 |Y 10 |18000|0  |11    |
+HOLY PLATE    |    P  G|MAGIC  |40 |Y 30 |25000|0  |12    |
+UN-HOLY PLATE |    P E |MAGIC  |40 |Y 30 |25000|0  |12    |
+ULTIMATE PLATE| S A KEG|MAGIC  |40 |Y 30 |30000|0  |13    |
+BRACERS AC 8  |RS A  EG|FEAR   |60 |Y 40 |7500 |0  |8     |
+SMALL SHIELD  |R C PKEG|EQUIP  |0  |N 0  |10   |0  |1     |
+LARGE SHIELD  |R C PKEG|EQUIP  |0  |N 0  |50   |0  |2     |
+SILVER SHIELD |R C PKEG|HOLY   |20 |N 0  |100  |0  |2     |
+SMALL SHIELD+1|R C PKEG|EQUIP  |0  |N 0  |100  |0  |2     |
+LARGE SHIELD+1|R C PKEG|EQUIP  |0  |N 0  |200  |0  |3     |
+LARGE SHIELD+1|R C PKEG|CURSE  |0  |N 0  |200  |0  |0     |
+SMALL SHIELD+2|R C PKEG|EQUIP  |0  |N 0  |400  |0  |3     |
+LARGE SHIELD+2|R C PKEG|EQUIP  |0  |N 0  |800  |0  |4     |
+LARGE SHIELD+2|R C PKEG|CURSE  |0  |N 0  |800  |0  |0     |
+FIRE SHIELD   |R C PKEG|FIRE   |20 |N 0  |2500 |0  |5     |
+COLD SHIELD   |R C PKEG|COLD   |20 |N 0  |2500 |0  |5     |
+ELEC SHIELD   |R C PKEG|ELEC   |20 |N 0  |2500 |0  |5     |
+ACID SHIELD   |R C PKEG|ELEM   |20 |N 0  |2500 |0  |5     |
+MAGIC SHIELD  |R C PKEG|MAGIC  |20 |Y 20 |5000 |0  |6     |
+DRAGON SHIELD |R C PKEG|MAGIC  |10 |Y 20 |8000 |0  |7     |
+ROPE & HOOKS  |RSCAPKEG|NONE   |0  |N 0  |10   |0  |0     |
+TORCH         |RSCAPKEG|NONE   |0  |Y 1  |2    |0  |0     |
+LANTERN       |RSCAPKEG|NONE   |0  |Y 10 |20   |0  |0     |
+10 FOOT POLE  |RSCAPKEG|NONE   |0  |N 0  |10   |0  |0     |
+GARLIC        |RSCAPKEG|NONE   |0  |N 0  |5    |0  |0     |
+WOLFSBANE     |RSCAPKEG|NONE   |0  |N 0  |10   |0  |0     |
+BELLADONNA    |RSCAPKEG|NONE   |0  |N 0  |25   |0  |0     |
+MAGIC HERBS   |RSCAPKEG|NONE   |0  |Y 3  |50   |0  |0     |
+DRIED BEEF    |RSCAPKEG|NONE   |0  |Y 3  |40   |0  |0     |
+ROBBER'S TOOLS|R     EG|THIEF  |20 |N 0  |150  |0  |0     |
+BAG OF SILVER |RSCAPKEG|EQUIP  |0  |N 0  |300  |0  |0     |
+AMBER GEM     |RSCAPKEG|EQUIP  |0  |N 0  |500  |0  |0     |
+SMELLING SALT |RSCAPKEG|NONE   |0  |Y 3  |50   |0  |0     |
+BAG OF SAND   |RSCAPKEG|NONE   |0  |Y 5  |100  |0  |0     |
+MIGHT POTION  |RSCAPKEG|NONE   |0  |Y 3  |200  |0  |0     |
+SPEED POTION  |RSCAPKEG|EQUIP  |0  |Y 3  |200  |0  |0     |
+SUNDIAL       |RSCAPKEG|NONE   |0  |Y 50 |500  |0  |0     |
+CURING POTION |RSCAPKEG|NONE   |0  |Y 4  |350  |0  |0     |
+MAGIC POTION  |RSCAPKEG|NONE   |0  |Y 2  |500  |0  |0     |
+DEFENSE RING  |RSCAPKEG|AC+    |1  |Y 30 |500  |0  |0     |
+BAG OF GARBAGE|RSCAPKEG|CURSE  |0  |N 0  |100  |0  |0     |
+SCROLL OF FIRE|RSCAPKEG|NONE   |0  |Y 1  |300  |0  |0     |
+FLYING CARPET | S    EG|AC+    |2  |Y 10 |500  |0  |0     |
+JADE AMULET   |        |?????  |5  |N 0  |600  |0  |0     |
+ANTIDOTE BREW |RSCAPKEG|NONE   |0  |Y 2  |500  |0  |0     |
+SKILL POTION  |RSCAPKEG|NONE   |0  |Y 5  |600  |0  |0     |
+BOOTS OF SPEED|RSCAPKEG|SPEED  |5  |Y 10 |800  |0  |0     |
+LUCKY CHARM   |RSCAPKEG|LUCK   |5  |Y 20 |800  |0  |0     |
+WAND OF FIRE  | S A  EG|FIRE   |15 |Y 10 |1000 |0  |0     |
+UNDEAD AMULET |RSCAPKEG|FEAR   |50 |Y 20 |800  |0  |0     |
+SILENT CHIME  |RSCAPKEG|NONE   |0  |Y 20 |400  |0  |0     |
+BELT OF POWER |R   PKEG|MIGHT  |5  |N 0  |600  |0  |0     |
+MODEL BOAT    |RSCAPKEG|NONE   |0  |Y 15 |400  |0  |0     |
+DEFENSE CLOAK |RSCAPKEG|AC+    |2  |N 0  |700  |0  |0     |
+KNOWLEDGE BOOK| SCAP EG|INT    |2  |Y 4  |1000 |0  |0     |
+RUBY IDOL     |RSCAPKEG|NONE   |0  |N 0  |3000 |0  |0     |
+SORCERER ROBE | S    EG|INT    |5  |Y 20 |2500 |0  |0     |
+POWER GAUNTLET|R CAPKEG|MIGHT  |5  |N 0  |3000 |0  |0     |
+CLERIC'S BEADS|  C   EG|PERS   |5  |Y 50 |3000 |0  |0     |
+HORN OF DEATH |RSCAPKEG|NONE   |0  |Y 10 |2500 |0  |0     |
+POTION OF LIFE|RSCAPKEG|NONE   |0  |Y 2  |1500 |0  |0     |
+SHINY PENDANT |RSCAPKEG|HOLY   |30 |Y 10 |2000 |0  |0     |
+LIGHTNING WAND|R CA  EG|ELEC   |20 |Y 10 |1500 |0  |0     |
+PRECISION RING|RSCAPKEG|ACCY   |5  |N 0  |3000 |0  |0     |
+RETURN SCROLL |RSCAPKEG|NONE   |0  |Y 1  |2000 |0  |0     |
+TELEPORT HELM |RSCAPKEG|MAGIC  |10 |Y 20 |5000 |0  |0     |
+YOUTH POTION  |RSCAPKEG|NONE   |0  |Y 2  |4000 |0  |0     |
+BELLS OF TIME |RSCAPKEG|NONE   |0  |Y 50 |1000 |0  |0     |
+MAGIC OIL     |RSCAPKEG|NONE   |0  |Y 1  |1000 |0  |0     |
+MAGIC VEST    |RSCAPKEG|MAGIC  |20 |Y 10 |6000 |0  |0     |
+DESTROYER WAND| S A  EG|MAGIC  |10 |Y 10 |7000 |0  |0     |
+ELEMENT SCARAB|RSCAPKEG|PERS   |5  |Y 20 |6000 |0  |0     |
+SUN SCROLL    |RSCAPKEG|NONE   |0  |Y 1  |3000 |0  |0     |
+STAR RUBY     |RSCAPKEG|LUCK   |10 |Y 30 |6000 |0  |0     |
+STAR SAPPHIRE |RSCAPKEG|MAGIC  |30 |Y 10 |6000 |0  |0     |
+WEALTH CHEST  |RSCAPKEG|NONE   |0  |Y 5  |6000 |0  |0     |
+GEM SACK      |RSCAPKEG|NONE   |0  |Y 10 |10000|0  |0     |
+DIAMOND COLLAR|RSCAPKEG|?????  |80 |Y 10 |10000|0  |0     |
+FIRE OPAL     |RSCAPKEG|?????  |80 |Y 10 |10000|0  |0     |
+UNOBTAINIUM   |        |?????  |5  |N 0  |50000|0  |0     |
+VELLUM SCROLL |RSCAPKEG|NONE   |0  |N 0  |10   |0  |0     |
+RUBY WHISTLE  |RSCAPKEG|LUCK   |2  |Y 200|500  |0  |0     |
+KINGS PASS    |RSCAPKEG|NONE   |0  |N 0  |0    |0  |0     |
+MERCHANTS PASS|RSCAPKEG|NONE   |0  |N 0  |0    |0  |0     |
+CRYSTAL KEY   |RSCAPKEG|NONE   |0  |Y 10 |1000 |0  |0     |
+CORAL KEY     |RSCAPKEG|NONE   |0  |Y 10 |300  |0  |0     |
+BRONZE KEY    |RSCAPKEG|NONE   |0  |Y 20 |500  |0  |0     |
+SILVER KEY    |RSCAPKEG|NONE   |0  |Y 30 |600  |0  |0     |
+GOLD KEY      |RSCAPKEG|NONE   |0  |Y 15 |800  |0  |0     |
+DIAMOND KEY   |RSCAPKEG|NONE   |0  |Y 20 |2000 |0  |0     |
+CACTUS NECTAR |RSCAPKEG|NONE   |0  |Y 10 |400  |0  |0     |
+MAP OF DESERT |RSCAPKEG|NONE   |0  |Y 20 |400  |0  |0     |
+LASER BLASTER |RSCAPKEG|ACCY   |5  |Y 10 |2000 |0  |0     |
+DRAGONS TOOTH |RSCAPKEG|NONE   |0  |Y 10 |1500 |0  |0     |
+WYVERN EYE    |RSCAPKEG|NONE   |0  |Y 20 |1000 |0  |0     |
+MEDUSA HEAD   |RSCAPKEG|CURSE  |0  |N 0  |0    |0  |0     |
+RING OF OKRIM |RSCAPKEG|LUCK   |10 |Y 20 |3000 |0  |0     |
+B QUEEN IDOL  |RSCAPKEG|NONE   |0  |N 0  |0    |0  |0     |
+W QUEEN IDOL  |RSCAPKEG|NONE   |0  |N 0  |0    |0  |0     |
+PIRATES MAP A |RSCAPKEG|NONE   |0  |N 0  |1000 |0  |0     |
+PIRATES MAP B |RSCAPKEG|NONE   |0  |N 0  |2000 |0  |0     |
+THUNDRANIUM   |RSCAPKEG|NONE   |0  |Y 250|10000|0  |0     |
+KEY CARD      |RSCAPKEG|NONE   |0  |N 0  |0    |0  |0     |
+EYE OF GOROS  |RSCAPKEG|NONE   |0  |Y 20 |10000|0  |0     |
+(USELESS ITEM)|RSCAPKEG|NONE   |0  |N 0  |0    |0  |0     |
+
+Below, AC=monster's armor class, DMG=maximum damage monster can do, 
+ATT=# of attacks, SPD = monster's speed, EXP=experience split among 
+party members for each monster killed, and ICO=the icon number of the 
+monster(what you see on the screen).  There is more information, but 
+this is the major stuff, made clear by the Identify Monster 
+spell(sorcerer 2-3.)
+
+MONSTER NAME   |AC |DMG|ATT|SPD|EXP    |ICO|
+---------------+---+---+---+---+-------+---+
+FLESH EATER    |2  |6  |1  |7  |20     |2  |
+BATTLE RAT     |3  |3  |1  |12 |20     |2  |
+SLITHER BEAST  |4  |8  |1  |10 |50     |13 |
+GNOME          |5  |6  |1  |12 |50     |3  |
+GOBLIN         |4  |6  |1  |10 |20     |3  |
+GREMLIN        |3  |3  |2  |4  |50     |3  |
+GUARDSMAN      |2  |6  |1  |14 |30     |20 |
+KOBOLD         |4  |4  |1  |6  |20     |2  |
+MUTANT LARVA   |0  |3  |1  |2  |20     |7  |
+ORC            |4  |6  |1  |11 |30     |5  |
+POLTERGEIST    |0  |2  |2  |16 |60     |22 |
+RABID JACKAL   |3  |2  |1  |15 |20     |11 |
+SKELETON       |3  |6  |1  |9  |20     |23 |
+SNAKE          |2  |3  |1  |17 |50     |13 |
+SPRITE         |10 |2  |1  |20 |100    |3  |
+VAMPIRE BAT    |2  |3  |1  |14 |50     |9  |
+MINOR DEMON    |5  |8  |2  |16 |200    |4  |
+DEMON DOG      |3  |10 |2  |14 |100    |11 |
+DUNG BEETLE    |6  |8  |1  |8  |50     |0  |
+FIRE ANT       |5  |6  |1  |7  |50     |0  |
+GHOUL          |4  |5  |3  |13 |200    |21 |
+GNOLL          |5  |8  |1  |10 |50     |5  |
+HAG            |1  |4  |2  |8  |50     |4  |
+LOCUST PLAGUE  |5  |1  |10 |17 |200    |1  |
+ORC LEADER     |5  |8  |1  |14 |60     |5  |
+RABID LEPER    |0  |3  |1  |11 |50     |2  |
+ROTTING CORPSE |2  |4  |2  |3  |60     |21 |
+SAVAGE SHREW   |3  |5  |3  |13 |150    |0  |
+STRANGLING VINE|3  |3  |4  |6  |100    |17 |
+THIEF          |3  |8  |1  |16 |50     |18 |
+TROGLODYTE     |5  |4  |3  |11 |60     |13 |
+ZOMBIE         |2  |8  |1  |2  |50     |21 |
+ACIDIC BLOB    |1  |8  |2  |8  |300    |7  |
+CENTAUR        |4  |4  |4  |12 |200    |14 |
+CLERIC         |5  |8  |1  |12 |300    |19 |
+MINOR DEVIL    |4  |4  |2  |15 |250    |4  |
+FIRE BEETLE    |7  |15 |1  |6  |150    |0  |
+GARGOYLE       |5  |4  |4  |12 |300    |4  |
+GARGANTU ANT   |8  |12 |1  |9  |100    |0  |
+DINOLIZARD     |5  |10 |1  |11 |120    |13 |
+GIANT SPIDER   |5  |8  |1  |18 |150    |0  |
+HARPY          |3  |5  |3  |15 |200    |9  |
+HIPPOGRIFF     |5  |8  |3  |14 |200    |14 |
+KILLER BEES    |10 |2  |10 |16 |300    |1  |
+PEGASUS        |4  |8  |3  |20 |250    |14 |
+SHADOW BEAST   |3  |5  |1  |18 |150    |22 |
+WILD BOAR      |3  |12 |1  |14 |120    |12 |
+WOLVERINE      |5  |5  |3  |12 |250    |12 |
+BARBARIAN      |8  |12 |2  |15 |400    |18 |
+CARYATID GUARD |5  |10 |1  |15 |400    |20 |
+COCKATRICE     |4  |8  |1  |8  |500    |10 |
+CYCLOPS        |6  |15 |2  |10 |400    |8  |
+DRUID          |4  |8  |2  |14 |400    |19 |
+RHINO BEETLE   |7  |20 |1  |7  |500    |0  |
+GIANT CENTIPEDE|5  |4  |8  |9  |500    |0  |
+MAGICIAN       |5  |8  |1  |15 |600    |19 |
+MILITIAMAN     |9  |10 |2  |9  |300    |20 |
+ORC CHIEFTAIN  |10 |12 |2  |15 |500    |20 |
+OGRE           |7  |10 |2  |12 |350    |5  |
+SATYR          |5  |8  |2  |10 |300    |6  |
+SWARMING WASPS |4  |2  |10 |17 |400    |1  |
+UNICORN        |8  |10 |3  |22 |500    |14 |
+WEREWOLF       |7  |8  |2  |14 |400    |11 |
+WIGHT          |6  |10 |1  |12 |500    |22 |
+BARBARIAN CHIEF|10 |12 |3  |18 |800    |18 |
+BASILISK       |5  |15 |1  |14 |1000   |16 |
+CELESTIAL STAG |14 |10 |3  |19 |700    |14 |
+DUST DEMON     |9  |12 |3  |15 |600    |4  |
+GIANT SCORPION |7  |8  |3  |13 |600    |0  |
+5 HEADED HYDRA |7  |8  |5  |12 |1500   |16 |
+WARRIOR CAT    |6  |6  |4  |17 |600    |12 |
+MINOTAUR       |7  |35 |1  |15 |1500   |14 |
+OGRE CHIEF     |9  |15 |2  |15 |750    |5  |
+PANTHRO MIST   |7  |8  |4  |18 |600    |12 |
+PHANTOM        |7  |8  |2  |10 |600    |23 |
+SWORDSMAN      |6  |10 |2  |18 |600    |20 |
+TROLL          |6  |9  |3  |12 |600    |6  |
+WOOD GOLEM     |5  |15 |2  |5  |800    |8  |
+WRAITH         |6  |6  |2  |9  |800    |22 |
+YETI           |4  |10 |2  |13 |600    |8  |
+DEADLY SPORES  |2  |1  |1  |10 |600    |17 |
+ENCHANTRESS    |6  |6  |2  |15 |1000   |19 |
+FIRE LIZARD    |7  |10 |3  |12 |800    |13 |
+GIANT SLOTH    |5  |8  |4  |14 |750    |11 |
+GRIFFIN        |7  |8  |3  |14 |700    |10 |
+PYRO HYDRA     |7  |8  |5  |12 |2000   |16 |
+MAN EATING MARE|6  |8  |3  |14 |600    |14 |
+MANTICORE      |6  |6  |4  |12 |600    |10 |
+MEDUSA         |5  |4  |1  |9  |1000   |4  |
+RAKSHASHA      |14 |5  |3  |14 |3000   |4  |
+STONE GOLEM    |7  |40 |1  |6  |1500   |8  |
+CAVE TROLL     |7  |11 |3  |10 |900    |6  |
+HILL TROLL     |8  |12 |3  |11 |1100   |6  |
+WARLOCK        |8  |8  |1  |16 |800    |19 |
+WEREBEAR       |8  |8  |4  |14 |800    |11 |
+WICKED WITCH   |4  |6  |2  |14 |1000   |4  |
+ASSASSIN       |6  |8  |1  |19 |2000   |18 |
+BANSHEE        |10 |10 |1  |12 |3000   |22 |
+CAVE GIANT     |10 |16 |3  |12 |2000   |8  |
+CHIMERA        |8  |5  |6  |14 |5000   |10 |
+AIR ELEMENTAL  |7  |15 |1  |20 |4000   |22 |
+EXECUTIONER    |8  |12 |2  |14 |4000   |20 |
+GORGON         |8  |12 |1  |12 |6000   |14 |
+LESSER DEMON   |10 |8  |4  |16 |2500   |4  |
+LESSER DEVIL   |8  |6  |5  |16 |2500   |4  |
+MUMMY          |7  |20 |2  |7  |2000   |21 |
+NECROMANCER    |7  |8  |2  |17 |2000   |19 |
+SPECTER        |8  |12 |1  |12 |3000   |22 |
+WHITE WOLF     |10 |12 |3  |14 |2500   |11 |
+WYVERN         |7  |18 |2  |12 |2000   |16 |
+GREEN DRAGON   |8  |8  |3  |12 |6000   |15 |
+BLUE DRAGON    |8  |10 |3  |13 |6000   |15 |
+EVIL EYE       |10 |10 |2  |10 |5000   |7  |
+EARTH ELEMENTAL|8  |20 |1  |18 |4000   |22 |
+GHOST          |10 |10 |1  |10 |4000   |22 |
+FROST GIANT    |10 |24 |1  |12 |5000   |8  |
+STONE GIANT    |10 |10 |4  |12 |4000   |8  |
+8 HEADED HYDRA |10 |8  |8  |13 |7500   |16 |
+LAVA BEAST     |5  |12 |2  |9  |4000   |7  |
+MANTIS WARRIOR |8  |12 |4  |16 |4000   |1  |
+NAGA           |8  |8  |1  |15 |4000   |13 |
+DINOBEETLE     |10 |50 |1  |8  |6000   |0  |
+SPHINX         |11 |10 |3  |18 |5000   |12 |
+VAMPIRE        |9  |12 |2  |14 |5000   |21 |
+WARRIOR        |12 |12 |2  |14 |4000   |20 |
+WIZARD         |8  |6  |2  |18 |7000   |19 |
+WHITE DRAGON   |8  |12 |3  |15 |10000  |15 |
+GRAY DRAGON    |8  |15 |3  |16 |10000  |15 |
+ARCH DRUID     |10 |8  |2  |18 |15000  |19 |
+CHAOTIC KNIGHT |14 |15 |3  |18 |7000   |20 |
+GREATER DEMON  |15 |8  |7  |19 |10000  |4  |
+GREATER DEVIL  |12 |15 |4  |19 |10000  |4  |
+FIRE ELEMENTAL |9  |30 |1  |20 |8000   |22 |
+GUARDIAN SPIRIT|8  |6  |6  |16 |6000   |23 |
+STORM GIANT    |9  |30 |2  |14 |10000  |8  |
+12 HEADED HYDRA|10 |10 |12 |16 |12000  |16 |
+INVISIBLE THING|14 |10 |3  |25 |6000   |23 |
+MAGE           |10 |6  |3  |20 |8000   |19 |
+MASTER THIEF   |12 |8  |2  |20 |5000   |18 |
+STEEL GOLEM    |15 |25 |2  |10 |7500   |8  |
+WEREPHASE MUMMY|20 |20 |2  |35 |8000   |21 |
+BLACK DRAGON   |12 |18 |3  |16 |15000  |15 |
+RED DRAGON     |12 |20 |3  |15 |15000  |15 |
+XX!XX!XX!XX!XX |20 |1  |1  |18 |15000  |22 |
+BLACK KNIGHT   |16 |50 |3  |20 |10000  |20 |
+DEMON LORD     |20 |50 |2  |30 |60000  |4  |
+ARCH DEVIL     |16 |100|1  |30 |60000  |4  |
+GOLD DRAGON    |10 |20 |5  |16 |50000  |15 |
+SILVER DRAGON  |8  |16 |4  |16 |20000  |15 |
+DIAMOND GOLEM  |15 |60 |3  |12 |15000  |8  |
+16 HEADED HYDRA|15 |12 |16 |12 |20000  |16 |
+HIGH CLERIC    |14 |16 |3  |18 |10000  |19 |
+KIRIN          |15 |40 |4  |22 |14000  |10 |
+LICH           |10 |10 |2  |20 |20000  |23 |
+ARCH MAGE      |12 |8  |2  |25 |25000  |19 |
+MASTER ARCHER  |10 |16 |8  |18 |25000  |18 |
+PHOENIX        |13 |8  |3  |24 |15000  |10 |
+ROC            |10 |50 |3  |14 |15000  |10 |
+SAND WORM      |7  |200|1  |8  |15000  |16 |
+TITAN          |13 |60 |2  |30 |20000  |8  |
+ALGAE BEAST    |0  |6  |1  |1  |50     |24 |
+WATER RAT      |1  |6  |1  |6  |100    |24 |
+LAMPREY        |2  |8  |1  |15 |200    |24 |
+GIANT LEECH    |2  |8  |1  |3  |250    |24 |
+CROCODILE      |5  |10 |2  |12 |300    |24 |
+GIANT CRAB     |9  |10 |2  |12 |300    |24 |
+BARRACUDA      |5  |20 |1  |16 |350    |24 |
+GIANT SQUID    |5  |6  |8  |14 |400    |24 |
+ELECTRIC EEL   |5  |8  |1  |15 |500    |24 |
+SEA HAG        |8  |6  |3  |12 |500    |24 |
+HIPPOCAMPUS    |12 |10 |4  |18 |600    |24 |
+SHARK          |6  |30 |2  |24 |700    |24 |
+SIREN          |8  |8  |2  |13 |700    |24 |
+WATER ELEMENTAL|12 |50 |1  |30 |1200   |24 |
+SEA SERPENT    |10 |100|1  |20 |3000   |24 |
+SEA DRAGON     |15 |50 |4  |32 |20000  |24 |
+SCORPION       |12 |60 |2  |20 |12000  |0  |
+DARK RIDER     |15 |50 |4  |30 |12000  |20 |
+WINGED BEAST   |12 |120|1  |30 |12000  |15 |
+GREAT SEA BEAST|12 |100|1  |30 |12000  |24 |
+DEMON KING     |30 |50 |5  |35 |50000  |24 |
+SUCCUBUS QUEEN |20 |30 |3  |20 |10000  |24 |
+TYRANNOSAURUS  |10 |200|1  |12 |5000   |16 |
+ALIEN          |15 |20 |2  |15 |1000   |22 |
+NATIVES        |6  |10 |2  |10 |200    |21 |
+VOLCANO GOD    |30 |40 |6  |32 |60000  |7  |
+PAUL PEAD      |10 |30 |1  |19 |2000   |18 |
+PIRATE         |8  |20 |1  |17 |500    |23 |
+PIRATE CAPTAIN |10 |20 |3  |18 |1000   |23 |
+GRAY MINOTAUR  |13 |30 |4  |20 |15000  |14 |
+LORD ARCHER    |15 |80 |3  |21 |20000  |18 |
+BRONTASAURUS   |8  |150|1  |6  |5000   |16 |
+STEGOSAURUS    |15 |200|1  |6  |5000   |16 |
+KILLER CADAVER |8  |12 |3  |15 |1500   |21 |
+OKRIM          |11 |6  |4  |18 |20000  |19 |
+
+SPELLS
+
+There are two spell classes in the game, Cleric and Sorcerer.  Each one 
+has seven spell levels, attainable at experience level 2x-1(i.e. spell 
+level 5 is achieved at level 9).  Also, Paladins and Archers may attain 
+Cleric and Sorcerer spells, respectively, up to level 4.  They gain 
+spell knowledge at experience level 2x+5.  All spells are automatically 
+learned on achieving the new level.
+
+The spell cost equals the spell level, except in cases I have noted 
+where the cost is equal to the spellcaster's level.
+
+I have tried to indicate how useful spells are.  For damage spells, the 
+effectiveness depends on the type of monster.  For incstance A fire 
+spell will be more effective on a Red Dragon(fire breathing) than a 
+White Dragon(frost breathing.)
+
+Note:  monsters can cast these spells on you, too.
+
+The following list of spells is cut and pasted, with generous 
+permission, from project64.c64.org.
+
+------------------------------------------------------------------------
+Clerical Spells
+------------------------------------------------------------------------
+
+Level 1
+
+1. NAME: Awaken
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: All sleeping party members
+   DESCRIPTION: Awakens all sleeping members of the party,
+      instantaneously cancelling the sleep condition.  May be critical 
+if
+      party is attacked during rest.
+
+
+2. NAME: Bless
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: Entire party
+   DESCRIPTION: Increases the accuracy with which all characters fight,
+      for the duration of combat.
+
+
+3. NAME: Blind
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Blinds the affected monster for the duration of combat 
+or
+      until it overcomes the spell.  Forced to rely on other senses, the
+      monster's chances of landing a blow are diminished.
+
+
+4. NAME: First Aid
+   COST: 1 SP
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Heals minor battle wounds, restoring 8 Hit Points to 
+that
+      character.
+
+
+5. NAME: Light
+   COST: 1 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Gives the party 1 light factor, which is sufficient to
+      light up 1 dark area.  Multiple light spells can be cast to
+      accumulate multiple light factors.
+
+
+6. NAME: Power Cure
+   COST: 1 SP per experience level of caster + 1 Gem
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Restores character's health and 1-10 Hit Points per
+      experience level of caster.
+
+
+7. NAME: Protection From Fear
+   COST: 1 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all characters' resistance to fear and spells
+      of intimidation.  Amount of the increase depends on experience
+      level of the caster.  Spell lasts 1 day.
+
+
+8. NAME: Turn Undead
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: All undead monsters
+   DESCRIPTION: Destroys some or all undead monsters, depending on
+      caster's experience level and monster's power level.
+
+
+
+Level 2
+
+
+1. NAME: Cure Wounds
+   COST: 2 SP
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Cures more serious wounds, restoring 15 Hit Points to 
+the
+      character.
+
+
+2. NAME: Heroism
+   COST: 2 SP+ 1 Gem
+   TYPE: Combat
+   OBJECT: 1 character of same alignment as caster
+   DESCRIPTION: Bestows 6 additional Hit Points and temporarily elevates
+      character 2 levels of experience.  Spell lasts for the duration of
+      combat.
+
+
+3. NAME: Pain
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 monster, not undead
+   DESCRIPTION: Cripples monster with pain, inflicting 2-12 damage
+      points, unless the monster is immune to pain.
+
+
+4. NAME: Protection From Cold
+   COST: 2 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all character's resistance to cold or freezing
+      spells.  Amount of the increase depends on the caster's experience
+      level.  Spell lasts 1 day.
+
+
+5. NAME: Protection From Fire
+   COST: 2 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all character's resistance to fire or heat
+      spells.  Amount of the increase depends on the caster's experience
+      level.  Spell lasts 1 day.
+
+
+6. NAME: Protection From Poison
+   COST: 2 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all characters' resistance to poison and
+      poisonous spells.  Amount of the increase depends on the caster's
+      experience level.  Spell lasts 1 day.
+
+
+7. NAME: Silence
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Prevents the monster from casting spells for the
+      duration of combat, or until it overcomes the spell.
+
+
+8. NAME: Suggestion
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Coerces monster into refraining from attack, unless it 
+is
+      attacked.  Lasts for the duration of combat, or until the monster
+      overcomes the spell.
+
+
+
+ Level 3
+
+
+1. NAME: Create Food
+   COST: 3 SP+l Gem
+   TYPE: Non-combat
+   OBJECT: Spell caster
+   DESCRIPTION: Adds 6 food units to caster's food supply.  Caster may
+      then distribute food among other party members, if he/she desires.
+
+
+2. NAME: Cure Blindness
+   COST: 3 SP
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Restores sight to that character, instantaneously
+      removing the blinded condition.
+
+
+3. NAME: Cure Paralysis
+   COST: 3 SP
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Restores movement to that character, instantaneously
+      removing the paralyzed condition.
+
+
+4. NAME: Lasting Light
+   COST: 3 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Bestows 20 light factors on the party, for use in
+      dispelling darkness.
+
+
+5. NAME: Produce Flame
+   COST: 3 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Attacks monster with a jet of flame that inflicts 3-18
+      damage points, providing monster is not immune to fire.
+
+
+6. NAME: Produce Frost
+   COST: 3 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Inflicts severe frostbite on monster, doing 3-18 points
+      of damage, unless monster is immune to cold.
+
+
+7. NAME: Remove Quest
+   COST: 3 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Releases party from its commitment to a quest.
+
+
+8. NAME: Walk On Water
+   COST: 3 SP+l Gem
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Creates a floating sand dune upon which the party may
+      walk on.  Lasts 1 day.
+
+
+
+ Level 4
+
+
+1. NAME: Cure Disease
+   COST: 4 SP
+   TYPE: Non-combat
+   OBJECT: 1 character
+   DESCRIPTION: Restores full health to sick character, instantaneously
+      removing the diseased condition.
+
+
+2. NAME: Neutralize Poison
+   COST: 4 SP
+   TYPE: Non-combat
+   OBJECT: 1 character
+   DESCRIPTION: Flushes poison out of character's system, 
+instantaneously
+      removing the poisoned condition.
+
+
+3. NAME: Protection From Acid
+   COST: 4 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all characters' resistance to acid attacks.
+      Amount of the increase depends on the caster's experience level.
+      Spell lasts 1 day.
+
+
+4. NAME: Protection From Electricity
+   COST: 4 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all characters' resistance to electrical
+      attacks.  Amount of the increase depends on the caster's 
+experience
+      level.  Spell lasts 1 day.
+
+
+5. NAME: Restore Alignment
+   COST: 4 SP+ 2 Gems
+   TYPE: Non-combat
+   OBJECT: 1 character
+   DESCRIPTION: Restores a character's original alignment, after actions
+      and responses have caused it to shift.
+
+
+6. NAME: Summon Lightning
+   COST: 4 SP
+   TYPE: Combat, Outdoors
+   OBJECT: Up to 3 monsters not in hand-to-hand combat
+   DESCRIPTION: Zaps monsters with lightning bolts, inflicting 4-32
+      damage points on each monster not immune to lightning.
+
+
+7. NAME: Super Heroism
+   COST: 4 SP+ 2 Gem
+   TYPE: Combat
+   OBJECT: 1 character
+   DESCRIPTION: Temporarily bestows 10 additional Hit Points and 3
+      additional experience levels on character.  Lasts for the duration
+      of combat.
+
+
+8. NAME: Surface
+   COST: 4 SP+ 2 Gems
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Instantly transports all party members from an
+      underground location to ground surface.
+
+
+
+Level 5
+
+
+1. NAME: Deadly Swarm
+   COST: 5 SP
+   TYPE: Combat, Outdoor
+   OBJECT: All monsters
+   DESCRIPTION: Sends a swarm of killer insects against the monsters,
+      inflicting 2-20 damage points against each monster.
+
+2. NAME: Dispell Magic
+   COST: 5 SP
+   TYPE: Anytime
+   OBJECT: All characters and monsters
+   DESCRIPTION: Cancels all magic spells currently active both for
+      characters and monsters.
+
+3. NAME: Paralyze
+   COST: 5 SP
+   TYPE: Combat
+   OBJECT: All monsters in hand-to-hand combat
+   DESCRIPTION: Attempts to immobilize all monsters and prevent them 
+from
+      fighting.  May be partially or completely ineffective on some or
+      all monsters.
+
+
+4. NAME: Remove Condition
+   COST: 5 SP+ 3 Gems
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Releases character from all undesirable conditions 
+except
+      dead, stoned or eradicated.
+
+
+5. NAME: Restore Energy
+   COST: 5 SP+ 3 Gems
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Replaces 1-5 experience levels that have been lost or
+      drained from character, up to his/her former level.
+
+
+
+Level 6
+
+
+1. NAME: Moon Ray
+   COST: 6 SP+ 4 Gems
+   TYPE: Combat, Outdoors
+   OBJECT: All characters and monsters
+   DESCRIPTION: Bathes all combatants in a beneficent ray that bestows
+      3-30 Hit Points on each character and removes 3-30 Hit Points from
+      each monster.
+
+
+2. NAME: Raise Dead
+   COST: 6 SP+ 4 Gems
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Brings the character back to life, removing the dead
+      condition.  Spell carries a moderate chance of failure and a 
+remote
+      chance of eradicating the character.
+
+
+3. NAME: Rejuvenate
+   COST: 6 SP+ 4 Gems
+   TYPE: Non-combat
+   OBJECT: 1 character
+   DESCRIPTION: A fountain of youth that trims 1-10 years off a
+      character's age, restoring his/her abilities to the younger level.
+      Spell carries some risk of producing the opposite effect.
+
+
+4. NAME: Stone to Flesh
+   COST: 6 SP+ 4 Gems
+   TYPE: Anytime
+   OBJECT: 1 character
+   DESCRIPTION: Re-animates a character who has been turned to stone,
+      removing the stoned condition.
+
+
+5. NAME: Town Portal
+   COST: 6 SP+ 4 Gems
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Opens a temporary portal to any town and moves the party
+      through the portal to that town.
+
+
+
+Level 7
+
+
+1. NAME: Divine Intervention
+   COST: 7 SP+ 10 Gems
+   TYPE: Combat
+   OBJECT: Entire party
+   DESCRIPTION: Intercedes with supernatural forces to restore all
+      characters' Hit Points and remove all undesirable conditions,
+      except eradicated.
+
+
+2. NAME: Holy Word
+   COST: 7 SP+ 5 Gems
+   TYPE: Combat
+   OBJECT: All undead monsters
+   DESCRIPTION: Utters a single word of devastating power, that totally
+      destroys all undead monsters.
+
+
+3. NAME: Protection From Elements
+   COST: 7 SP+ 5 Gems
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all characters' resistance to fear, cold, 
+fire,
+      poison, acid and electricity.  Amount of the increase depends on
+      the caster's experience level.  Spell lasts 1 day.
+
+
+4. NAME: Resurrection
+   COST: 7 SP+ 5 Gems
+   TYPE: Non-combat
+   OBJECT: 1 character
+   DESCRIPTION: Removes the eradicated condition from the character,
+      adding 10 years to his/her age and subtracting 1 endurance point
+      from his/her vital statistics.  There is a chance that the spell
+      will fail.
+
+
+5. NAME: Sun Ray
+   COST: 7 SP+ 5 Gems
+   TYPE: Combat, Outdoors
+   OBJECT: 1 monster
+   DESCRIPTION: Sears the monster with a focused ray of deadly light,
+      inflicting 50-100 damage points.
+
+
+------------------------------------------------------------------------
+Sorcerer Spells
+------------------------------------------------------------------------
+
+
+Level 1
+
+
+1. NAME: Awaken
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: All sleeping party members
+   DESCRIPTION: Awakens all sleeping members of the party,
+      instantaneously cancelling the sleep condition.  May be critical 
+if
+      party is attacked during rest.
+
+
+2. NAME: Detect Magic
+   COST: 1 SP
+   TYPE: Non-combat
+   OBJECT: Spell caster
+   DESCRIPTION: Reveals any magical items in caster's back pack, and
+      notes the number of magical charges remaining in any item which
+      must be charged for use.  Also detects any magic surrounding or
+      inside a chest, sack, box, etc.
+
+
+3. NAME: Energy Blast
+   COST: 1 SP per experience level of caster +1 Gem
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Zaps the monster with a blast of pure energy, inflicting
+      1-4 damage points per experience level of caster.
+
+
+4. NAME: Flame Arrow
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Sends a burning shaft into the monster, inflicting 1-6
+      points of fire damage, unless monster is immune to fire.
+
+
+5. NAME: Leather Skin
+   COST: 1 SP
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Toughens all characters' skin, so that attacks from
+       monsters bounce off rather than hitting.
+
+
+6. NAME: Light
+   COST: 1 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Gives the party 1 light factor, sufficient to light a
+      single darkened square.  Multiple light spells can be cast, to
+      accumulate light factors.
+
+
+7. NAME: Location
+   COST: 1 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Gives precise information on party's location.  May be
+      critical when party is lost or magically transported.  In general,
+      this spell is the key to successful mapping.
+
+
+8. NAME: Sleep
+   COST: 1 SP
+   TYPE: Combat
+   OBJECT: Up to 5 monsters
+   DESCRIPTION: Casts monsters into a deep sleep, preventing them from
+      attacking.  Effective until monster is damaged or overcomes the
+      spell.
+
+
+
+Level 2
+
+1. NAME: Electric Arrow
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Electrocutes a monster, inflicting 2-12 damage points,
+      unless monster is immune to electrical attack.
+
+2. NAME: Hypnotize
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Uses the power of suggestion to prevent a monster from
+      attacking.  Effective until monster is attacked or overcomes the
+      spell.
+
+
+3. NAME: Identify Monster
+   COST: 2 SP+1 Gem
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Informs caster of the nature of any one monster during
+      combat.
+
+
+4. NAME: Jump
+   COST: 2 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Gives all characters super strength, enabling them to
+      jump 2 squares forward, providing there are no magical 
+obstructions
+      (force fields, etc.) in the way.
+
+
+5. NAME: Levitate
+    COST: 2 SP
+    TYPE: Non-combat
+    OBJECT: Entire party
+    DESCRIPTION: Raises all characters above ground level, protecting
+       them from various dangers for 1 day.
+
+
+6. NAME: Power
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 character
+   DESCRIPTION: Boosts that character's Might by 1-4 points for the
+      duration of combat.  Increases the potency of character's attacks
+      on monsters.
+
+
+7. NAME: Quickness
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 character
+   DESCRIPTION: Boosts character's Speed by 1-4 points for the duration
+      of combat, moving him/her further forward in order of combat.
+
+
+8. NAME: Scare
+   COST: 2 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Strikes fear into the  monster's heart, decreasing its
+      probability of hitting a character during combat.
+
+
+
+Level 3
+
+
+1. NAME: Fire Ball
+   COST: 1 SP per experience level of caster + 1 Gem
+   TYPE: Combat
+   OBJECT: 1-5 monsters not in hand-to-hand combat
+   DESCRIPTION: Rolls a deadly ball of fire into the monsters' midst,
+      inflicting 1-6 damage points per level of experience on each
+      monster.
+
+
+2. NAME: Fly
+   COST: 3 SP
+   TYPE: Non-combat, Outdoors
+   OBJECT: Entire party
+   DESCRIPTION: Grants magical flight to all characters, allowing the
+      party as a whole to move to any other outdoor area.  The party 
+will
+      land in the safest square in that area.
+
+
+3. NAME: Invisibility
+   COST: 3 SP+ 1 Gem
+   TYPE: Combat
+   OBJECT: Entire party
+   DESCRIPTION: Drops a cloak of invisibility over all characters,
+      greatly decreasing the monsters' chances of hitting them.
+
+
+4. NAME: Lightning Bolt
+   COST: 1 SP per experience level of caster + 1 Gem
+   TYPE: Combat
+   OBJECT: 1-3 monsters
+   DESCRIPTION: Blasts the monsters with a gigantic lightning bolt that
+      inflicts 1-6 damage points per level of experience on each 
+monster.
+
+
+5. NAME: Make Room
+   COST: 3 SP
+   TYPE: Combat
+   OBJECT: Entire party
+   DESCRIPTION: Expands a narrow corridor or area during combat,
+      allowing the first 5 characters in the party to engage in hand-to-
+      hand combat.
+
+
+6. NAME: Slow
+   COST: 3 SP
+   TYPE: Combat
+   OBJECT: All monsters
+   DESCRIPTION: Places an invisible  force field around all monsters'
+      feet, slowing them down to 1/2 their original speed and putting
+      them farther back in order of combat.
+
+
+7. NAME: Weaken
+   COST: 3 SP+ 1 Gem
+   TYPE: Combat
+   OBJECT: All monsters
+   DESCRIPTION: Drains power from all monsters, reducing each monster's
+      Hit Points by 2 and Armor Class by 1.
+
+
+8. NAME: Web
+   COST: 3 SP
+   TYPE: Combat
+   OBJECT: 1-5 monsters not in hand-to-hand combat
+   DESCRIPTION: Wraps 1-5 monsters in a supernatural web, preventing
+      them from fighting for the duration of combat or until they 
+escape.
+
+
+
+Level 4
+
+
+1. NAME: Acid Arrow
+   COST: 4 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Attacks with corrosive acid that inflicts 3-30 damage
+      points, unless the monster is immune to acid.
+
+
+2. NAME: Cold Beam
+   COST: 4 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Attacks with a beam of intense cold that penetrates to
+      the monster's heart and inflicts 4-40 damage points, unless the
+      monster is immune to cold.
+
+
+3. NAME: Feeble Mind
+   COST: 4 SP+ 2 Gems
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Erases the monsters brain, removing all its abilities 
+for
+      the duration of combat or until the monster overcomes the spell.
+
+
+4. NAME: Freeze
+   COST: 4 SP
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Immobilizes the monster, preventing it from attacking
+      for the duration of combat.  Monster's chance of overcoming this
+      spell is very small.
+
+
+5. NAME: Guard Dog
+   COST: 4 SP
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Places a supernatural guard over party, preventing
+      surprise attacks for 1 day.
+
+
+6. NAME: Psychic Protection
+   COST: 4 SP+ 2 Gems
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Grants all characters immunity from mind influencing
+      spells for 1 day.
+
+
+7. NAME: Shield
+   COST: 4 SP+ 2 Gems
+   TYPE: Combat
+   OBJECT: Entire party
+   DESCRIPTION: Creates an invisible shield which surrounds the party 
+and
+      protects all characters from most missile weapons for the duration
+      of combat.
+
+
+ 8. NAME: Time Distortion
+    COST: 4 SP+ 2 Gems
+    TYPE: Combat
+    OBJECT: Entire party
+    DESCRIPTION: Creates a warp in time that enables the party to 
+retreat
+       safely from most battles.
+
+
+
+Level 5
+
+
+1. NAME: Acid Rain
+   COST: 5 SP
+   TYPE: Combat, Outdoor
+   OBJECT: All monsters not in hand-to-hand combat
+   DESCRIPTION: Unleashes a torrent of acid rain that inflicts 5-50
+      damage points on each monster, unless immune to acid.
+
+
+2. NAME: Dispell Magic
+   COST: 5 SP
+   TYPE: Anytime
+   OBJECT: All characters and monsters
+   DESCRIPTION: Cancels all magic spells currently active, both for
+      characters and monsters.
+
+
+3. NAME: Finger of Death
+   COST: 5 SP+ 3 Gems
+   TYPE: Combat
+   OBJECT: 1 monster not undead
+   DESCRIPTION: Channels the ancient power of all dead sorcerers through
+      the caster, resulting in death to the monster at whom the caster
+      points a finger.
+
+
+4. NAME: Shelter
+   COST: 5 SP+ 3 Gems
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Provides' 1 day's rest free of the danger of encounter.
+
+
+ 5. NAME: Teleport
+    COST: 5 SP+ 3 Gems
+    TYPE: Non-combat
+    OBJECT: Entire party
+    DESCRIPTION: Instantly moves the party from its present position, up
+       to 9 squares in any direction.
+
+
+
+Level 6
+
+
+1. NAME: Dancing Sword
+   COST: 6 SP+ 4 Gems
+   TYPE: Combat
+   OBJECT: All monsters
+   DESCRIPTION: A magical sword that moves with lightning speed,
+      inflicting 1-30 damage points on each monster. The sword cannot be
+      avoided, nor can the damage from it be minimized.
+
+
+2. NAME: Disintegration
+   COST: 6 SP+ 4 Gems
+   TYPE: Combat
+   OBJECT: 1 monster
+   DESCRIPTION: Reduces the monster to a pile of dust, utterly 
+destroying
+      it.
+
+
+3. NAME: Etherealize
+   COST: 6 SP+ 4 Gems
+   TYPE: Non-Combat
+   OBJECT: Entire party
+   DESCRIPTION: Alters all characters' molecular structure long enough 
+to
+      allow them to move 1 square forward through any special barrier
+      (force field. etc.).
+
+
+4. NAME: Protection From Magic
+   COST: 6 SP+ 4 Gems
+   TYPE: Anytime
+   OBJECT: Entire party
+   DESCRIPTION: Increases all characters' resistance to magic.  Amount
+      of the increase depends on experience level of caster.  Spell 
+lasts
+      1 day.
+
+
+5. NAME: Recharge Item
+   COST: 6 SP+ 4 Gems
+   TYPE: Non-combat
+   OBJECT: Spell caster
+   DESCRIPTION: Restores 1-4 charges to any item in caster's back pack
+      that still has 1 magical charge remaining.  Some risk that the
+      spell will fail and destroy the item.
+
+
+
+Level 7
+
+
+1. NAME: Astral Spell
+   COST: 7 SP+ 5 Gems
+   TYPE: Non-combat
+   OBJECT: Entire party
+   DESCRIPTION: Transports all characters' to the astral plane.  This
+      highly dangerous and unpredictable area is otherwise impossible to
+      reach.
+
+
+2. NAME: Duplication
+   COST: 7 SP+ 100 Gems
+   TYPE: Non-combat
+   OBJECT: Spell caster
+   DESCRIPTION: Allows the caster to exactly duplicate any 1 item in
+      his/her back pack, provided that there is room in the caster's 
+pack
+      for the new item.  Small chance that the spell will fail and
+      destroy the original item.
+
+
+3. NAME: Meteor Shower
+   COST: 7 SP+ 5 Gems
+   TYPE: Combat, Outdoors
+   OBJECT: All monsters
+   DESCRIPTION: Buries all monsters under a hail of meteors, inflicting
+      1-120 damage points on each monster.
+
+
+4. NAME: Power Shield
+   COST: 7 SP+ 5 Gems
+   TYPE: Combat
+   OBJECT: Entire party
+   DESCRIPTION: Reduces the damage inflicted on all characters by any
+      attack, by 1/2.  Lasts for the duration of combat.
+
+
+5. NAME: Prismatic Light
+   COST: 7 SP+ 5 Gems
+   TYPE: Combat
+   OBJECT: All monsters
+   DESCRIPTION: A powerful, but erratic spell that has completely
+      unpredictable effects on all monsters.
+
+QUICK WALKTHROUGH[NECESSARY STUFF]
+
+
+
+
+
+
+
+As this is a bit of a spoiler, I threw in a few carriage returns before 
+going on with it.  This contains only the quests needed to get to the 
+end of the game.  It doesn't tell how to improve your characters so that 
+they can win certain critical fights.  It just tells the items and where 
+to get them.
+
+I.   FIVE TOWNS QUEST
+  A.  Sorpigal (1,2) dungeon under, get scroll--from entrance go west, 
+north, west.
+  B.  Erliquin (3,4) behind inn, say "N" when asked to sign in, go 
+forward to see Agar.  +500 Exp.
+  C.  Dusk (8,0) in maze,  SWSSESSSS from the entry gets you to 
+Telgoran.  +1000 Exp, +500 gold.
+  D.  See Zam in Portsmith (12,2)--here the jump or teleport spells will 
+be useful.  If your characters are male be sure to rest after passing 
+through intersections.  From the entry (1,15) you can go SSSSS jump 
+SSSSSE rest EE jump EE jump ESSSENN.
+  E.  See Zom in Algary (1,1) west from the inn, south through the 
+docks, all the way west, 1n, 1e.
+  F.  Go to C-1 (15,15) to find treasure including a ruby whistle.  It 
+won't be there unless you've gotten the twins' clues.
+II.  DIAMOND KEY
+  A.  Go to B1(4,4) and answer "love" to get the bronze key.
+  B.  Do it again to get the diamond key.  From Erliquin you can go 
+WSWWWSSSWWWSSW[secret door in mountain]SSWSSSSESSWWNE.
+III. GOLD KEY
+  A.  Go to the Minotaur's stronghold.  From (15,8) go SSSSWWWWSEEE and 
+blow the whistle twice as previously instructed(the game will prompt you 
+to blow the whistle 0-9 times.)
+  B.  Go west to an intersection, north, and west.  Descend at (1,12).  
+Go west, south through the door, and go to the grate east at (1,4).  
+Follow the spiral and don't desecrate the doggie.  Search for the gold 
+key.
+IV.  CORAL KEY
+  A.  Go to the one-eyed gypsy at C2 (9,11) and learn each player's 
+sign.
+  B.  Fly to A4 and you will be at (14,14).  Go 9W, 6S.  
+WSEE(encounter)SWW will get you to a place where you are asked your 
+signs.  If you do well you are teleported to (4,2) where you will search 
+and find the coral key.
+V.   KEY CARD
+  A.  South from (7,13) you'll find the Volcano God's island.  The Coral 
+Key should fit in the slab.
+  B.  The virgin at (5,0) will tell you where to set the stabilization 
+dials if you kiss her(release her, and the Volcano God fights you.  He's 
+tough.)
+  C.  (6,3) at stabilization dial 1, type B.
+  D.  (8,3) at stabilization dial 2, type J.
+  E.  Teleport at (6,0)--you will go to (11,7).
+  F.  Ask the Volcano God for a riddle(a clue first is OK too--it tells 
+you about the Og quest.)  "Who was brave but failed?"  GALA (remember 
+the statues in Sorpigal!)
+  G.  Search to get the key card.
+VI.  Rescue King Alamar
+  A.  Enter Doom at (7,14) by the secret passage.  The "quick way" is to 
+fly to A1 and go north, etherealize, and follow the passage to the 
+north.  It avoids automatic encounters on some squares, too.
+  B.  Teleports are at (8,5) (6,6) and (7,10).  Jump over them.
+  C.  The gold door is at (7,7) so you need the gold key.  At (7,8) you 
+will get the Eye of Goros to confront the false Alamar.
+VII. Destroy false Alamar
+  A.  Go to C1(5,7) and search to get Merchants Pass.  It's not strictly 
+necessary but easier than going to Ranalou's and teleporting to Castle 
+Alamar and etherealizing.
+  B.  Go to A2(0,15) to get Kings Pass.  Etherealize may be your best 
+bet if you can't find secret doors.
+  C.  Go to E3(9,2) to find "password for today" from Heratio Harper.
+  D.  Go to E3(12,6) and give the password to the lion.  NEE and you 
+enter the castle.  From there go east until the false Alamar is 
+revealed.
+VIII.Soul Maze
+  A.  The answer is in the orange walls in the maze: "My name is 
+SHELTEM"
+IX.  Astral Plane
+  A.  Cast S7-1 to get there or go to the diamond door--E3(1,4) is an 
+odd square, with ice surrounding it.  The door is one-way.
+  B.  Visit the astral transporters in order.  Their coordinates are 
+(4,6) (4,10) (7,14) (10,10) (10,6) and the Key Card to the Inner Sanctum 
+is at (7,10).  Don't be shy about etherealizing, although mapping will 
+also do the trick.
+X.   Finale
+  A.  Go to B1(4,15) for a message.  Congratulations, you've won!
+
+SIDE QUESTS
+
+Og's quest is one of the most inexplicable and incomprehensible I've 
+ever seen.  However, I got a sense of accomplishment when I finally 
+figured out why you were able to solve it, so here it is.  You need to 
+find the white and black idols.  When you do, and you visit Og, he says 
+"Queen to Queen's Level 4."  Your reply should be "Queen to King's Level 
+1."
+  A.  The Black Idol is at (0,15) in the Wizard's Lair level 1 B1 (13,5)
+  B.  The White Idol is at (0,15) in the City of Gold level 4 E4 (10,5)
+  C.  C3 (8,0) says the first part is female--the only female chess 
+piece is the QUEEN.
+  D.  Volcano God's dungeon (0,5) says the second part is the most 
+valuable--the KING, the object of the game.
+  E.  Dragadune level 2 E1 (12,12) at 20 feet below (9,13) says that the 
+last part is the first--1.
+  F.  You must respond in kind.  Slip the words "to" and "level" in to 
+solve the quest.
+
+CHEATS
+
+In the fountains in C2, after drinking, go forward and you will be 
+prompted to drink again.  This doesn't happen if you turn left and then 
+right.  This way you can get stats of all 30 for one fight.  A useful 
+way to start your party improving!
+
+BUGS
+
+If you get in combat and teleport/jump/flee you can still search for 
+treasure.
+The game never tells you if backpacks are full, but you can drop items 
+and re-search.
+
+------------------------------------
+
+Credits:
+New World Computing(now 3DO) for making the "original" Might & Magic
+mirror.apple.asimov.net--for the original!
+project64.c64.org for the FULL Might and Magic I manual, from which I 
+extracted the spells.  This was a big help and I am grateful to them!
+Jennifer King, e-mail unknown, whose walkthrough that I saw on 
+Gamefaqs.com made this much easier.
+
+Versions:
+0.6.1 added rudimentary FAQ info including brief quick walkthrough.
+0.6.0 released 10/10/2000 completed item info and also has more detailed 
+monster info.  Spell info is also included.  This should pave the way 
+for a full-blown FAQ.
+0.4.0 released 6/14/2000 has complete item info. minus some 
+miscellaneous ones.
+ Monster names have been extracted, but I haven't decoded the bytes yet.
+
+Questions/comments, mail me at schultza@earthlink.net.
+
+
+

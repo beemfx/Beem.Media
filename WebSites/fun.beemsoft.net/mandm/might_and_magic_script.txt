@@ -1,0 +1,3001 @@
+Might and Magic I
+Full game script(incl. text maps)
+Version 0.5.0
+
+Combine with my items/spells/monster list(soon to be a FAQ) for best 
+results :)
+
+Copyright 2000 by Andrew Schultz schultza@earthlink.net but the original 
+ideas/disk format, etc. is copyright New World Computing/3DO.
+
+Please do not copy this without permission.  This took *considerable* 
+time and thought on my part, and if you would like to use it for your 
+site, please address me *by name* in a friendly letter and I will almost 
+certainly say yes.  Text is extracted from images of Apple disks off 
+Apple.Asimov.net.  It is in ALL CAPS because that is the way MM1 handles 
+it.  This document contains no instructions on how to solve the game;  
+however, you can probably solve the game from the clues given by the 
+script if you have knowledge of the critical puzzles.
+
+Version 0.5.0 info:
+
+I've added text maps.  They are still somewhat inaccurate, and you can 
+only do so much with text graphics, but if you really want to see maps, 
+look at:
+
+http://www.geocities.com/SoHo/Exhibit/2762/mm1/maps.htm which has maps 
+that correspond to the text maps here and will (as of 10/27/2000) be a 
+little more descriptive.  In this case text maps can display some things 
+rather clearly, and it was my first real attempt at the genre.
+
+Some of the formatting may still seem post-modernist, but I'm working on 
+it, I swear :).  There is a lot to delete to make this FAQ succinct!
+
+**************************************************
+
+There is a basic code for all the annotations on the map.  First,
+* = VERY important
+- = lose hit points(pit, drain)
+T = tree
+! = encounter
+$ = treasure
+& = encounter with fixed monsters
+v = stairs down
+^ = stairs up
+: = portal
+N = non-fight meeting with NPC's
+1 = sign
+2 = business
+@ = important landmark
+. = "ordinary"
+? = where you are given a choice
+# = raise attributes(?)
+| = teleport
+
+Some of these are awkward, but this was my first try, and I should fix 
+them soon.
+
+**************************************************
+Sorpigal(town)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|!| "!| |! !"     | < |   |   | |
++ + +-+ +v+-+-+^+-+ +-+ + + +-+ +
+| " |   |         |1  "2  | |s  |
++v+ +-+ + +-+-+-+ + +-+-+-+ +-+ +
+| > " | | | | | >!| |         | |
++^+ +-+ + +=+ +=+ + +-+ +-+-+ + +
+| " |   | |     | |  s| |   | | |
++ + +-+ + +-+ +-+ + +-+ + + + + +
+|!| " | |  !| |!  | |   |  1| | |
++-+ +-+v+v+-+=+-+-+ +-+-+-+=+v+ +
+|                          2    |
++ +-+-+ +-+-+=+-+-+ +-+-+ +-+ +-+
+|s|   | | |  !| | " " | " | | | |
++-+ + + + + + + +-+-+-+-+-+ + + +
+|     | | |!  |             | | |
++ +-+-+ + +-+-+ +-+-+-+-+-+-+ + +
+| |     |       |             < |
++v+ +-+=+ +-+-+ + +-+-+-+ +-+ +-+
+|s  | |!| |   | | |     | | |   |
++-+ + +-+ + + +-+ +-+-+ + + + +-+
+| | |     |  2"  1  "2| | | |   |
++ + +-+ + +-+-+-+=+-+-+ + + + +-+
+|s   s|         | |     | | |   |
++-+ +-+ +-+-+ +-+ +-+ +-+ + +-+-+
+| | |   | |!| |  2  < |N  |     |
++ + + +-+ + + +-+-+^+-+-+ +v+-+-+
+|s  | |     |       |           |
++ + + +-+ +-+ +-+-+ + +^+ +^+-+ +
+| | |   |2|   |s  | | | | |   | |
++-+ +-+-+=+-+-+ + +-+ + + + +-+ +
+|!"      1            | |^| |v  |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+Sorpigal:
+A SIGN ABOVE THE DOOR READS:
+(8,5)  "THE INN OF SORPIGAL"
+(8,3)  THE INNKEEPER ASKS: "WOULD YOU LIKE TO SIGN IN (Y/N)?"
+(8,5)  "EULARDS FINE FOODS"
+(10,5) BEHIND THE COUNTER, AN OVERWEIGHT DWARF EXCLAIMS: "YOU LOOK LIKE 
+A HUNGRY BUNCH!WOULD YOU LIKE TO BUY SOME FOOD (Y/N)?"
+(8,5)  "B AND B BLACKSMITHS"
+(6,5)  A MAN WEARING A LEATHER APRON SPEAKS: "DISTINGUISHED TRAVELERS, 
+YOU'VE COME TOTHE RIGHT PLACE.CAN I HELP YOU (Y/N)?"
+(9,14) "YE OLDE HOGGE TAVERN"
+(11,14)STEP UP TO THE BAR (Y/N)?
+(4,0) "TEMPLE MOONSHADOW"
+(4,1) SEVERAL ORNATELY ROBED CLERICS APPROACH THE PARTY AND ASK, "DO YOU 
+SEEK OUR HELP(Y/N)?"
+(13,10)"OTTO'S TRAINING"
+(13,11)BEFORE YOU ARE VARIOUS GROUPS ENGAGED INTRAINING EXERCISES. 
+WORG,THE GUILDMASTERASKS, "DO YOU REQUIRE TRAINING(Y/N)?"
+(6,10)"JAIL, KEEP OUT!"
+
+(14,0) STAIRS GOING DOWN! TAKE THEM (Y/N)?
+(12,0) A PASSAGE LEADS OUTSIDE, TAKE IT (Y/N)?
+
+(11,3) A TENACIOUS LEPRECHAUN APPEARS SAYING, "TRAVELING THE ROADS IS 
+QUITE DANGEROUS SAVE FOR THE STRONG AND COURAGEOUS, ONLY 1 GEM YOU LOOSE 
+AND I'LL SEND YOU TO THE TOWN YOU CHOOSE." 'ESC' TO GO BACK      WHICH 
+TOWN (1-5)?
+
+[Eight statues in Sorpigal tell you what your quest should be.]
+THERE IS A STATUE HERE, SEARCH IT (Y/N)?
+ON THIS STONE STATUE OF (insert monster/class here) A PLAQUE READS...
+(0,9)  AN ELVEN WIZARD: SEEK THE WIZARD RANALOU/IN HIS LAIR AT THE KORIN 
+BLUFFS/SIX CASTLES HE WILL SEND YOU TO/BUT DOOM WILL BE QUITE 
+TOUGH!/CRUELTY AND KINDNESS MEASURED THOUGHOUT/JUDGEMENT DAY IS THEN 
+SOUGHT OUT
+(2,4)  A HUMAN KNIGHT: SERVICES RENDERED, SECRETS UNFOLD/THE BROTHERS 
+TOGETHER LEAD TO TREASURES UNTOLD/FIVE TOWNS YOU MUST TRAVEL/FOR THIS 
+QUEST TO UNRAVEL
+(12,10)A GNOME ROBBER: ONE BY WATER, ONE BY LAND/ONE BY AIR, AND ONE BY 
+SAND/THE WHEEL OF LUCK WILL FAVORABLY PAY, THE MORE OF THESE MENACING 
+BEASTS YOU SLAY!/ALTHOUGH WISHES MAY COME TRUE/ALL THE BEASTS WILL 
+BECOME ANEW
+(14,14)A DWARF PALADIN PAINTED A BLACK & WHITE CHECKERED MOTIF: THERE 
+ARE MANY DUNGEONS LIKE ME/FIND THE RIGHT PAIR AND YOU'LL DISCOVER THE 
+KEY/THE ANCIENT SEER OG HAS LOST HIS SIGHT/THE IDOLS WILL HELP TO END 
+HIS PLIGHT
+(7,1)  AN H-ORC ARCHER: IN HONOR OF CORAK... FOR HIS MAPPING EXPEDITION 
+OF THE LAND OF VARN AND REDISCOVERY OF THE LOST TOWN OF DUSK
+(0,4)  A HUMAN CLERIC: IN HONOR OF GALA... FOR HER BRAVE ATTEMPT TO WORK 
+WITH THE SAVAGES OF THE VOLCANIC ISLES
+(0,2)  A BLUE DRAGON: IN MEMORY OF A TIME LONG AGO... BEFORE THE DAYS 
+WHEN THE TOWNS MOVED UNDERGROUND, DRAGONS WERE FEW AND FAR BETWEEN
+(0,6)  A GRAY MINOTAUR: THIS BEAST ONCE ROAMED THE ENCHANTED FOREST AND 
+NOW RULES A GREAT FORTRESS THERE
+
+The following locations contain encounters:
+(0,15) (2,15) (4,15) (5,15) (6,12) (0,11) (5,11) (7,11) (6,9) (5,8) 
+(3,6) (5,3) (0,0)
+
+Portsmith(town)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|v|^|     | |     | |     | |.  |
++ + +-+=+-+ +-+=+-+ +-+=+-+ +=+-+
+| |        - 1     -     1 -    |
++ + +-+-+-+ +=+-+-+ +-+-+=+ +=+-+
+| | | | | | |2    | |    2| |   |
++ + +-+ + + + + + + + + + + + + +
+| |1"  2| | |     | |     | |   |
++ + +-+ + + +-+-+-+ +-+-+-+ +-+-+
+| |1"2| | | |     | |     | |   |
++ + +-+-+ + + + + + + + + + + + +
+| | |     | |     | |     | |   |
++=+ +-+-+-+ +=+-+-+ +-+-+=+ +=+-+
+|  -       -       -       -    |
++-+ +=+-+-+ +-+-+=+ +-+^+-+ +-+-+
+| | |!    | |    !| "!|*|!" > |!|
++ + + +-+-+ +-+-+ + +-+=+-+ + + +
+| | | |   | "!  | | "!| |!" | | |
++ + + + + + + + + + +-+ +-+ +-+ +
+|2"1| |  !" |   | | "!| |!"1"2  |
++ + + +-+-+ +-+-+ + +-+ +-+ +-+ +
+| | | |  !" |   | | "!| |!" | | |
++ + + + + + + + + + +-+ +-+ + + +
+| | | |   | "!  | | "!> |!" | |!|
++-+ +-+-+-+ +-+-+-+ +-+-+-+ +-+-+
+|  -       -       -       -    |
++-+ +-+ +-+ +-+ +-+ +-+ +-+ +-+ +
+| | | | | | | | | | | | <N| | | |
++-+ +-+ +-+ +-+ +-+ +-+ +^+ +-+ +
+| | | | | | | | | | | | | | | | |
++-+ +-+ +-+ +-+ +-+ +-+ +^+ +-+ +
+| |!| |!| |!| |!| |!| |!> |!| |!|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Portsmouth:
+A SIGN ABOVE THE DOOR READS:
+(1,12) "INN OF PORTSMITH"
+(3,12) LARA, THE INKEEPERS VOLUPTUOUS DAUGHTER, ASKS IF YOU WILL BE 
+SPENDING THE NIGHT... SIGN IN (Y/N)?
+(1,11) "MAID MARION'S MARKET"
+(12,14)BUSILY FORGING A LONG SWORD,AN EXTREMELY BEAUTIFUL YOUNG GIRL 
+SAYS WITH A SEDUCTIVE SMILE, "CAN I HELP YOU (Y/N)?"
+(12,13)"B. SMITH'S WORKSHOP"
+(2,11) FROM BEHIND THE FRUIT STAND A SULTRY VOICE ASKS, "SEE ANYTHING 
+YOU LIKE (Y/N)?"
+(13,6) "TEMPLE SUCCUBON"
+(14,6) THE ONCE MAGNIFICENT TEMPLE SHOWS SIGNS OF NEGLECT AND DECAY. THE 
+HIGH PRIESTESS ASKS,"NEED HELP (Y/N)?"
+(6,14) "AMAZONIA'S TRAINING"
+(6,13) A TALL, MUSCULAR FEMALE CLAD IN LEATHER ARMOR APPROACHES ASKING, 
+"STRANGERS, ARE YOU HERE FOR TRAINING (Y/N)?"
+(1,6)  "ZORELDA'S WATERING HOLE"
+(0,6)  STEP UP TO THE BAR (Y/N)?
+(1,15) PASSAGE OUTSIDE, EXIT (Y/N)?
+(0,15) STAIRS GOING DOWN! TAKE THEM (Y/N)?
+(12,2) "I AM ZAM, ASTRAL BROTHER OF ZOM AND ONLY LIVING MALE RESIDING IN 
+PORTSMITH
+[Delivered scroll to Telgoran:]  MY CLUE IS C-15"
+[Or not:]  YOU'RE NOT THE COURIERS!"
+(11,8) A SENSUOUS FEMALE VOICE SPEAKS FROM WITHIN AN INTOXICATING MIST, 
+"YOU'VE DISCOVERED MY SECRET!"
+  [Encounter with Succubus Queen]
+(15,14)NOTE: ZAM 12,2
+(6,14) (9,14) (13,14) (2,8) (6,8) (9,8) (13,8) (2,3) (6,3) (10,3) (14,3) 
+MALES ARE DRAINED!
+Encounters at (2,8) (8,8) (10,8) (12,8) (15,8) (10,7) (12,7) (4,6) 
+(10,6) (12,6) (4,5) (10,5) (12,5) (6,4) (10,4) (12,4) (15,4) (1,0) (3,0) 
+(5,0) (7,0) (9,0) (11,0) (13,0) (15,0)
+
+Algary(town)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|!" | " " | " | |x|     |       |
++-+ +-+ +-+-+ + + + +-+-+ + +v+ +
+|!" | " " |#" | | | |  1"2  | | |
++-+ +-+ +-+-+ +-+ +-+ + +-+-+ + +
+|                      1"    2| |
++-+ +-+ +-+-+-+ + + + + +-+-+ + +
+| | " | |     |  1   1 1"2  | | |
++ + + + + + + +-+=+-+=+-+ + + + +
+| " | | |     |  2  |2  |   | | |
++-+ +-+ +-+-+ +-+-+-+ + +-+ + + +
+| | " |     |       |   | | | | |
++ + + + +-+-+ +-+-+-+ + + + + + +
+| " | | |     | "!  |   | | | | |
++-+ +-+ +-+-+ + + + +-+ + + + + +
+| | " |    !| | >   | | | |:| | |
++ + + + +-+-+ + +-+-+ + + +-+ + +
+| " | | |     | "!  | | |   | | |
++-+ +-+ + + + + + + + + +-+ + + +
+| | "!| |     | |   | |   | | | |
++ + + + +-+-+-+ +-+-+ + + + + + +
+|!" | |        1"2  | |  :| | | |
++-+-+-+=+-+-+-+ + + + +-+-+ + + +
+|     |   "!  | |   |       | | |
++ +-+ + + + + + +-+-+ + + +-+ + +
+|     |1  |   | "!  | | | |   | |
++ +-+ +=+-+-+-+ + + + + + + + + +
+|!            | |   | |:| |?  | |
++ +-+ + + + + + +-+-+ +-+ +-+-+ +
+|  N| | | | | | "!  |           |
++ +-+ + + + + + + + +-+-+-+-+ +-+
+|    !        | |  !|:       !  |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Algary:
+(11,12)"SWAMPSIDE SUPPLIES"
+(12,12)A MAN ENCLOSED IN A STEEL CAGE SAYS, "CAN I HELP YOU FIND 
+ANYTHING (Y/N)?"
+(7,5) "JOLLY JESTER TAVERN"
+(8,5) STEP UP TO THE BAR (Y/N)?
+(11,14)"ARCON'S SLOP"
+(12,14)A PUTRID SMELL PERVADES THE ROOM...LOOK FOR SOME FOOD (Y/N)?
+(11,13)"THE INN OF ALGARY"
+(14,13)STANDING BEHIND A LARGE DESK, A TALL BEARDED HALF-ORC GRUNTS, "IF 
+YOU DON'T SIGN IN, YOU CAN'T STAY! WELL (Y/N)?"
+(8,12) "TEMPLE HALF-DEAD"
+(8,11) AN ANCIENT LOOKING CLERIC STAGGERS UP TOTHE PARTY GASPING, "I CAN 
+HELP, REALLY I CAN!" ACCEPT THE OFFER (Y/N)?
+(10,12)"DRAGONS CLAW TRAINING"
+(10,11)SEVERAL ADVENTURERS ARMORED IN DRAGON SCALES, ADDRESS THE PARTY, 
+"LOOKING FOR TRAINING (Y/N)?"
+(8,15) PASSAGE OUTSIDE, EXIT (Y/N)?
+(3,3)  "YE OLD DOCKS"
+(1,1)  [Returned scroll to Telgoran]  "I AM ZOM, ASTRAL BROTHER OF ZAM. 
+MY CLUE IS 1-15."
+       [Haven't completed scroll quest]  "YOU'RE NOT THE COURIERS!"
+(5,14) MORANGO THE MYSTIC ASKS, "WHO SHALL I MEASURE (1-6)?"
+% RESISTANCE FOR MAGIC     FIRE     COLD       ELEC ACID      FEAR     
+POISON     SLEEP
+(13,2) SWAZE PIT! JUMP IN (Y/N)?  [Unlimited encounters]
+(9,0)  A MAGIC PORTAL! ENTER (Y/N)? [To Portsmith 8,4]
+(10,0) A MAGIC PORTAL! ENTER (Y/N)? [To B1 15,0]
+(12,5) A MAGIC PORTAL! ENTER (Y/N)? [To Sorpigal 5,13]
+(11,2) A MAGIC PORTAL! ENTER (Y/N)? [To City of Gold level 1(0,0)]
+
+Encounters at (15,15), (15,14), (8,9), (5,8), (8,7), (2,6), (0,5), 
+(5,4), (8,3), (0,2), (8,1), (2,0), (14,0)
+
+Dusk(town)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+| | | | | |     ".|       | |   |
++ + + + + +-+ + + + +-+-+ + +-+ +
+|$ & & & & &".  | | |   " |   | |
++ + + + + +-+ +-+ + +-+-+ +-+ + +
+| | | | | |  ."&| | |   | " | | |
++-+-+-+-+-+-+-+-+ + + + + + + + +
+|!                | |  2"1| | | |
++ +-+-+-+-+-+-+-+-+ +-+-+ +-+-+ +
+|          !      |             |
++-+ +-+-+-+ +-+-+-+ +-+-+ +-+-+ +
+|                 | |  2"1|  !" |
++ +-+-+-+ +-+-+-+ + +-+-+ +-+ + +
+|          !      | |   | | | | |
++-+ +-+-+-+ +-+-+-+ + + + + +-+ +
+|                 | |  2"1|   " |
++ +-+-+-+ +-+-+-+ + +-+-+ +-+-+ +
+|                . .           ^|
++ +-+ + +-+ +-+-+ + +-+-+ +-+-+ +
+|     | |         | |  2"1|   " |
++-+ +-+ + + +-+ +-+ +-+-+ +-+ + +
+|         |!  | | | |   | | | | |
++ +-+ +-+ +-+ + + + + + + + +-+ +
+|   | |           | |  2"1|  !" |
++ + + + + +-+ +-+ + +-+-+ +-+-+ +
+| |  !  |   | |   |             |
++ +-+ +-+ + + + + + +-+-+ +=+-+ +
+|         |     | | |  2"1| | | |
++ + +-+ +-+ + +-+ + + + + +-+ + +
+| |   |!    |     | |   | |   | |
++ +-+ + +-+ +-+ + + +-+-+ + +-+ +
+|       |       |N|       | |v  |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Dusk:
+SIGN ABOVE THE DOOR READS:
+(12,6) "CASPER'S FINE SPIRITS"
+(11,6) STEP UP TO THE BAR (Y/N)?
+(12,8) "THE INN OF DUSK"
+(11,8) AN EERIE SILENCE PERVADES THE DESERTED INN. SUDDENLY, A GHOSTLY 
+APPARITION APPEARS, ASKING, "SIGN IN (Y/N)?"
+(12,10) "FEWLERD'S FEED"
+(11,10)A FAINT OUTLINE OF A MAN APPEARS, SAYING, "NEED SOME FEED (Y/N)?"
+(12,4) "MYSTICAL METAL WORKS"
+(11,4) A YOUNG GNOME MATERIALIZES, ASKING, "WOULD YOU BE WANTING MY 
+SERVICES(Y/N)?"
+(12,12)"TEMPLE GEIST"
+(11,12)BRIGHT LIGHTS SWIRL THROUGHOUT THE ROOM.A HORRIFYING VOICE 
+SHRIEKS, "NEED HELP (Y/N)?"
+(12,2) "CLEARMAN'S TRAINING"
+(11,2) SEVERAL EMPTY SUITS OF ARMOR APPROACH ASKING, "NEED TRAINING 
+(Y/N)?"
+(14,0) STAIRS GOING DOWN! TAKE THEM (Y/N)?
+(15,7) A PASSAGE LEADS OUTSIDE, TAKE IT (Y/N)?
+
+(8,0)  AN ELF DRESSED IN ROBES APPROACHES... 
+[You don't have Agar's scroll:]"YOU'RE NOT THE COURIERS!
+[You have Agar's scroll:]"FRIENDS, I AM TELGORAN. THIS SCROLL YOUHAVE 
+BROUGHT ME WILL BE VERY HELPFUL (+1000 EXP) HERE'S 500 GOLD FOR YOUR 
+SERVICES. I'LL TELL YOU A SECRET, IF TREASURE IS WHAT YOU WANT..."  "THE 
+BROTHERS YOU MUST FIND... PORTSMITH AND ALGARY ARE COMBINED."
+(6,14) "FORBIDDEN CRYPT"
+(6,13) "ETERNAL REST CHAMBER"
+
+Erliquin(town)
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+| |           |$|             |$|
++ + +-+-+ + + +v+ + + + +-+-+ +v+
+| " |$ $|               |$ $|   |
++-+ +-+v+ +-+ + +-+-+ + +-+v+ + +
+| |       |$|   |$ $|           |
++ + + + + +v+ + +-+v+ +-+ + + + +
+| "                   |.|       |
++-+ +-+-+-+-+-+-+ +-+-+ +-+-+ +-+
+| | |           | | |     | | | |
++ + + +-+-+-+-+ + + + + + + + + +
+| " | |   |   |   | |     | | " |
++ + + + + + + + + + + + + + + +-+
+| | | |2  |2  | | | |  2  | | " |
++-+ +-+=+-+=+-+-+ +=+-+=+-+=+ + +
+|  .   1   1     .     1     .| |
++ + + +-+^+-+^+-+ +-+^+-+^+-+ +-+
+|^    |     < < |@|   |     |  v|
++ + + +-+v+-+v+-+ +-+v+-+v+-+ +-+
+|  .     1   1   .     1     .<+|
++-+ +-+-+=+ +=+-+ +-+-+=+-+-+ +^+
+| " |   | | |2| | | |  2  | | " |
++ + + +-+ +-+ + + + + + + + + + +
+| | |    2  |   | |       | | | |
++-+ +-+-+ +-+-+-+ +-+ + + + + + +
+|       |*  |       |       | | |
++ +^+^+ + + + +^+^+ + +-+-+-+ +-+
+| <$|$> |   | <$|$> |     |     |
++ +-+-+ +-+-+ +-+-+ +-+-+-+ +^+ +
+| <$|$>       <$|$>         <$> |
++ +v+v+ +-+-+ +v+v+ +-+-+-+ +v+ +
+|           |             |     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Erliquin:
+A SIGN ABOVE THE DOOR READS:
+(4,6)  "THE INN OF ERLIQUIN"
+(4,4)  ADJUSTING HIS SPECTACLES, AN ELDERLY GNOME EYES THE PARTY AND 
+ASKS, "SIGNING IN (Y/N)?"
+(5,8)  "TAVERN OF TALL TALES"
+(5,9)  STEP UP TO THE BAR (Y/N)?
+(6,6)  "FOUR STAR FOODS"
+(6,5)  THE CHEF SAYS,"I ONLY SERVE THE BEST! HUNGRY (Y/N)?"
+(3,8)  "CURRENT TRENDS IRONWORKS"
+(3,9)  A BOISTROUS HALF-ORC PROCLAIMS, "WE CARRY THE VERY LATEST, BROWSE 
+(Y/N)?"
+(11,6) "TEMPLE GAUCHE"
+(11,5) SEVERAL FAT CLERICS WELCOME YOU. NEED HELP (Y/N)?
+(11,8) "SUPERIOR TRAINING"
+(11,9) THREE HUGE ARMOR CLAD KNIGHTS BARK IN UNISON, "WANT A GOOD 
+WORKOUT (Y/N)?"
+(15,7) STAIRS GOING DOWN! TAKE THEM (Y/N)?
+(0,7)  PASSAGE OUTSIDE, EXIT (Y/N)?
+
+(4,3)  THE WIZARD AGAR SPEAKS:
+[You don't have the scroll from under Sorpigal]:  "I HAVE NO BUSINESS 
+WITH YOU. BEGONE!"
+[You have the scroll]:  "YOU HAVE DONE WELL TO BRING ME THIS SCROLL. 
+(+500 EXP) NOW TAKE IT TO MY PROTEGE TELGORAN IN DUSK."
+[If you've stolen town treasure]TOWN GUARDS: YOU'RE UNDER ARREST! 
+A)ATTACK B)BRIBE C)RUN D)SURRENDER
+[If you bribe or surrender]:  HIGH COURT SENTENCE: YEARS= 
+[If you run, a player is eradicated.]
+(15,7) (15,15) (2,14) (3,14) (4,13) (7,13) (8,13) (10,12) (3,7) (5,7) 
+(7,7) (9,7) (11,7) (13,7) (15,6) (1,2) (2,2) (7,2) (8,2) (1,1) (2,1) 
+(7,1) (8,1) (14,1) TOWN TREASURE, STEAL (Y/N)?
+(8,7)  POOF! [Or when you flee from town guards.  This causes a random 
+teleport.]
+
+Under Sorpigal
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  1    |       |!| |!|   |    !|
++-+ +-+ + +-+ + + +-+ +-+ + +-+-+
+|     | | |!|   |       | | |   |
++ + + + + + +-+-+-+-+ +-+ + +-+-+
+|  ?  | | |     |   | |   |     |
++ + + + + +-+-+ + + + + + +-+-+ +
+|     | |     | |   | |       | |
++-+ +-+ +-+-+ + +-+-+ +-+-+ +-+ +
+|  1    |   | |           | |   |
++-+v+-+ + + + +-+-+-+-+-+ + +-+ +
+| |!| | |  !|   |         |   | |
++-+-+ + +-+ +-+ + +-+ +-+ +-+-+ +
+|   | |       | | |  !| |       |
++-+ +-+-+-+-+ + + + + + +v+-+-+^+
+| | |   |   | | | |   | | |   | |
++ + + + + + + + + +-+-+ + +-+-+ +
+|!| |  !|!  | | |     | |     | |
++ + +-+ + +-+ + + + + +-+-+-+ + +
+|         | | | | | | | |   | | |
++ + +-+-+ + + + + +-+-+-+ +-+ + +
+| | |   | | | | |!      | |!< | |
++-+-+-+-+ +-+ +-+-+-+-+-+ +-+ + +
+|   |   |               |   | | |
++-+-+ + +-+-+-+-+-+-+-+ + +-+ + +
+|   |   |!| | | |     | | |!> | |
++ + +v+-+^+^+^+^+-+-+ + + +-+ + +
+|  N"    & & & &    | | |   | | |
++-+-+ +-+v+v+v+v+-+ + + +-+-+ + +
+|  !" | |!| | | | | | |   "   | |
++-+-+ + +-+-+-+-+ + +-+-+-+ + + +
+|  !" |           |       >  ^|:|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Under Sorpigal:
+A SIGN ABOVE THE DOOR READS:
+(1,15) (1,11) "THE ARENA"
+(1,13) AROUND THE ROOM THERE ARE SEVERAL BALCONIES FILLED WITH CHEERING 
+PEASANTS A MAN ASKS "WILL YOU PARTICIPATE (Y/N)?"
+(15,0) A SHIMMERING BLUE AND WHITE PORTAL APPEARS! ENTER (Y/N)?
+SCRAWLED ON THE WALL, A MESSAGE READS:
+(5,14) (8,15) DON'T TURN AROUND!
+(13,3) THE JAIL ABOVE HAS MANY CELLS.
+(14,0) A LADDER GOING UP, TAKE IT (Y/N)?
+(1,2)  The man with the scroll quest.  Need to put this in the script.
+
+Under Portsmith
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                !    |   | "!  |
++ +-+ +-+-+-+ +-+ +-+ + + + +-+-+
+| | | |     | | | | |   |?| |   |
++ + + + +-+-+ + + + +-+-+-+ + + +
+| | | | |?    | | |       | "!  |
++ + + + +-+-+-+-+v+ +-+-+ + +-+-+
+|#| | |     |   | | |   | | |   |
++-+ + +-+-+-+ + +v+-+ + + + + + +
+|   |      ?|  !< >   | | | "!  |
++-+-+ + +-+-+v+-+ +-+ + + + +-+-+
+|?      |   | |   | |!  | | |   |
++-+-+-+-+ + +v+ +-+ +-+v+ + + + +
+|           | | |     | | | "!  |
++-+-+-+-+-+-+v+^+-+-+ +v+ + +-+-+
+|!            <     | | | | |   |
++-+-+ +-+-+-+ + + + + +v+ + + + +
+|   | |     | |  &  | | | | "!  |
++ + + +-+-+ + +-+ +-+-+ +-+ +-+-+
+|!  |     | | | |.| |          !|
++ +-+-+-+ + + + + + + +-+-+-+-+-+
+| |     | | |!| | | | |         |
++ +-+-+ + +-+ +-+-+-+ + +-+-+-+-+
+| |   | |       | |   | |   |   |
++ + + + +-+-+-+-+-+-+-+ + + + + +
+| |  !|         | |     |  !|  !|
++ +-+ +-+-+-+-+ +v+ + +-+-+ +-+ +
+|             | | |   |         |
++ +-+-+ +-+-+ + + + + + + +-+ +-+
+| |   | |   | | | |   | |!  |!  |
++ + + + + + + +-+ +-+-+ + + + + +
+|:|  !" "!  |    ^      |   |   |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Beneath Portsmouth:
+(0,0)  BLUE AND WHITE PORTAL, ENTER (Y/N)? [to Under Erliquin (2,7)]
+(8,2)  BRONZE GRATE REPELS YOU!  [You can teleport around it.]
+(8,6)  DEMONS IN CONFERENCE, DO NOT DISTURB!
+(8,7)  Lots of Demons.
+GLOWING POOL, STEP IN (Y/N)?
+(0,12) THOSE WHO ARE WORTHY +2 MIGHT!
+(12,14) REVERSAL!
+(0,10) (4,13) TOXIC!
+(8,0)  STAIRS GOING UP! TAKE THEM (Y/N)?
+
+Under Dusk
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|?  "!"!  |   | | | | | | | | |#|
++ + + + + + +-+ +-+ +-+ +-+ +-+ +
+|   | |   | |  ! - ! - - - ! -  |
++-+-+ +-+-+ + +-+ +-+ +-+ +-+ +-+
+|  !" "!  | | | | | | | | | | | |
++ + + + + + + +-+-+-+-+-+-+-+-+-+
+|   | |   | | |  !>         <! ^|
++-+-+ +-+-+-+ +-+-+-+-+ +-+-+-+-+
+|  !"   |     |  !>         <!  |
++ + +-+ + +-+-+-+-+-+-+ +-+-+-+-+
+|   | | | |   |  !>         <!  |
++-+-+-+ + +-+-+-+-+-+-+ +-+-+-+-+
+|      - !   -                  |
++ +-+-+-+-+-+ + +-+-+-+ +-+-+-+-+
+| |         | | | | | | | | | | |
++ + +-+-+-+-+ + + + + + + + + + +
+| | |   |    -         -        |
++ +-+-+ + +-+ +-+-+-+-+ +-+-+-+ +
+|!    |!" | | | |!|!|!| |!|!|!| |
++ +-+-+-+ + + + + + + + +v+-+-+ +
+| | |.| | | | | | | | | |    #| |
++ + + +-+ + + +-+-+-+-+ +-+-+v+ +
+| | |. !" | |    -     -      | |
++ + +-+-+ + +-+-+ +-+-+-+-+-+ + +
+| |     | |     | |     |  .| | |
++ + +-+-+ +-+-+ + + + + + + + + +
+| | |    -    | | |     |   | | |
++ + + +-+-+-+ + + +-+ +-+ +-+ + +
+| | | |   | | | | |:|!|:|!|:| | |
++ +-+ + + +-+ +-+ + +v+ +v+ + + +
+|     |    !"-   -           ^|:|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Under Dusk:
+TRAP DOOR!
+, LEVITATION SAVES YOU!
+(15,0) BLUE AND WHITE PORTAL, ENTER (Y/N)? [to Sorpigal]
+(15,15)THE PRISM OF PRECISION GRANTS THOSE WHO ARE WORTHY +2 ACCURACY!
+(14,5) THE FLAME OF AGILITY GRANTS THOSE WHO ARE WORTHY +2 SPEED!
+(0,15) THE SHRINE OF OKZAR, PRAY (Y/N)?
+[Right alignment:] YOUR LEADER IS OF CLEAR MIND.
+[Wrong alignment:] YOUR LEADER IS INCONSISTENT. BEGONE!
+(6,7) (8,4) (8,0) (14,14) STALACTITES SHOWER THE PARTY! [1/2 damage.  No 
+protection spells.]
+A PIT OF POISONOUS SPIKES! LEVITATION SAVED YOU.
+(6,0) (4,2) (0,6) (4,9) (8,14) (10,14) (11,14) (12,14) PSYCHIC BLAST! 
+(PROTECTION SAVED YOU.)
+(14,0) STAIRS GOING UP! TAKE THEM (Y/N)?
+(15,12)A CAVERNOUS PASSAGE, TAKE IT (Y/N)?
+(12,3) SCRAWLED IN STONE: CHARACTER #1 LEADS THE WAY. BEWARE, TRAPS 
+ABOUND!
+(2,4)  CORAK WAS HERE
+(2,5)  BEHIND AN OLD TAPESTRY, A MESSAGE ETCHED IN GOLD READS: YICU2ME3
+
+Under Erliquin
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|   | |     | " | " |     | |   |
++-+-+ +-+-+-+ +-+-+ +-+-+-+ +-+-+
+|               |               |
++-+-+ +-+^+-+ +-+-+ +-+^+-+ +-+-+
+|!| | |$ $ $| | | | |$ $ $| | |!|
++-+ + + +^+ + + + + + +^+ + + +-+
+|!| | |$<$>$| < | | |$<$>$| | |!|
++-+ + + +v+ + + + + + +v+ + + +-+
+|!| | "$ $ $" < | | "$ $ $" | |!|
++-+ + +-+-+-+ + + + +-+-+-+ + +-+
+|!| | |     | " | " |     | | |!|
++-+ + + +-+ + + + + + +-+ + + +-+
+|!| | | |?| | | | | | |?| | | |!|
++-+ +-+ + + +-+ + +-+ + + +-+ +-+
+|!| |-| | | |-| | |-| | | |-| |!|
++-+ + +-+v+-+ +-+-+ +-+v+-+ + +-+
+|^             -|-             ^|
++-+ + +-+^+-+ +-+-+ +-+^+-+ + +-+
+|!| |-| | | |-| | |-| | | |-| |!|
++-+ +-+ + + +-+ + +-+ + + +-+ +-+
+|!| | | | | | | | | | | | | | |!|
++-+ + + +-+ + + + + + +-+ + + +-+
+|!| | |     | " | " |     | | |!|
++-+ + +-+-+-+ + + + +-+-+-+ + +-+
+|!| | "$<$>$" | | | "$<$>$" | |!|
++-+ + + +v+ + + + + + +v+ + + +-+
+|!| | |$ $ $| | | | |$ $ $| | |!|
++-+-+ +-+v+-+ +-+-+ +-+v+-+ +-+-+
+|               |               |
++-+-+ +-+-+-+ +-+-+ +-+-+-+ +-+-+
+|   | |     | " | " |     | |   |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Beneath Erliquin:
+ALARM!
+(4,9) (11,9)COVERED WITH FLASHING LIGHTS THE WALL SPEAKS: "PLEASE ENTER 
+ACCESS CODE:"
+[not YICU2ME3]:  "IMPROPER ACCESS CODE!"
+[YICU2ME3]:  "THANK YOU, FIELDS DEACTIVATED."
+(2,6) (2,8) (6,6) (6,8) (9,6) (9,8) (13,6) (13,8) ZAP! [Lose 1/2 hit 
+points]
+(2,7) (6,7) (9,7) (13,7) DANCING LIGHTS FLICKER AND CRACKEL IN THE AREA 
+IN FRONT OF YOU!
+(0,7) (15,7) STAIRS GOING UP! TAKE THEM (Y/N)?
+(0,5) teleport to (15,9)
+(15,5) teleport to (0,10)
+Treasures at (3 4 5 10 11 12, 2 3 11 12 13)
+
+A1 surface
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|       |!"   "v"               |
++ +-+ + + + + + + +-+-+-+-+-+-+ +
+| |!| |   " " "v" |           | |
++ + + + +-+ + + + + +-+-+-+-+ + +
+|   | |   " " " " |         |   |
++-+-+ + + + + + + +-+-+-+-+ +-+-+
+|!    | | " "   " |       |     |
++-+-+-+ + + +-+-+ + +-+-+ +-+-+ +
+|!      | "       | |   |       |
++-+-+ + + +-+-+-+-+ + + +-+-+-+-+
+|       |           | |       | |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+ + +
+| |     |!  |!                | |
++ +-+ + + + + +-+-+-+-+-+-+-+ + +
+| |   | | | |                 | |
++ +-+ + + + +-+-+-+-+-+ +-+-+-+ +
+| |   | | |            !|        
++ +-+ + + +-+-+-+-+-+ +-+ +-+-+-+
+| |   | |   |!        |   |     |
++ +-+ + +-+ + +-+-+-+ + +-+ +-+ +
+| |   |     |         | |   |.| |
++ +-+ +-+-+-+ +-+-+-+ + + +-+ + +
+| |     |            !| | |   | |
++ +-+ + + +-+-+-+-+ +-+ + + + + +
+| |   | | |         |   | | | | |
++ +-+ + + + +-+-+-+ + +-+ + + + +
+| |   |    &|       | |   | |!| |
++ +-+ +-+-+-+ +-+-+ + + +-+ +-+ +
+| |                 | | |# !    |
++ +-+-+-+-+-+-+-+-+ + + +-+-+-+-+
+|!                    |          
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+
+
+Sector A1:
+(14,5) CARVED ON A BLOCK OF ICE ARE THE WORDS: START AT 15-7 AND WALK TO 
+DOOM!
+(7,14) SECRET PASSAGE TO DOOM, TAKE IT (Y/N)?
+(12,1) THE POOL OF HEALTH GRANTS THOSE WHO ARE WORTHY +2 ENDURANCE!
+(5,2)  YOU'VE BEEN SURROUNDED BY THE DARK RIDER AND HIS MEN! HE 
+CHALLENGES YOU TO A DUEL...ACCEPT (Y/N)?
+(7,15) THE FABELED CASTLE DOOM! WILL YOU ENTER (Y/N)?
+()4,15) (1,14) (0,12) (0,11) (4,9) (6,9) (11,7) (6,6) (10,4) (14,2) 
+(13,1) (0,0) Encounter
+
+A2 surface
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|N  | |                       " "
++-+ + + + + + +-+-+-+-+-+-+-+ + +
+|   | | | | | |         | | | " "
++ +-+ + + + +-+ +-+-+-+ + + + + +
+|     | | | |   ". . ."       " "
++ +-+-+ + +-+ +-+ +-+ +-+ + + + +
+| |   | | |   ". .".". ."     " "
++ + + + +-+ +-+ +-+ +-+ +-+ + + +
+| | | | |   ". .". . .". ."   " "
++ + + + + +-+ +-+ +-+ +-+ +-+-+ +
+| | | | |  . . . . . . . . . .  "
++ + + + + +-+ +-+ +-+ +-+ +-+-+-+
+|   | | |   ". .". . .". ."   " "
++-+-+ + +-+ +-+ +-+ +-+ +-+ + + +
+|     |   |   ". .".". ."     " "
++ +-+-+-+ +-+ +-+ +-+ +-+ +-+-+-+
+|         |     ". . ."   " "  ! 
++ +-+-+-+ +-+-+ +-+-+-+ +-+ + +-+
+"       " |             "   " "  
++-+-+-+ + +-+-+-+-+ + + + +-+ + +
+"    ?" "       |       " "   " "
++ +-+-+ +-+-+-+ +-+ +-+-+ + +-+ +
+" "  ?"       "     "&    " "   "
++ + +-+-+-+-+ +-+-+-+ +-+-+ + +-+
+" "   "     "         "&    " " "
++ + + + + + +-+-+-+-+-+ + +-+ + +
+|                         "  !" "
++ + + + + + + + + + + + +-+ +-+-+
+|                   " "   " "   |
++ + + + + + + + + +-+ + +-+ + +-+
+|                     "   " " " |
++ + + + + + + + + +-+-+-+ + + +-+
+
+
+Sector A2(?)
+(5,10) (14,10) LAVA FILLS THE VALLEY OF FIRE!
+(11,3) [Random dragon encounter] THE DRAGONS BODY DISAPPEARS, EXCEPT FOR 
+A SHINY TOOTH!
+(2,4) (2,5) A PIRATES SECRET COVE, SEARCH (Y/N)?  [Empty unless quested]
+(0,15) I AM PERCELLA THE DRUID AND I HAVE WHAT YOU NEED. BUT PROMISE ME 
+THAT YOU WON'T HELP THAT DEMONIC MENACE. ACCEPT (Y/N)?
+[No:]THEN MEET MY PETS!
+[Yes: get kings pass]
+[inside the octagon formed by (6,9) (8,7) (10,7) (12,9) (12,11) (10,13) 
+(8,13) (6,11)]:  IT'S HOT!
+(10,4) Encounter(8 red dragons)
+(14,2) Encounter
+
+A3 surface
++ + + + + + + + + +-+-+-+ + + +-+
+|. . . . . . . . .  "            
++ + + + + + + + + + +-+-+ +-+-+ +
+|. . . .   . . . .      " "   |  
++ + + + +-+ + + + + + + + + + + +
+|. . .  "!"    . . . .  " " "    
++ + + + +-+ +-+ + + + + + +-+ +-+
+|. . . .    "!"  . . .      "   "
++ + + + + + +-+ + + + + + +-+ +-+
+|. . . . . .   . . . . .  "!    "
++ + + + + + + + + + + + + +-+ + +
+|. . . . . . . . . . . .    " " "
++ + + + + + + + + + + + + + + + +
+|. . . . . . . . . . . . .  " " "
++ + + + + + + + + + + + + + + + +
+|.           . . . . . . .  " " "
++ + +-+-+-+ + + + + + + + + + +-+
+|.  |     |  . . . . . . .  "   "
++ + + +-+ + + + + + + + + + +-+ +
+|.  | " " |      . . . . .    " "
++ + + + + +-+-+ + + + + + + + + +
+|.  | " "     |  . . . . . . . . 
++ + + + +-+-+ + + + + + + + + + +
+|.  | "       |  . . . . . . . . 
++ + + +-+-+-+ + + + + + + + + + +
+|.  |         |  .       . . . . 
++ + + +-+-+-+-+ + + +-+ + + + + +
+|.               .   !|  . . .   
++ + + + + + + + + + +-+ + + + + +
+|. . . . . . . . .       . .  " "
++ + + + + + + + + + + + + + +-+ +
+|. . . . . . . . . . . . .  "!  "
++ + + + + + + + + + + + + + +-+-+
+
+
+Sector A3:
+THE WATER ERUPTS VIOLENTLY, REVEALING A TREMENDOUS SERPENT
+(3,6)  EMBEDDED IN THE SIDE OF THE MOUNTAIN IS A LARGE WHEEL COVERED IN 
+STRANGE AND ARCHAIC SYMBOLS. SPIN THE WHEEL (Y/N)?
+
+A4 surface
++ + + + + + + + + + + + + + +-+-+
+|                           ".  "
++ + + + + + + + + + + + + + +-+ +
+|                             " "
++ + + + + + + + + + + + + +-+ + +
+|                         "!"    
++ + + + + + + + + + + + + +-+ + +
+|                                
++ + + + + + + + + +-+ + + + + + +
+|                 "!" "!"        
++ + + + + + + + + +-+ +-+ + + + +
+|                                
++ + + + + + + + + + + +-+ + + + +
+|                     "!"        
++ + + + + + + + + + + + + + + + +
+|                                
++ + + + + +-+-+ + + + + + + + + +
+|            !"                  
++ + + + +-+-+ + + + + + + + + + +
+|       "N    "                  
++ + + + +-+-+-+ + + + + + + + + +
+|                                
++^+^+^+^+^+^+^+^+ + + + + + + + +
+|               >                
++ + + + + + + + + + + + + + + + +
+|               >                
++ + + + +-+-+-+ + + + + + + + + +
+|       "$    " >                
++ + + + +-+-+ + + + + + + + + + +
+|               >                
++ + + + + + + + + + + + + + + + +
+|               >                
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Sector A4:
+(4,6) teleport to (4,2)
+(4,2)  A WOODEN BRIDGE EXTENDES ACROSS THE OCEAN INTO THE MIST. A HOODED 
+FIGURE MATERIALIZES, "TO CROSS YOU MUST EACH ANSWER A QUESTION, ACCEPT 
+(Y/N)?"
+1) RED THORAC
+2) BLUE OGRAM
+3) GREEN BAGAR
+4) YELLOW LIMRA
+5) PURPLE SAGRAN
+6) ORANGE OOLAK
+7) BLACK DRESIDION
+8) WHITE DILITHIUM
+WHAT IS YOUR COLOR(1-8)?
+[See C2 (9,11)]
+WRONG! [eradicated] / CORRECT!
+(14,15)ATOP THIS PEAK 5 ISLANDS CAN BE SEEN TO THE SOUTHEAST
+A TIDAL WAVE SWEEPS THE PARTY AWAY!
+
+B1 surface
++-+-+-+-+-+-+-+-+-+ + + + + + + +
+|!      |.|      !               
++ +-+-+ + + +-+-+-+ + + + + + + +
+|     | | | |                  ! 
++ + + + + + + + + + + + + + + + +
+|   | | | | |                    
++ + + + + + + +-+-+-+-+ + + + + +
+| | | | | | |         |      .   
++ + + + + + +-+-+-+-+ + + + + + +
+| | |   | |           |         |
++-+ +-+-+ +-+-+-+-+-+-+ + + + + +
+|                            v  |
++ +-+-+ +-+-+ + + + + + + + + + +
+| |   |!|   |  !     !          |
++ + + + + +-+ + + + + + +-+-+-+-+
+| | |     |             |   |   |
++ + +-+-+-+ + + + + +-+-+-+-+ + +
+| |    !|#|           | | | | | |
++-+-+-+-+-+ + + + + +-+-+-+ + + +
+| >!| "!  |           | | | | | |
++ + +-+ +-+ + + + + +-+-+-+-+ + +
+| | |!  |             | |  v| | |
++ + + +-+ + + + + + +-+-+-+-+ + +
+| | |  !|           | |!| | | |!|
++ + +-+ + + + + + + +-+-+-+ + +-+
+| | |!  |            !| | | | |  
++ + + +-+ + + + + + + + +-+-+ + +
+| |   |        !|  !   v   !| |  
++ +-+-+ + + + + + + + + + + + + +
+|      !        |    !     v v   
++ + + + + + + +-+ + + + + + + + +
+|                                
++ + + + + +-+-+-+-+ + + + +-+-+-+
+
+
+Sector B1:
+(13,1) CAVERNOUS PASSAGE TO ERLIQUIN, TAKE IT (Y/N)?
+(14,10)CASTLE BLACKRIDGE NORTH, ENTER (Y/N)?
+(11,2) CASTLE BLACKRIDGE SOUTH, ENTER (Y/N)?
+(13,5) ANCIENT RUINS OF A DESERTED WIZARDS LAIRSHOW SIGNS OF RECENT USE, 
+ENTER (Y/N)?
+(4,15) THE GATES TO ANOTHER WORLD!
+[If you've won the game:]  CONGRATULATIONS DISTINGUISHED  TRAVELERS! THE 
+GATES ARE NOW   OPEN TO YOU, IN ORDER TO PASS  THROUGH YOU MUST FIRST 
+FIND    MIGHT AND MAGIC BOOK TWO !!!  
+(14,12)A SIGN POINTING S. READS: BLACKRIDGE N.
+(9,2)  A SIGN POINTING E. READS: BLACKRIDGE S.
+(11,1) A SIGN POINTING E. READS: ERLIQUIN
+(14,1) A CAVE, ENTER (Y/N)? [Back door to Erliquin]
+(13,2) CARVED ON A TREE "9-9 RAVENS LAIR"
+
+B2 surface
++-+-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+
+"!" | | | |      !" "     "!    "
++ + + + + + +-+-+-+ + +-+ +-+-+ +
+" " | | | | "       " |!| "     "
++ + + + +-+ + +-+-+-+ + + +-+-+ +
+"   | |  !  " |!      | |     "!"
++ +-+ + + +-+ +-+-+-+-+ + + +-+-+
+" "     | |   |!        |   "   "
++ +-+ +-+ + + +-+ +-+ + +-+ +-+ +
+" "   |   | | |   |   |  !|   "!"
++ +-+ + +-+ + +-+ + +-+-+-+ + +-+
+" "   | |   | |!  |     |     " "
++-+ +-+ + +-+ +-+ +-+-+ + +-+-+ +
+" " |  !| |   |   |v  |   "     "
++ + + + + + +-+-+ +-+ +-+ +-+-+ +
+"   | | | | |       <   |     "!"
++-+-+ + + + +-+-+-+ +-+ +-+ + +-+
+    | | | | |!       !|   |   "!"
++ + + + + + +-+-+-+ +^+-+ + +-+ +
+    | | | |   |     |     | "   "
++-+ + + + +-+ +-+-+-+ +-+-+ +-+-+
+"   | |!|   | |!              " "
++ + + +-+-+ + + +-+-+-+-+ +-+-+ +
+"   |    N| | | "v"     " "    !"
++ + +-+ +-+ + + + + +-+ + +-+-+ +
+"    !|     | | "     "       " "
++ +-+ +-+-+-+ + + + +-+-+ +-+ +-+
+| "           | " "     "  !|    
++ + +-+-+-+-+-+ + + +-+ + +-+ +-+
+  " "!   !|  !| " " "!  "     " "
++ + +-+ + + + + + + +-+-+ + +-+ +
+| "   " |  !|  !"!"         "   "
++ +-+ +-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Sector B2:
+(9,9)  A DESCENDING STAIRCASE IS THE ENTRANCE TO A WARRIORS STRONGHOLD, 
+GO IN (Y/N)? [Lord Archer]
+(4,4)  ON A THRONE ADORNED WITH PRECIOUS GEMS THE ICE PRINCESS SPEAKS, 
+"CONQUEROR OF WORLDS, MAKER OF DREAMS THE GREATEST FORCE OF ALL, YET 
+ELUSIVE IT SEEMS." ANSWER:
+[wrong:]  WRONG, YOU'RE TOO YOUNG TO UNDERSTAND.
+[love:]  CORRECT!
+(8,4)  THERE'S A CAVE HERE, ENTER (Y/N)?
+
+B3 surface
++ +-+ +-+-+-+-+-+-+-+-+-+-+-+-+-+
+| | | |  ! ! ! !|  !   ! ! ! ! !"
++ + + +-+-+-+-+ +-+-+-+-+-+-+-+ +
+| | | |        !"     "! ! ! ! !"
++ + + + +-+-+-+-+ +-+ + +-+-+-+-+
+|   | |!        " "v  "         "
++-+ + +-+-+-+-+-+ +-+-+ +-+-+-+ +
+"   |  .         .            | "
++-+ +-+ +-+-+-+-+-+-+-+ +-+-+ + +
+"!"         "      !"!"     " | "
++-+-+-+ +-+-+ + + + + + + + + + +
+"       |             "     " |!"
++-+-+-+ + + + + + + + +-+ + + +-+
+"!"!  | |                   "    
++ +-+ + + + + +-+-+ + + + + +-+-+
+"     |       "  !"             |
++-+-+ + + + +-+ + +-+ + + +-+-+ +
+"v  "       "   "         |  !  |
++ + +-+ + + + +-+-+-+ + + + + + +
+"     "     "  !"  ."     | | |!|
++ + + + + + +-+ + +-+ + + + + + +
+      "       "   "       | | | |
++ + + + + + + +-+-+ + + + + + + +
+      "                   | | | |
++ + + + + + + + + + + +-+-+ + + +
+      "v"             |!     !  |
++ + + +-+ + + + + + + + +-+-+-+ +
+        "             |      .| |
++-+ + + +-+ + + + + + + +-+-+-+ +
+" "                      !      |
++ + +-+ + + + + + + + + +-+-+-+ +
+"     "                !       !|
++-+-+-+ + + + + + + + +-+-+-+-+-+
+
+
+Sector B3:
+(3,3)  PASSAGE TO PORTSMITH, TAKE IT (Y/N)?
+(0,7)  A CAVE, ENTER (Y/N)?
+(9,13) CASTLE WHITE WOLF, ENTER (Y/N)?
+(14,2) [Have Ruby Whistle] YOUR RUBY WHISTLE BEGINS TO GLOW, BLOW IT (0-
+9 TIMES)?
+[Blown 2 times:] STAIRS GOING DOWN, ENTER (Y/N)?
+[No Ruby Whistle] AN ANCIENT TEMPLE CONVERTED TO A STRONGHOLD HAS NO 
+APPARENT ENTRANCE.
+(9,6)  ATOP THIS PEAK LOOKING: N= A CAVE BEYOND WHITE WOLF. E= LARGE 
+BEASTS ABOVE WYVERN PEAKS! S= DISTANT UNCHARTED ISLES. W= A PIRATE SHIP 
+BEYOND KORIN BLUFFS.
+(8,12) A SIGN POINTING N. READS: WHITE WOLF
+(3,12) A SIGN POINTING S. READS: PORTSMITH
+
+B4 surface
++-+-+-+ + + + + + + + + + + + + +
+"     "                  . . . ? 
++ +-+-+ + + + + + + + + + + + + +
+"!"                          . . 
++ + +-+ + + +-+ + + + + + + + + +
+    "!"     "!"                . 
++ + + + + + + + + + + + + + + + +
+                                 
++ + + + +-+ + + + + + + + + + + +
+        "!"                      
++ + + + + + + + + + + + + + + + +
+                                 
++ + +-+ + + +-+ + + + + + + + + +
+    "!"     "!"                  
++ + + + + + + + + + + + + + + + +
+                         !       
++ + + + + + + + + + + + + + + + +
+                           !     
++ + + + + + + + + + + + + + + + +
+                           !     
++ + + + + + + + + + + + + + + + +
+                                 
++ + + + + + + + + + + + + + + + +
+                                 
++ + + + + + + + + + + + + + + + +
+               !   !             
++ + + + + + + +-+ +-+ + + + + + +
+             !"  ?  "!           
++ + + + + +-+-+ + + +-+ + + + + +
+          "      ?    "!         
++ + + + + + + + + + + +-+-+ + + +
+         !"  ? ? ? ?      "!     
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Sector B4:
+(8,2)  TRIVIA ISLAND! 500 GOLD, ENTER (Y/N)?
+NOT ENOUGH GOLD!
+(Random point on the map):  PIRATE GHOSTSHIP ANARCHIST!
+(8,1)  WHO RULES CASTLE W.W.? [LORD IRONFIST]
+(6,0)  WHO IS THE VOLUPTUOUS ONE? [LARA]
+(7,0)  WHO'S LOST SIGHT? [OG]
+(8,0)  WHERE'S THE VERY LATEST? [ERLIQUIN should be but isn't]
+(9,0)  WHO BE YE?
+[Right] CORRECT!+50 GEMS
+[Wrong] WRONG! [Note:  If you make a typo you can't back up.  Grr.]
+(15,15)FREE TRIVIA CHANCE, PULL BRANCH (Y/N)?
+
+C1 surface
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+"       "               "      $"
++ +-+-+ + +-+-+-+-+-+-+ + +-+-+-+
+" " "   "  ? ? ? ? ? ?  " "    -"
++-+ + + + +-+-+-+-+-+-+-+ + +-+-+
+  "              -        " "  -"
++ +-+-+-+-+-+-+-+-+-+-+ + + + +-+
+"         |                 " " "
++-+-+-+-+ + + + + + + + + +-+ + +
+|       "                 "  -  "
++ + + + + + + + + + + + + + +-+ +
+|                         " "   "
++ + + + + + + + + + + + + + + + +
+|        ?             .         
++-+-+ + + + + + + + + + + + + + +
+|      ?         ?        " "   "
++ +-+ + + + + + + + + + + + +-+ +
+| |        ?   ?     -    "   " "
++-+ + + + + + + + + + + + +-+ + +
+|                           " " "
++ +-+ + + + + + + + + + + + + +-+
+| |          ?     -      " "-< "
++-+ + + + + + + + + + + + + +-+ +
+|   "    -                "-  " "
++-+-+ + + + + + + + + + + +-+ + +
+" "   "           "         " " "
++ + +-+ + + + + + +-+-+ + + + + +
+" " "-    " "   "   "     " "  -"
++-+ + + +-+ + + +-+ + + + + +-+ +
+" " " " "-  "     "-"     "  -" "
++ + + + + +-+v+ + + + + + +-+ +-+
+" " " " " "       " "       "   "
++-+-+-+-+-+-+-+-+-+-+-+ + + + + +
+
+
+Sector C1:
+DESERTED MERCHANT WAGONS, SEARCH (Y/N)?
+AMBUSH!
+(5,7)  [Find Merchants Pass]
+[Several locations:] A FOUNTAIN SPEAKS: "WILL THE PARTY DRINK (Y/N)?"
+(14,9) TODAY SPELLS!
+(14,5) (14,6) (14,7) (14,10) ARGHHH... POISON!
+(14,8) TODAY MIGHT!
+(15,15)YOU FOUND A CHEST UPON WHICH AN INSCRIPTION READS: PROPERTY OF 
+XX!XX! INSIDE YOU FOUND A RUBY WHISTLE, 2000 GOLD AND A NOTE: THE 
+STRONGHOLD LIES AT B-3,14-2 BLOW TWICE TO ENTER.
+ROADSIGN: SORPIGAL S.17, W.1, N.2
+
+C2 surface
++-+-+-+-+-+-+-+-+-+-+-+ + + + + +
+"                -"   " "       "
++ +-+ + +-+-+-+-+-+ + + +-+-+ +-+
+" "     "           | "         "
++ + + +-+ +-+-+-+-+-+ + + +-+ +-+
+"!" " "               " " "     "
++-+ + + +-+-+-+-+-+-+ + + + +-+ +
+"!  " " |             " " " "   "
++-+-+ + + + + + + + + + + + + +-+
+"     " |  -   -   N  " " " "  v"
++-+ +-+ + + + + + + +-+ + + + +-+
+"   "$" |           "v" " " "   "
++ + + + +-+ + + + + + + + + +-+ +
+" " " "  -|  -        " " "    -"
++ + + + +-+ + + + + + + + + +-+ +
+" " " "  ?|      ?        " "  ."
++ + + + +-+ + + + + + + + + + + +
+" "   "  -|  -            " " " "
++ + + + +-+ + + + + + + + + + + +
+"!" " " |             |   " " " "
++-+ + + + + + + + + + + + + + + +
+"!  " " |  -   -   -  |   "   " "
++-+-+ + + + + + + + + + + +-+-+ +
+"     " |             |   "    -"
++ +-+ +-+ + +-+-+-+-+-+ + + + +-+
+" "   "   " "-            " " "  
++-+ +-+ +-+ +-+-+-+-+-+-+ + + + +
+|?  "       "-      "     "-"    
++-+ +-+ +-+-+-+-+-+ +-+-+ +-+ + +
+"       "      -"   "     "-     
++ + + + + + +-+-+ +-+ + + +-+ + +
+"     "   "   "       "   " "    
++-+-+-+ + +-+-+-+-+-+-+-+ +-+-+-+
+
+
+Sector C2:
+(10,10):  A CAVERNOUS PASSAGE LEADS TO SORPIGAL, TAKE IT (Y/N)?
+(5,5) (7,5) (9,5) (5,11) (7,11) (9,11) A PIT!....
+[If 2-5 has been cast]:  YOUR LEVITATION SAVED YOU!
+[If not]:  AN AMBUSH!
+(8,8)  A GLOWING WHITE COLUMN, TOUCH IT (Y/N)?
+(0,2)  STATUES BLOCK THE PATH,SMASH THEM (Y/N)?
+[Yes:  encounter with Caryatid Guards, not affected by non-magic items, 
+allows you to pass]
+(4,7) (4,9) A STRANGE FOUNTAIN, DRINK (Y/N)?
+CHEERS!
+(15,8) AVALANCHE!
+(15,11)THERE'S A CAVE HERE, ENTER (Y/N)?
+(9,11):  A TOOTHLESS GYPSY SEER ASKS,"WHO WOULD LIKE TO HEAR THEIR SIGN 
+(1-6)?"
+"YOUR SIGN IS THE 
+[Eight choices below:]
+RED THORAC"
+BLUE OGRAM"
+GREEN BAGAR"
+YELLOW LIMRA"
+PURPLE SAGRAN"
+ORANGE OOLAK"
+BLACK DRESIDION"
+WHITE DILITHIUM"
+--Before each planned encounter, the words "Look out!" appear on the 
+screen.
+
+C3 surface
++-+-+-+ + +-+-+-+-+-+-+-+ +-+-+-+
+" "   "   "    !"                
++ +-+-+ +-+ +-+ + + + + + + + + +
+"   "   "   "N" "                
++ + + + + +-+ + +-+ + + + + + + +
+" " "   "!  " "   "              
++ + + + +-+ + +-+ + + + + + + + +
+" "  !    "!" "  !               
++ +-+ + + + + + +-+ + + + + + + +
+" " "     "!" " "                
++ + +-+ + +-+-+ + + + + + + + + +
+" " "!"         "                
++-+-+-+-+-+-+-+-+-+-+-+-+ + + + +
+        <                   "    
++-+-+-+ +-+-+-+-+-+-+-+-+ + + +-+
+|     | |   "        !  |   "    
++-+-+-+ + +-+ +-+-+ + + + + +-+-+
+|   | | |     "?   &"   |        
++ + +-+ + + + + +-+ + + + + + + +
+| | | | |     " "&  "   |        
++ + +-+ + +-+-+ + + + + + + + + +
+| | |   |      &" " "   |        
++ + + +-+ + +-+-+ + + + + + + + +
+|!|!| |     "     "  !  |        
++ + + + + +-+ +-+-+ + + + + + + +
+ !> | |      &"     "   |        
++^+ + + + +-+-+ +-+-+-+-+ + + + +
+  >   |   "!   &"          .     
++ +-+ +-+-+ +-+-+ + + + + + + + +
+    |             "              
++ + +-+-+-+-+-+-+-+ + + + + + + +
+     !   !"!     ."              
++ + + + + +-+-+-+-+ + + + + + + +
+
+
+Sector C3:
+WYVERNS ATTACK FROM ABOVE!
+(7,7)  A WYVERN'S LAIR, INVESTIGATE (Y/N)?
+[Win fight:]  ONE OF THE WYVERN'S EYES BEGINS TO GLOW!TAKE IT (Y/N)?
+(12,2) ROADSIGN: SORPIGAL N.22, W.2, N.2
+(6,14) THE EXILED LORD KILBURN SPEAKS: "TAKE THIS MAP AND EXPLORE THE 
+DESERT. REPORT YOUR FINDINGS TO THE OTHER LORDS.THEN THEY WILL 
+UNDERSTAND!" ACCEPT(Y/N)?
+(8,0)  PAINTED IN A BLACK AND WHITE PATTERN, A SIGN READS: THE FIRST 
+PART IS FEMALE.
+(2,10) THE HERMIT SAYS: "TRADE WARES (Y/N)?"
+
+C4 surface
++ + + + + +-+-+-+-+ + + + + + + +
+            " " " "    . . . . . 
++ + + + + + +-+ + + + + + + + + +
+              " " "  . . . . . . 
++ + + + + + + +-+ + + + + + + + +
+                "?"  . . . ? . . 
++ + + + + + + + + + + + + + + + +
+           ?         . . . . . . 
++ + + + + + + + + + + + + + + + +
+       ?           ?     . . . . 
++ + + + + + + + + + + + + + + + +
+   ?                     . . .   
++ + + + + + + + + + + + + + + + +
+                       ?         
++ + + + + + + + + + + + + + + + +
+           &       &         ?   
++ + + + + + + + + + + + + + + + +
+                                 
++ + + + + + + + + + + + + + + + +
+                                 
++ + + + + + + + + + + + + + + + +
+     &                   &       
++ + + + + + +-+ +-+ + + + + + + +
+            " "&" "              
++ + + + +-+-+ + + +-+-+ + + + + +
+        "             "          
++ + + + +-+-+-+ +-+-+-+ + + + + +
+     &        "@"        &       
++ + + + + + + +-+ + + + + + + + +
+                                 
++ + + + + + + + + + + + + + + + +
+                                 
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Sector C4:
+(2,7)
+[No coral key:]  A LARGE SLAB OF CORAL BLOCKS A PASSAGE!
+[Have coral key:]YOUR CORAL KEY FITS PERFECTLY IN THE LOCK, ENTER (Y/N)?
+(1,10) (3,11) (5,12) (9,11) (11,9) (14,8) AT THE WATERS EDGE ARE THE 
+DECAYING REMAINS OF A LARGE SHIP. SEARCH(Y/N)?
+(8,13) THE JOLLY RAVEN! [Otherwise, cursed and an encounter]
+(2,2) (2,6) (5,8) (9,8) (12,5) (12,2) CRAZED NATIVES ATTACK!
+THE VOLCANO ERUPTS!
+PIRATES ATTACK!
+(Northeast corner) MYSTERIOUS WEEPING ECHOES THROUGHOUT!
+(13,13)PORTAL OF POWER, ENTER (Y/N)?
+
+D1 surface
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+" " "  . . . . .           . . . 
++ + +-+ + + + + + +-+ +-+ + + + +
+" " "  . . . . .  "     "  . . . 
++ + +-+ + + + + + + + + + + + + +
+" " "  . . . . .  "  N  "  . . . 
++ + + + + + + + + + + + + + + + +
+" " "    . . . .  "     "  . . . 
++ + +-+ + + + + + +-+-+-+ + + + +
+" "   "    . . .           . . . 
++ +-+ +-+ + + + + + + + + + + + +
+"   "   "  . .       . . . . . . 
++ + + + + + + + + + + + + + + + +
+           . .       .           
++ + + + + + + + + + + + + + + + +
+"   "   "  . .       .           
++ + + +-+ + + + + + + + + + + + +
+" " " "    . . . . . . .         
++ + + + + + + + + + + + + + + + +
+" " " "  . . . . . . . . . . . . 
++ +-+ + + + + + + + + + + + + + +
+" "   "  . . . . . . . . . . . . 
++ + +-+ + + + + + + + + + + + + +
+" " "    . . . . . . . . . . . . 
++ + + + + + + + + + + + + + + + +
+" " "  . . . . . . . . . . . . . 
++ + + + + + + + + + + + + + + + +
+"   "  . . . . . . . . . . . . . 
++ + +-+ + + + + + + + + + + + + +
+" " "  . . . . . . . . . . . . . 
++ + +-+ + + + + + + + + + + + + +
+" "."  . . . . . . . . . . . . . 
++-+-+-+ + + + + + + +-+ + + + + +
+
+
+Sector D1(?):
+SUDDENLY, A GARGANTUAN SCORPION ATTACKS!
+(10,13)A SMALL TRIBE OF DESERT NOMADS HAVE ESTABLISHED A TRADING POST 
+HERE. TRADE ITEM (Y/N)? [Get a cactus]
+YOUR LEADER HAS NOTHING TO TRADE!
+(1,0)  KILBURN,C-3 6-14
+IT'S HOT...
+YOU'RE LOST!!!
+A WHIRLWIND SWOOPS THE PARTY AWAY!
+A VIOLENT SANDSTORM BLASTS THE PARTY!
+
+D2 surface
++-+-+-+ + + + + + + +-+ + + + + +
+"!"!"  . . . . .    " "    . . . 
++ + +-+ + + + + + +-+ +-+ + + + +
+"!"!"  . . . .    "  .  "    . . 
++ + +-+ + + + + +-+ + + +-+ + + +
+"!"!"  . . .    "         "    . 
++ + + + + + + +-+ + + + + +-+ + +
+"!"!"    . .  "  .   .   .  "  . 
++ + +-+ + + + +-+ + + + + +-+ + +
+"!"!  "  . .    "         "    . 
++ +-+ + + + + + +-+ + + +-+ + + +
+"!  " "  . . .    ". .  "    . . 
++ + + + + + + + + +-+ +-+ + + + +
+" " " "    . . .           . . . 
++ + + +-+ + + + + + + + + + + + +
+" " "!  "  . . . . . . . . . . . 
++ + + + + + + + + + + + + + + + +
+" " " " "  . . . . . . . . . . . 
++ + + + + + + + + + + + + + + + +
+"  !  " "      . . . . . . . . . 
++ +-+ + +-+-+ + + + + + + + + + +
+" " " "    !         . . . . . . 
++ + + +-+-+ +-+ +-+ + + + + + + +
+"!" "    !    "!  "      . . . . 
++-+ +-+-+-+ + + + +-+-+ + + + + +
+         !     !      "     " " "
++-+-+-+-+-+ + + +-+-+ +-+-+-+-+-+
+          "     "               "
++ + + + +-+ +-+-+-+-+-+-+-+ +-+-+
+           !"   "     "   "!     
++ + + + + + + + + + + +v+ +-+-+ +
+              "         "        
++ + + + + + + +-+-+-+-+ + + + + +
+
+
+Sector D2:
+(10,12)  THE POOL OF WISDOM GRANTS THOSE WHO ARE WORTHY +2 PERSONALITY.
+(10,10)  CLERICAL RETREAT
+WE ARE THE CLERICS OF THE 
+N:  YOUR PARTY IS CURED!
+E:  YOUR ALIGNMENT IS RESTORED!
+W:  ALL CURSES ARE REMOVED!
+(9,10)  THE CLERICS OF THE S. SHALL DEEM YOU WORTHY, IF YOU CAN FIND 
+THEM!
+IT'S HOT...
+YOU'RE LOST!!!
+
+D3 surface
++-+-+-+-+-+-+-+-+-+-+-+-+ + + + +
+|T   T   T   T                   
++ + + + + + + + + + +-+ + + + + +
+|                 "!  "  T   T   
++ + + + + + + +-+-+ + + + + + + +
+|T   T   T  " "v"   " "          
++ + + + + + + + + +-+ + + + + + +
+|           "   " "   "    T   T 
++ + + + + + + + + + +-+ + + + + +
+|T   T   T  " " " " "            
++ + + + + + + + + + + + + + + + +
+|           " " " " "    T   T   
++ + + + + + + + + + +-+ + + + + +
+|T   T   T  " " " " "            
++ + + + + + + + + + + + + + + + +
+|           " " " " "      T   T 
++ + + + + + + + + + +-+ + + + + +
+|T   T   T    "  !" "            
++ + + + + + +-+ +-+ + + + + + + +
+|                   "    T   T   
++ + + + + + + + +-+-+-+ + + + + +
+|T   T   T                       
++ + + + + + + + + + + + + + + + +
+|                                
++ + + + + + + + + + + + + + + + +
+|                                
++ + + + + + + + + + + + + + + + +
+|E                     !         
++ + + + + + + + + + + + + + + + +
+                   !             
++ + + + + + + + + + + + + + + + +
+               .       !   !     
++ + + + + + + + + + + + + + + + +
+
+
+Sector D3:
+(7,13) A CAVE, ENTER (Y/N)?
+(0,2)  I AM ARENKO GUIRE AND THIS IS MY GROVE. CLIMB ALL THE TREES, 
+WITHOUT LEAVING THE AREA, AND RETURN.
+[All trees visited]:  WELL DONE! WHAT IS YOUR PLEASURE? A) GOLD  B) GEMS  
+C) ITEM [My advice--take the item!]
+(0,15) (2,15) (4,15) (6,15) (12,14) (14,14) (0,13) (2,13) (4,13) (13,12) 
+(15,12) (0,11) (2,11) (4,11) (12,10) (14,10) (0,9) (2,9) (4,9) (13,8) 
+(15,8) 0,7) (2,7) (4,7) (12,6) (14,6) (0,5) (2,5) (4,5) CLIMB TREE 
+(Y/N)?
+Possible(random) responses:
++5 FOOD
+POISON THORNS
+YOU FELL
+LIGHTNING
+INFECTIOUS SAP
+FLASH
+POOF
+NOTHING HERE.
+CURSED
+KEEP CLIMBING
+(7,0) ROADSIGN: ALGARY S.9
+
+D4 surface
++ + + + + + + + + + + + + + + + +
+      "       " "         "   "  
++ + + + + + + + + + + + + + + + +
+      "   "!  " "       "        
++ + + + + + + + + + + + + + + + +
+    "    !"   " "   "    !  "   "
++ + + + + + + + + + + + + + + + +
+    "!"    !" "  !     !"& !  " "
++ + + + + + + + + + + + + + + + +
+  "   "       " " "   "  !" " " "
++ + + + + + + + + + + + + + + + +
+  "  !" "!    " " "   " "  !" " "
++ + + + + + + + + + + + + + + + +
+    "     "  !" " "N" " "   " " "
++ + + + + + + + + + + + + + + + +
+                    " " " "!" " "
++ + + + + + + + + + + + + + + + +
+               v    " " " " " " "
++ + + + + + + + + + + + + + + + +
+                      " "  !" " "
++ + + + + + + + + + + + + + + + +
+                      " "   " " "
++ + + + + + + + + + + + + + + + +
+                      "   "!" " "
++ + + + + + + + + + + + + + + + +
+                        " " " " "
++ + + + + + + + + + + + + + + + +
+                        " " " " "
++ + + + + + + + + + + + + + + + +
+                        " " " " "
++ + + + + + + + + + + + + + + + +
+                        "       "
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Sector D4:
+(7,7)  ALGARY, ENTER (Y/N)?
+(12,12)PAUL PEAD AND HIS MEN ATTACK!
+(9,9)  A HUGE WINGED BEAST EXCLAIMS, "THIS SWAMP IS QUITE DANGEROUS. FLY 
+YOU TO SAFETY (Y/N)?"
+(7,1):  [You don't have the idols]  OG SAYS, "BEGONE!"
+[You have the idols]  PAINTED ON THESE GROUNDS IS A BLACK & WHITE 
+CHECKERED MOTIF COVERED WITH IDOLS SIMILAR TO THE ONES YOU CARRY. A 
+LARGE BEING APPROACHES... OG SPEAKS, "QUEEN TO QUEENS LEVEL 3" RESPONSE: 
+[Queen to Kings Level 1]  YOU HAVE RESTORED MY SIGHT! (+25000 EXP)I SEE 
+AN IMPORTANT PRISONER IN A CASTLE ON MT. DOOM! HE HAS YOUR SIGHT.
+[Wrong answer]  OG CURSES AS THE IDOLS VANISH!
+
+E1 surface
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+ . . . . . .                 . .|
++ + + + + + + + + + + + + + + + +
+ . . . . . .                 . .|
++ + + + + + + +-+-+-+-+-+ + + + +
+ . . . . . .       ?"   " "  . .|
++ + + + + + + +-+-+-+ + + + + + +
+ . . . . . .    "     " "v"  . .|
++ + + + + + + + + +-+-+ +-+ + + +
+ . . . . . .      "v      "  . .|
++ + + + + + + + + +-+-+-+ + + + +
+ . . . . . .    "         "  . .|
++ + + + + + + +-+-+-+ +-+-+ + + +
+ . . . . . .    " "     " "  . .|
++ + + + + + + + + + + + + + + + +
+                             . .|
++ + + + + + + + + + + + + + + + +
+ . . . . . . . . . . . .   . . .|
++ + + + + + + + + + + + + + + + +
+               . . . . .   . . .|
++ +-+-+-+-+-+ + + + + + + + + + +
+  "   "!    "  . . . . .   . . .|
++ + + + + + + + + + + + + + + + +
+  "  ! ! !  "  . . . . .   . . .|
++ + + + + +-+ + + + + + + + + + +
+  "! ! ? ! !"  . . . . .   . . .|
++ +-+ + + + + + + + + + + + + + +
+  "  ! ! !  "  . . . . .   . . .|
++ + + + + + + + + + + + + + + + +
+  "    !"   "  . . . . .   . . .|
++ +-+-+-+-+-+ + + + + + + + + + +
+               . . . .     . . .|
++ + + + + + + + + + + + + + + + +
+
+
+Sector E1:
+(9,11) PASSAGE TO DUSK, ENTER (Y/N)?
+(12,12)RUINS OF CASTLE DRAGADUNE, ENTER (Y/N)?
+A WHIRLWIND SWOOPS THE PARTY AWAY!
+A VIOLENT SANDSTORM BLASTS THE PARTY!
+(3,3)  AT THE CENTER OF THE LAND THAT TIME FORGOT STANDS AN 
+HOURGLASS,TURN IT(Y/N)?
+(9,13) STATUE OF A GIANT HOLDING THE SCALE OF JUDGEMENT. WHO WILL CLIMB 
+ON (1-6)?
+NOT WORTHY!
+YOUR ACTIONS REFLECT YOUR VIEWS   OF 6 +
+
+E2 surface
++ + + + + + + + + + + + + + + + +
+   . . . . . . . . .         . .|
++ + + + + + + + + + + + + + + + +
+       |     . . . .         . .|
++ + + +-+ + + + + + + + + + + + +
+     |"#"|   . . . .         . .|
++ + +-+ +-+ + + + + + + + + + + +
+   |"     "| . . . .         . .|
++ + + + + +-+ + + + + + + + + + +
+     | N |  "  . . . .     . . .|
++ + + + + +-+ + + + + + + + + + +
+   |"     "  . . . .       . . .|
++ + +-+ +-+ + + + + + + + + + + +
+     |       . . . .       . . .|
++ + + + + + + + + + + + + + + + +
+ . . . . . . . . . . .     . . .|
++ + + + + + + + + + + + + + + + +
+ . . . . . . . . . . . . . . . !"
++ + + + + + + + + + + + + + + + +
+ . . . . . . . . . . . . .      "
++ + + + + + + + + + + + + + +-+-+
+ . . . . . . . . . .       !"   "
++ + + + + + + + + + +-+ +-+-+ +-+
+                    "!   !    "!"
++ + + + +-+ + + + + + + + +-+-+ +
+" "!    "!"        !"     "     "
++-+-+-+-+ +-+-+-+-+-+ + + + +-+-+
+"!        "!       !"       "  !"
++-+-+-+-+ +-+-+-+-+ + + + +-+ + +
+    "!  "     "  !"             "
++ + + + + + + + + +-+ + + + + + +
+                  "            !"
++ + + + + + + + + + + + +-+-+-+-+
+
+
+Sector E2:
+(3,13) STRANGE ALIEN DEVICE GRANTS THOSE WHO ARE WORTHY +2 INTELECT!
+(3,11) SCATTERED REMAINS OF A METALLIC CRAFT! AN ALIEN GRUNTS, "EEP OP 
+OOP!" REACTION: A)HOSTILE B)NEUTRAL C)FRIENDLY
+[Hostile:]  A BRIGHT FLASH! [All players killed]
+[Friendly:] "VARNLINGS TAKE HEED! OUR PRISONER HAS ESCAPED AND MAY BE 
+DISGUISED AS A NOBLE.FIND HIS COUNTERPART TO EXPOSE HIM!"
+[Many teleports around where the aliens are:]  POOF!
+
+E3 surface
++ + + + + + + + + + + + +-+-+-+-+
+ T         T         T        " "
++ + + + + + + + + + + + + +-+-+ +
+       T         T              "
++ + + + + + + + + + + + + + + +-+
+   T         T             T  " "
++ + + + + + + + + + + + + + + + +
+         T         T            "
++ + + + + + + + + + + + + + +-+-+
+     T         T          "     "
++ + + + + + + + + + + + + + +-+-+
+ T         T         T  " " "!  "
++ + + + + + + + + + + + + +-+ + +
+       T         T      " "! !"!"
++ + + + + + + + + + + +-+ + +-+ +
+   T         T      " " "@"! ! !"
++ + + + + + + + + + +-+ + +-+-+ +
+         T          "   "    v" "
++ + + + + + + + + + +-+ + +-+-+ +
+     T         T    " " "@"! ! !"
++ + + + + + + + + + + + + + +-+ +
+ T         T              "! !"!"
++ +-+ + + + + + + + + + + +-+ + +
+  |T|            .       .  "!  "
++ + + + + + + + + + + + + + +-+-+
+         .     .                "
++ + + + + + + + + + + + + + + + +
+ .     .           *            |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+
+
+Sector E3:
+(14,7) KING ALAMAR'S CASTLE, ENTER (Y/N)?
+(1,4)  A DIAMOND DOOR!
+ USE YOUR KEY (Y/N)?
+(12,6) (12,8) STATUE OF A LION GROWLS,"PASSWORD?" RESPONSE:> ..........
+[Wrong:  teleport one square west]
+[Right:]CORRECT! YOU MAY PASS.
+(0,2) (3,2) (4,3) (7,3) (8,4) (12,4) DISTANT HARP MUSIC...
+(9,2)  HERATIO HARPER SINGS: "******IS THE PASSWORD FOR TODAY, LEAVE THE 
+AREA AND CHANGE IT I MAY!"
+[Choices:]  MUSICAL,TONES,TOGETHER,CLERICS,SOUTH,DEEM,WORTHY
+(At any tree:)  TRESPASSING!
+
+E4 surface
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+     !               !          |
++ + + + + + + + + + + + + + + + +
+             !                  |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + + + + + + + + + + +
+                                |
++ + + + + + + +-+ +-+ +-+ + + + +
+                "   " "         |
++ + + + + + + + + + + + + + + + +
+              "&"&"&"&" "       |
++ + + + + + + +-+-+-+-+-+ + + + +
+               &"?  "v"&        |
++ + + + + + +-+-+ + + +-+-+ + + +
+               &"   " "&        |
++ + + + + + + +-+ + + +-+-+ + + +
+              "       "&        |
++ + + + + + + + +-+-+-+-+-+ + + +
+                "&"&"&"&        |
++ + + + + + + + + + + +-+ + + + +
+                " " "           |
++ + + + + + + +-+ + +-+ + + + + +
+                                |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Sector E4:
+(10,5) THE FABLED BUILDING OF GOLD, ENTER (Y/N)?
+ECTOPLASMIC SLIME SLUSHES BENEATH YOU!
+TOPPLED TOMBSTONES ABOUND!
+(2,6)  UNEARTHED COFFIN! EXAMINE (Y/N)?
+(3,6)  OPEN CRYPT! EXAMINE (Y/N)?
+(3,6)  HALF BURIED CORPSE ASKS FOR HELP! ASSIST (Y/N)?
+[Yes:] THANKS! IT AIN'T EASY BEING A CORPSE! TAKE THESE...
+(8,5)  DRAGON CITY, TOWN MEETING... DISRUPT (Y/N)?
+QUICKSAND!
+
+Basilisk's cave
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|             |   | "!" "   "!  "
++ +-+-+ +-+-+ +-+ + +-+ + + + + +
+| |   | |   |  &| | "   "   "   "
++ + + + + + + +-+ + + + +-+ + +-+
+| |   | |   | |   | "  !" " "!" "
++ + +-+ +-+ + + + + +-+-+ +-+-+-+
+| | |& & &| | |   |             "
++ + + + + + + + + +-+-+-+ +-+-+-+
+| | |& & &| | |         | "     "
++ + +-+-+-+ + +-+-+-+-+-+ +-+-+-+
+| |         |          -  |!   -"
++ +-+-+-+-+-+ +-+-+-+-+-+ +-+-+ +
+|             |         | "   "-"
++ +-+-+ +-+-+ +-+-+-+-+ + +-+-+ +
+| |   | |   |      ! !| | "! !| "
++ + +-+ +-+ + +-+-+-+-+ + +-+-+ +
+| | |& & &| | |         | "! !| "
++ + + + + + + + + +-+-+ + +-+-+ +
+| | |& & &| | |   |! !| | "   |-"
++ + +-+-+-+ + + + +-+ + + + +-+-+
+| |         | |     | | | "! ! !"
++ +-+-+-+-+-+ +-+-+-+ +-+ + +-+-+
+|              !         ." "  *"
++-+-+-+-+-+ +-+-+ +-+-+-+-+ + + +
+|         |!|   | |       " "   "
++ +-+-+-+ + + + + + +-+-+-+ +-+-+
+| |! ! !| |!|   | | "     " "   "
++ +-+ +-+ +-+ + + + + +-+ +-+ +-+
+|   | |         | | " "-"     "-"
++-+-+ +-+-+-+-+-+ + + +-+ +-+ +-+
+|                ^| "     "!"   "
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Medusa's Head Dungeon[B2 (8,4)]
+(8,0)  A PASSAGE LEADS OUTDOORS, EXIT (Y/N)?
+(12,10) (11,12) (14,12) (13,7) (13,8) (15,6) (15,9) (15,1) (13,2) A 
+TRAP! A PIT FULL OF POISONOUS SPIKES OPENS BELLOW THE PARTY!
+[LUCKILY,YOUR LEVITATION SPELL SAVED YOU!]
+SNAKE PIT! [LEVITATION SAVED YOU.]
+(12,4)SMASHED REMAINS OF STONE STATUES SEEM SUSPICIOUSLY LIFELIKE.
+(2 3 4, 6 7 11 12) encounters
+(15,4) has a Medusa's Head.
+
+Caves in C2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|  N"      !       !     !     !|
++ + +-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|   |                         | |
++-+-+ +-+-+-+-+-+-+ +-+-+-+-+-+ +
+|     |s         !| |           |
++-+ + + + +-+-+-+-+ + +-+ +-+-+-+
+|!|   |s  |         | | | |     |
++ + + + + + +-+-+ + + + + + +-+-+
+| |   |s  | |   |   |!| | | |- s|
++ +-+-+ + + + + +-+ +-+ + + +-+ +
+|s s s s  | |  !> |     | |   |s|
++ +-+-+-+-+ + + +^+-+-+-+ +-+-+ +
+|s|         |!  | |        s s s|
++ + +-+-+-+ +-+-+ + +-+-+-+ +-+-+
+|s| |    !|     | | |     |s|   |
++ + + +-+-+ +-+ + + + +-+ + +-+-+
+|s| | |     |!| | | | |?| |s|   |
++ +-+ + +-+-+ +-+ + +-+v+ + + + +
+|s    | |       | | |!> | |s"   |
++ +-+-+ +-+-+-+ + + +-+-+ + +-+-+
+|s|           | | |!|     |s|   |
++ +-+-+-+-+ +-+ + + +-+-+-+ +-+-+
+|s       !| |s s| |        s|  !|
++ +-+-+-+-+ + + + + +-+ +-+ + + +
+|s|         |s|     | | | | "!  |
++ + + +-+ + + +-+ +-+ + + + +-+-+
+|s|   |!|   |s| | |   | | | |   |
++ + + + + + + + + + +-+ + + +-+-+
+|s|   | |   |s| | | |  !| | |   |
++ +-+-+ +-+-+ +-+ + + + + + + + +
+|s s s s s s s|^  | |   | | "!  |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+C2 dungeon(15,11)
+(4,4) SHIMMERING BLUE AND WHITE PORTAL, ENTER (Y/N)?
+(3,13) (15,10) SPLASH! A POOL OF ACID!  Slides begin at (7,4) and 
+(13,4).
+(11,7) BUTTON ON THE WALL, PRESS IT (Y/N)?
+POOF!
+(15,15)A BANNER READS: CORRIDOR OF ENDLESS ENCOUNTERS!
+(1,15) A CRAZED WIZARD EXCLAIMS, "ENCOUNTER THE 13, WIN THE PRIZE!" 
+[2000 gold if you do so.]
+(8,0)  PASSAGE OUTSIDE, EXIT (Y/N)?
+
+Square Magic Cave
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|?|     |!|     |!|     |!|     |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| |!|?| | |!|?| | |!|?| | |!|?| |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| |     | |     | |     | |     |
++ + +-+-+ + +-+-+ + +-+-+ + +-+-+
+|                               |
++ +-+-+ + +-+-+ + +-+-+ + +-+-+ +
+| |     | |     | |     | |     |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| | |?| | | |?| | | |?| | | |?| |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| |     | |     | |     | |     |
++ + +-+-+ + +-+-+ + +-+-+ + +-+-+
+|                !              |
++ +-+-+ + +-+-+ + +-+-+ + +-+-+ +
+| |     | |     | |     | |     |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| | |?| | | |?| | | |?| | | |?| |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| |     | |     | |     | |     |
++ + +-+-+ + +-+-+ + +-+-+ + +-+-+
+|        !               !      |
++ +-+-+ + +-+-+ + +-+-+ + +-+-+ +
+| |     | |     | |     | |     |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| | |?| | | |?| | | |?| | | |?| |
++ + +-+ + + +-+ + + +-+ + + +-+ +
+| |     | |     | |     | |     |
++ + +-+-+ + +-+-+ + +-+-+ + +-+-+
+|                ^             !|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+D3 "square magic" cave:
+(8,0)  LADDER UP, CLIMB (Y/N)?
+(6,14) (10,14) (2,10) (14,10) (2,6) (6,6) (10,6) (2,2) (14,2) [The first 
+time, you need to stop the polyhedron.]  ATOP A CRYSTAL PYRAMID SPINS A 
+GLOWING POLYHEDRON. STOP IT ON SIDE (1-9)?
+[After stopping the polyhedron] THE POLYHEDRON IS SET ON [1-9] SPIN IT 
+(Y/N)?
+A GLOWING POLYHEDRON IS SET ON SIDE [10-16]
+[16:(2,14) 15:(6,2) 14: (10,2) 13:(14,14) 12:(14,6) 11:(10,10) 
+10:(6,10)]
+(0,15) PLATINUM LEVER PROTRUDES FROM THE WALL.  PULL IT (Y/N)?
+[Not all polyhedra set or not worthy] IT WON'T BUDGE!
+INCORRECT SETTINGS!
+[Magic square set up:]  YOU HAVE MASTERED THE MAGIC SQUARE! +2 INT, +20 
+GEMS, +200 GOLD, +2000 EXP
+[There are two ways to make all the rows and columns add up to 34("magic 
+square.")  The magic square can be:
+16  3  2 13
+ 5 10 11  8
+ 9  6  7 12
+ 4 15 14  1
+which I have verified works
+or
+16  1  4 13
+ 7 10 11  6
+ 9  8  5 12
+ 2 15 14  3
+so the solution is not unique.  I haven't checked both yet.]
+
+Volcano God's Lair
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|      T      | |   | | <   |   |
++-+-+-+ +-+-+-+ + +-+ + +-+-+-+ +
+|     >T<       | |   |T    | | |
++-+-+-+ +-+-+-+-+ + + + +-+ + + +
+|            T    |   | | | | | |
++-+-+-+ +-+-+-+-+-+v+-+ + +-+ + +
+|     >T<         |T    |     | |
++-+-+-+ +-+-+ +-+ + +-+-+-+-+v+ +
+|           | | | | |   |       |
++-+-+-+ +-+-+ +v+-+ + + + +-+ +-+
+|     |T|     |  T  |   | | | | |
++-+-+ + +-+-+ + +-+^+v+-+ + +-+ +
+|   | |     | |T|   |     |     |
++ +-+ +-+-+ + +-+ + + +-+-+ +-+-+
+| |       | | |T|   | |     >   |
++ +-+v+-+-+ + + +-+ + +-+-+ + +-+
+|    T     T| |   | |T    | | | |
++-+-+ +-+-+ + + +-+ + +-+-+ + + +
+|   | |   | | | |   | |     | | |
++-+ + + + + +-+ +-+-+ + +v+-+ +v+
+|.| | |   >-   ^   -  | |    T  |
++ +v+ +-+-+-+-+ +-+-+-+ + +-+-+-+
+|  T T    |   | |       |T<     |
++-+-+-+-+ + +-+ +-+ +-+-+ +-+-+ +
+|       |T| | " " | |  T   T  | |
++-+-+-+ + + +-+ +-+ + +^+ +^+ +-+
+|     | | |   | |   | | |T| |   |
++-+-+ + + +-+-+ +-+-+ + + + +-+-+
+|   > | >      !      | | |     |
++-+-+ +-+ +-+-+-+-+-+-+ + +-+-+-+
+|    T    |*|!|T|.|!|   |       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Volcano God's(C4 7,2)
+(8,0)  THIS CAVERN IS RANDOM UNTIL THE DIALS ARE SET.
+(6,3)[1] (8,3)[2] STABILIZATION DIAL #  SET (A-Z)?
+POOF! YOU'VE BEEN TELEPORTED...
+(7,11) THE VOLCANO GOD BELLOWS, "WHAT DO YOU SEEK HERE?" A) A CHALLENGE  
+B) A RIDDLE  C) A CLUE
+WHO WAS BRAVE YET FAILED? ANSWER:> .......... [GALA]:  gets key card
+(5,0)  PAINTED IN A BLACK AND WHITE PATTERN, A SIGN READS: THE SECOND 
+PART IS THE MOST VALUABLE.  [ask for clue]
+PIT OF BUBBLING LAVA!  LEVITATION SAVES YOU.
+A LUSCIOUS VIRGIN SHACKLED TO THE WALL! A) KISS HER  B) RELEASE HER  C) 
+LEAVE
+[A:] TRY SETTING 1B,2J
+[B:] Encounter with Volcano God
+
+Ranalou's Lair
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|&|1        "          - -      |
++-+ + + + + + +-+-+-+-+-+-+-+-+ +
+|           |     | ||||||||||| |
++ + + + + + + + + + + + + + + + +
+|||||||||||||     "           | |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|1|!| <          -              |
++ +-+ + +-+-+-+-+-+-+-+-+-+-+-+-+
+|     | >!       !       !      |
++-+ +-+ + +-+-+-+ +-+-+-+ +-+-+-+
+|       | |     | |     | |     |
++ +-+-+-+ + + + + + + + + + + + +
+| |       | |!| | |!| | | | |!| |
++ +-+-+-+-+ + + + + + + + + + + +
+|          -||| | | | | | | | | |
++-+-+-+-+-+-+ + + + + + + + + + +
+|             | | | | | | | | | |
++-+-+-+-+-+-+-+ + + + + + + + + +
+|          -    | | | | | ||| | |
++ +-+-+-+-+-+-+-+ + + + + + + + +
+| |$ ! ! ! ! ! |  | | | | | | | |
++ +-+-+-+-+-+-+-+-+ + + + + + + +
+|                   | | | ||| | |
++-+-+-+-+-+-+-+-+-+-+ + + + + + +
+|$ ! ! ! ! ! !   |    | | | | | |
++-+-+-+-+-+-+-+-+-+-+-+ + + + + +
+|            !          | | | | |
++ +-+-+-+-+-+-+-+-+-+-+-+ + + + +
+| |$ ! ! ! ! !     |      | | | |
++ +-+-+-+-+-+-+-+-+-+-+-+-+ + + +
+|              !            | |^|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Ranalou's Lair[B3 (7,0):]
+POOF! YOU'VE BEEN TELEPORTED...
+JAGGED SLIME PIT! 
+LEVITATION SAVED YOU.
+(15,0)  A PASSAGE LEADS OUTSIDE, TAKE IT (Y/N)?
+(5,15)  "I'M THE WIZARD RANALOU. ARE YOU HERE TO USE THE PORTALS (Y/N)?"
+[No:] "THEN BEGONE!"
+[Yes:] "GOOD! INSIDE THIS ROOM ARE 6 PORTALS, EACH OF WHICH LEADS TO A 
+CASTLE. THE STATUE OF JUDGEMENT REQUIRES YOU TO FIND ONE PRISONER FROM 
+EACH OF THESE CASTLES BEFORE YOU MAY BE FOUND WORTHY."
+[From (0,13) west they are White Wolf, Blackridge North, Blackridge 
+South, Alamar, Dragadune, and Doom.]
+(15,1)  A SIGN: EXPERIMENT IN PROGRESS, DO NOT ENTER!
+(12,0)  AUTHORIZED PERSONNEL ONLY! KEEP OUT.
+
+Castle Wolf
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|     |   |   |                 |
++ + + + + + + + +-+-+ +-+-+ +-+ +
+|             " |   " | | | |   |
++ + + + + + + + +-+-+ + + + +-+ +
+|     |   |   | "   | |   " |   |
++-+-+-+-+-+-+-+ +-+-+ +-+-+ +-+ +
+|   |   | |   " |   " | | | |   |
++ + + + + + + + +-+-+ + + + +-+ +
+|   |   | |   | "   | |   " |   |
++-+ +-+ + +-+-+ +-+-+ +-+-+ +-+ +
+|       | |   " |   " | | |     |
++-+-+-+ + + + + +-+-+ + + + +-+-+
+|     | | |   | "   | |   " |   |
++ + + + +-+-+-+ +-+-+ +-+-+ +-+-+
+|? N  ".         .         N   ^|
++ + + + +-+ +-+ +^+-+v+-+-+-+-+-+
+|     | | | | | | |             |
++-+-+-+ + + + + + + +-+-+-+-+-+ +
+|       | |!| | | | |         | |
++-+ +-+ + +^+ + + + + +-+-+-+ + +
+|   |   | | | | | | | |     | | |
++ + + + + +-+-+ + + + + +-+ + + +
+|   |   |   |   | | | | |?| | | |
++-+-+-+-+ + + + + + + + + + + + +
+|!" " |     |   | | | |   | | | |
++-+ +-+-+-+-+-+^+ + + +-+-+ + + +
+| " " | |!| | | | | ||      | | |
++-+ +-+v+v+v+v+ + + +-+-+-+-+ + +
+|!"             | |           | |
++-+^+^+^+^+^+^+^+ +-+-+-+-+-+-+ +
+| | | |!| | |!| |        |      |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Castle White Wolf:
+(15,8) EXIT CASTLE, (Y/N)?
+(0,8)  BUTTON ON THE WALL, PUSH IT (Y/N)?
+(1,8)  LORD IRONFIST SPEAKS: "YOUR SERVICES ARE NEEDED!" ACCEPT(Y/N)?
+"RETURN NOT UNTIL THY QUEST IS COMPLETE"
+"SORRY, BUT SINCE YOU ARE CURRENTLY QUESTED, I CAN'T ENGAGE YOUR 
+SERVICES."
+[1]FIND THE STRONGHOLD IN RAVENS WOOD
+[2]FIND LORD KILBURN
+[3]DISCOVER THE SECRET OF PORTSMITH
+[4]FIND THE PIRATES SECRET COVE
+[5]FIND THE SHIPWRECK OF THE JOLLY RAVEN
+[6]DEFEAT THE PIRATE GHOST SHIP ANARCHIST
+[7]DEFEAT THE STRONGHOLD IN RAVENS WOOD
+(12,4) A VICIOUS DEMON LUNGES AT THE PARTY, RESTRAINED ONLY BY A COLLAR 
+AND CHAIN!
+OPTIONS:  1) TORMENT THE PRISONER.  2) SET PRISONER FREE.    3) LEAVE 
+WITHOUT DISTURBING.
+THE PRISONER CRIES!
+THE PRISONER STAYS! 
+ETCHED IN SILVER, MESSAGE B READS: RSTIA-,E1,;/11RN;/M-
+(13,8) CASTLE GUARDS EXCLAIM, "NO MERCHANTS PASS! BEGONE PEASANTS."
+WELL DONE, QUEST COMPLETE! +
+ EXP
+(8,8)  THE TOWER
+(3,8)  THRONE ROOM
+
+Blackridge North
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|         |   |^|   |           |
++ +-+-+-+ + + + + + + +-+-+-+-+ +
+| |     | |   " "   | |       | |
++ + +-+ + +-+-+ +-+-+ + +-+^+ + +
+| | |!| |!            | |!  | | |
++ + + + +-+-+-+ +-+-+-+ +-+-+ + +
+| | " |        N              | |
++ + +-+ +-+-+-+ +-+-+-+ + +-+-+ +
+| |     | |   " "   | | | " |   |
++ +-+-+ + + + + + + + + + + + +-+
+|   | | | |   | |   | | | | |   |
++-+ + + + +-+-+ +-+-+ + + +-+ +-+
+|   | " |     | |     | | " |   |
++-+ +-+ +-+-+ + + +-+-+ + + + +-+
+|   | | |! !| | | |! !| | | |   |
++-+ + + + + +-+ +-+ + + + +-+ +-+
+|   | " |! !"     "! !| | " |   |
++-+ +-+ + + +-+ +-+ + + + + + +-+
+|   | | |! !| | | |! !| | | |   |
++-+ + + +-+ + + + + +-+ + +-+ +-+
+|   | "  .|!| | | |!|.  | " |   |
++ +-+-+ +-+-+-+ +-+-+-+ + + + +-+
+| |     |   |  N  |   ||| | |   |
++ + +-+ +-+-+ + + +-+-+-+ +-+-+ +
+| | " | |.           .|       | |
++ + + + +-+-+-+-+-+-+-+ +-+-+ + +
+| | |!|   | | | | | | | |?  | |!|
++ + +-+ + + + + + + + + +-+v+ + +
+| |     |      !      |       | |
++ +-+-+-+ + + + + + + +-+-+-+-+ +
+|         | | | | | |           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Blackridge North:
+(7,4)  LORD INSPECTRON SPEAKS: "YOUR SERVICES ARE NEEDED!"ACCEPT (Y/N)?
+"RETURN NOT UNTIL THY QUEST IS COMPLETE"
+"SORRY, BUT SINCE YOU ARE CURRENTLY QUESTED, I CAN'T ENGAGE YOUR 
+SERVICES."
+[1]FIND THE ANCIENT RUINS IN THE QUIVERING FOREST
+[2]VISIT BLITHES PEAK, AND REPORT
+[3]THE PEOPLE OF THE DESERT HAVE MUCH TO TRADE,BRING ME A SAMPLE OF 
+THEIR GOODS
+[4]FIND THE SHRINE OF OKZAR IN THE CAVES BELOW DUSK
+[5]FIND THE FABELED FOUNTAIN IN DRAGADUNE
+[6]SOLVE THE RIDDLE OF THE RUBY
+[7]DEFEAT THE STRONGHOLD IN THE ENCHANTED FOREST
+(12,2) MAN IN SHACKELES MOANS IN AGONY! OPTIONS:  1) TORMENT THE 
+PRISONER.  €2) SET PRISONER FREE.    €3) LEAVE WITHOUT DISTURBING.
+THE PRISONER CRIES!
+THE PRISONER STAYS! 
+(2,2)  ETCHED IN SILVER, MESSAGE A READS: ATIS-19-31UD54AEUPI1
+(11,4) A SLIDE!
+(5,3) (9,3) EMPTY VAULT, ALARM!
+
+Blackridge South
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|         | | | | | | |         |
++ +-+-+-+ + + + + + + + +-+-+-+ +
+| |     |               |     | |
++ + +-+ +-+-+-+-+-+-+-+-+ +-+ + +
+| | " | |!  |!  |  !|   | | " | |
++ + + + +-+v+-+v+v+-+v+-+ + + + +
+| | |!|                   |!| | |
++ + +-+ +-+-+-+-+-+-+-+-+ +-+ + +
+| |                    ||     | |
++ +-+-+ +-+-+-+-+-+-+-+-+-+ +-+ +
+|     | |     |! ! !| | | | "   |
++-+-+ + +-+-+ + + + + + + +-+ +-+
+|   | | |   | |! ! !| |.| | " " |
++ + + + + + + +-+v+-+ + +-+-+ +-+
+|  !| | |!  |   | |   |   | " ".|
++-+v+ + +v+-+-+-+ +-+-+ + +-+ +-+
+|^    "N              "N  |!" " |
++-+^+ + +^+-+-+-+ +-+-+ + +-+ +-+
+|  !| | |!  |   | |   |   |!" " |
++ + + + + + + +-+^+-+ + +-+-+ +-+
+|!  | | |   | |! ! !| |-| | " " |
++-+-+ + +-+-+ + + + + +-+ +-+ +-+
+|     | |     |! ! !|     | "   |
++ +-+-+ +-+-+-+-+-+-+-+-+-+-+-+ +
+| |                           | |
++ + +-+-+ +-+^+-+^+-+^+ +-+-+ + +
+| | |!  | |!  |!  |!  | |  ?| | |
++ + +-+v+ +-+-+-+-+-+-+ +v+-+ + +
+| |       |           |       | |
++ +-+-+-+-+ + + + + + +-+-+-+-+ +
+|           | | | |!|           |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Blackridge South:
+(0,7) EXIT CASTLE, (Y/N)?
+(3,7) CASTLE GUARDS EXCLAIM, "NO MERCHANTS PASS! BEGONE PEASANTS."
+(11,7) LORD HACKER SPEAKS:
+"YOUR SERVICES ARE NEEDED!"ACCEPT (Y/N)?
+BRING ME 
+[1]GARLIC
+[2]WOLFSBANE
+[3]BELLADONNA
+[4]THE HEAD OF A MEDUSA
+[5]AN EYE OF A WYVERN
+[6]A DRAGONS TOOTH
+[7]THE RING OF OKIRM
+"RETURN NOT UNTIL THY QUEST IS COMPLETE"(LEADER SHOULD PRESENT ITEMS)
+"SORRY, YOUR ALREADY QUESTED.
+'MY BREW IS COMPLETE, GUARDS TAKE THEIR ITEMS AND SEND THEM TO THE PIT!
+(13,2) A MYSTERIOUS CLOAKED FIGURE, BOUND AND GAGGED, LIES MOTIONLESS IN 
+THE CORNER.
+OPTIONS:  1) TORMENT THE PRISONER.  2) SET PRISONER FREE.    3) LEAVE 
+WITHOUT DISTURBING.
+THE PRISONER CRIES!
+THE PRISONER STAYS!
+(11,11)SLIDE!
+(11,5) THE PIT OF PERIL...
+(0,5) (11,9) EMPTY VAULT, ALARM!
+(15,8) ETCHED IN SILVER, MESSAGE C READS: IACI1;-2;0NU--G,NOT2
+
+Castle Alamar
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                               |
++ +-+-+-+ +-+-+-+-+-+-+-+-+-+-+ +
+| |! ! !| |                  || |
++ + +-+ + +-+ +-+-+-+-+-+-+-+-+ +
+| |! ||!| |   |.  |   |   |   | |
++ +-+-+ + +-+ + + + + + + + + + +
+|."! ! !| |   |!  |!  |!  |!  | |
++ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+ +
+| | | | | |                   | |
++ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+ +
+| |     | |   |       |       | |
++ +-+ +-+ +-+ +-+-+-+-+-+-+-+-+ +
+| | | | | |   |               | |
++ +-+-+-+ +-+ + + +-+-+-+-+-+-+ +
+|! !      |   |   | " | |! !|$|!|
++-+-+-+ + + + + + + +-+ + + + + +
+|^   N"   "   "  ."    N"! ! !|!|
++-+-+-+ + + + + + + +-+ + + + + +
+|! !      |   |   | " | |! !|$|!|
++ +-+-+-+ +-+ + + +-+-+-+-+-+-+ +
+| | | | | |   |               | |
++ + + + + +-+ +-+-+-+-+-+-+-+-+ +
+| | | | | |   |       |       | |
++ +-+-+-+ +-+ +-+-+-+-+-+-+-+-+ +
+|."! ! !| |                   | |
++ +-+-+ + +-+ +-+-+-+-+-+-+-+-+ +
+| |! ||!| |   |!  |!  |!  |!  | |
++ + +-+ + +-+ + + + + + + + + + +
+| |! ! !| |   |   |   |   |   | |
++ +-+-+-+ +-+-+-+-+-+-+-+-+-+-+ +
+|                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Castle Alamar:
+A CATAPULT EJECTS YOU FROM THE TOWER!
+INSIDE A STEEL CAGE,A FAIR MAIDEN WEEPS.
+OPTIONS:  1) TORMENT THE PRISONER.  €2) SET PRISONE R FREE.   €3) LEAVE 
+WITHOUT DISTURBING.
+THE PRISONER CRIES!
+THE PRISONER STAYS! 
+A PASSAGE LEADS OUTSIDE, TAKE IT (Y/N)?
+ETCHED IN SILVER, MESSAGE E READS: OEI/:1-33-1EK5;D-ET,
+THE OMNIPOTENT KING ALAMAR SPEAKS, 
+"YOU'VE DISCOVERED MY TRUE IDENTITY! INTO THE SOUL MAZE YOU GO..."
+"MY SAVIORS, YOU'RE ALWAYS WELCOME HERE!YOU SHOULD FIND THE INNER 
+SANCTUM... LIVE LONG AND PROSPER."
+"VARNLINGS, I QUEST THEE TO FIND THE CRYPT OF CARMENCA. AWAY WITH 
+YOU..." [Unsolvable quest]
+KINGS GUARDS APPROACH. "NO KING'S PASS, NO ADMITTANCE!"
+CASTLE GUARDS EXCLAIM, "NO MERCHANTS PASS! BEGONE PEASANTS."
+A LOUD SCREAM FROM BEHIND THE DOOR!
+SINGE! ACID TRAP.
+BOOM! A FIERY EXPLOSION.
+THRONE ROOM
+
+Dragadune l. 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|           |  .|         |?  | |
++ +-+-+ +-+ + + +-+ + +-+ +-+ + +
+| |   | | | | | |   | |         |
++ +-+ + + + + + + + + + +-+ + + +
+|     | |   | | | |     |     | |
++-+-+-+ +-+ + + + + +-+ + +-+ +-+
+|           | | |     |   |     |
++ +-+ +-+-+ + + + +-+ + + + +-+ +
+| | | |   | | | | |     |   |   |
++ + + + + + + + + + + +-+ + + + +
+|   | | |v| | |.          |   | |
++-+-+ + +-+ + + +-+ + +-+ + + +-+
+|           | | |   |   |   |   |
++ +-+-+-+-+-+ + + +-+ + + +-+ + +
+|             | |     |       | |
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+|    .         .           .    |
++-+-+ +-+-+-+-+ +-+-+-+-+-+ +-+-+
+|   |         | |           |   |
++ + + + + +-+ + + +-+ + + + + + +
+|   " | | |." | | " | | | | "   |
++ + + +-+-+-+ + + +-+-+-+-+ + + +
+|   |     | " | | " | "     |   |
++-+-+-+-+ +-+ + + +-+-+ +-+-+-+-+
+|       | | " | | " |." |       |
++ +-+-+ + +-+ + + +-+-+ + +-+-+ +
+| |   | | | " | | " | " | |   | |
++ + + + + +-+ + + +-+-+ + + + + +
+| |.| | | | " | | " | " | | |.| |
++ +-+ + + +-+ + + +-+-+ + + +-+ +
+|     | "     | |       " |     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Dragadune level 1:
+(14,1) A MUTATED CREATURE CHAINED TO THE FLOOR GRUNTS AS YOU APPROACH.  
+OPTIONS:  1) TORMENT THE PRISONER.  €2) SET PRISONER FREE.    €3) LEAVE 
+WITHOUT DISTURBING.
+[1] THE PRISONER CRIES!
+[3] THE PRISONER STAYS! 
+(10,3) ETCHED IN SILVER, MESSAGE F READS: TSTST,E1,D-DS15A1DRH
+(1,1)  THE GREEN CLOVER GRANTS THOSE WHO ARE WORTHY +2 LUCK!
+(13,15)THE FABULOUS FABLED FOUNTAIN OF DRAGADUNE CONVERTS ALL GOLD INTO 
+EXPERIENCE, ACCEPT (Y/N)?
+(5,5)  CARVED IN STONE, A TRIVIAL MESSAGE READS: I BE ME
+(2,7) (7,7) (13,7) (7,10) (7,15) DECAYED BONES CRUNCH BENEATH YOU! 
+[There is a secret door around]
+(4,10) STAIRS GOING DOWN, TAKE THEM (Y/N)?
+(7,15) STAIRS GOING UP, TAKE THEM (Y/N)?
+
+Dragadune l. 2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|           |!|v                |
++ +-+-+ +-+ + +-+-+-+-+-+-+-+-+ +
+| |   | |v| | |               | |
++ + + + + + + + + +-+ + + + + + +
+| |!| | | | | |   |.|         | |
++ +-+ + + + + + + + + +-+-+-+ + +
+|     | |   | |   | | |    .| | |
++-+-+-+ +-+-+ + + + + + + + + + +
+|!|    .    | |   | | |  !  | | |
++ + +-+ +-+ + + + + + +-+-+-+ + +
+| | |!| |^| | |   | |   |.|   | |
++ + + + + + + + + + +-+-+ +-+ + +
+|     | |   | |   |         | | |
++ +-+-+-+-+-+ +-+-+ +-+-+-+-+ + +
+|            !  |  .|         | |
++-+-+-+-+-+-+ +-+-+ + +-+-+-+ + +
+|   |     | | |   | | |  .  | | |
++ + + + + + + + + + + + + + + + +
+|   |  !  | | |   | | |  !  | | |
++ + +-+-+-+ + + + + + +-+-+-+ + +
+|     | |   | |   | |   | |   | |
++-+-+ + + + + + + + +-+-+ +-+ + +
+|   | | |   |.|   |         | | |
++ + +-+ + +-+-+-+ + +-+-+ +-+ + +
+|  !"   | |  !  | | |   | |   | |
++ + +-+ + + + + + + + +-+-+-+ + +
+|   | | | |  !  | | | |  !  | | |
++-+-+ + + +-+-+-+ + + + + + + + +
+|     | |   |.|   | | |     | | |
++-+-+-+ +-+-+ +-+-+ +-+-+-+-+-+ +
+|^                              |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Dragadune level 2:
+(13,12)ETCHED IN GOLD, MESSAGE 8 READS: THE-ARE-QUESTS,-INCREASES-
+IDENTIFY,- APPLY.-LOCATIONS,-END-ATTAINED-MY-SEQUEL
+(12,7) PAINTED IN A BLACK AND WHITE PATTERN, A SIGN READS: THE LAST PART 
+IS THE FIRST
+THE WALLS GLOW RYTHMICALLY
+(8,8)  ETCHED IN STONE: "28 DAYS OUT. NO FOOD, LOW ON SUPPLIES. WE FEAR 
+THE WORST YET WE CONTINUE-CORAK
+(4,14) (7,15) STAIRS GOING DOWN, TAKE THEM (Y/N)?
+(4,10)  STAIRS GOING UP, TAKE THEM (Y/N)?
+(15,0)  A CAVERNOUS PASSAGE, TAKE IT (Y/N)? [Goes to Dusk 12,15]
+A SIGN ON THE DOOR READS:
+(6,1) (6,4) "TEMPLE WOLF PASS"
+(12,10)"CULT OF THE NEW ORDER"
+(12,7) THE WALL IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE 
+CHECKERED PATTERN!
+
+Dragadune l. 3
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|              ^|v              |
++ +-+-+-+-+-+ +-+-+-+-+-+-+-+-+ +
+| |     |^| | |               | |
++ + +-+ +-+ + + +-+-+-+-+-+-+ + +
+| | | |     | | | |!| | |!| | | |
++ + + +-+-+-+ +-+-+-+-+-+-+-+ + +
+| | |.                      | | |
++ + + +-+-+-+ +-+-+-+-+-+-+-+ + +
+| | | | |!| | |               | |
++ + +-+ +-+ + + +-+-+-+-+-+-+ + +
+| |         | | |!  |   |   | | |
++ + +-+-+-+-+ +-+ +-+-+ +-+ + + +
+| | |                       | | |
++ + +-+ + +-+ +-+-+-+-+-+-+-+ + +
+| |   | | | | |               | |
++ + + +-+-+ + + +-+-+-+-+-+-+ + +
+| |         | | |           | | |
++ + +-+-+-+-+-+-+ +-+-+-+-+ + + +
+| | |       | |   |       | | | |
++ + + +-+-+ + +-+-+ + +-+ + + + +
+| | | "  ." | |       | | | | | |
++ + + +-+-+ +-+ +-+-+-+ +-+ + + +
+| | |       | | |!          | | |
++ + +-+-+-+-+ + +-+-+-+-+-+-+ + +
+| |         | |               | |
++ + +-+-+-+-+ +-+-+-+-+-+-+-+ + +
+| | |!           |        ".| | |
++ + +-+-+-+-+-+-+-+-+-+-+-+-+ + +
+| |                           | |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|                               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Dragadune, level 3
+(2,12) THE ROOM IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE 
+CHECKERED PATTERN!
+(4,5)  THE GROUND SHAKES!
+(8,15) STAIRS GOING DOWN, TAKE THEM (Y/N)?
+(4,14) (7,15) STAIRS GOING UP, TAKE THEM (Y/N)?
+(13,2) CLERICS OF THE SOUTH JUST BELOW-CORAK
+(8,2) teleport to (7,2)
+
+Dragadune l. 4
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|   |   |   | |  ^| |   |   |   |
++ + + + + + + + +-+ + + + + + + +
+|  !|  !|  !|  .    |  !|  !|  !|
++-+-+-+-+-+-+ + + + +-+-+-+-+-+-+
+|  !          | |               |
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+|           |1 1 1|             |
++ +-+ + +-+ +-+-+-+ +-+ + + +-+ +
+| |||   |!|   | |   |!|     |.| |
++ +-+ + +-+ + + + + +-+ + + +-+ +
+|             | |               |
++^+^+ + +-+-+ + + + +-+-+ + +^+^+
+|   >   | | | | |   | | |   <   |
++-+ + + +-+-+ + + + +-+-+ + + +-+
+|?" >   |!| | | |   | |!|   < "?|
++-+ + + +-+ + + + + + +-+ + + +-+
+|!" >         | |           < "!|
++-+ + + +-+-+ + + + +-+-+ + + +-+
+|!" >   |!| | | |   | |!|   < "!|
++-+ + + +-+-+-+ +-+ +-+-+ + + +-+
+|!" >       |!| |!|         < "!|
++-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+-+
+|                               |
++ +-+ + + +-+ +-+ + +-+ + + +-+ +
+| |||     ||| |||  || |     ||| |
++ +-+ + + +-+ +-+ + +-+ + + +-+ +
+|                               |
++ +-+ + +^+^+^+^+^+^+^+ + + +-+ +
+| |||   <             >     ||| |
++ +-+ + + +-+-+-+-+-+ + +-+ +-+ +
+|       < |||||?||||| > |*|     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Dragadune level 4:
+(14,11)ETCHED IN GOLD, MESSAGE 5 READS: SCOOP:-THE-DICOVERIES-YOUR-TO-
+RETURN- THE-YOUR-FOR-DREAMS-IS
+(0,8) (15,8) (9,0) COVERED WITH CRYPTIC SYMBOLS, A LARGE BRASS GONG 
+HANGS FROM THE CEILING. STRIKE IT (Y/N)?
+[A LOUD TONE RESOUNDS THROUGHOUT THE ROOM!/A SHARP TONE ASSAULTS YOUR 
+SENSES!/A MELLOW TONE RELAXES YOU.]
+(12,0) THE CLERICS OF THE SOUTH SPEAK: "WE DEEM YOU WORTHY OF 
+ADVANCEMENT!"/"HEAR THE 3 TONES AND RETURN!"
+(8,15) STAIRS GOING UP, TAKE THEM (Y/N)?
+(7,14) ON THE RIGHT WALL IS A PAINTING OF A BOX,ON THE LEFT A PAINTING 
+OF A CURTAIN.
+(6,12) DOOR NUMBER 1
+(7,12) DOOR NUMBER 2
+(8,12) DOOR NUMBER 3
+
+Doom
++-+-+-+-+-+ +-+-+-+-+-+-+-+-+-+-+
+|    !"!" >!<! ! ! !|." "!    <.|
++ +-+-+ +-+^+ + + + +-+ +-+-+ +-+
+| |.  | " |! ! ! ! !| " |  .| | |
++ +-+ + +-+ + + + + +^+ + +-+ +-+
+|     | " |! ! ! ! !| " |     | |
++-+-+-+ +-+-+-+-+-+-+-+ +-+-+-+-+
+|      !               !      | |
++-+-+-+ +-+-+-+-+-+-+-+ +-+-+-+-+
+| | | | |             | | | | | |
++ +-+-+ + +-+-+-+-+-+ + +-+-+-+ +
+|! ! !| | |    |    | | |! ! ! !|
++ + + + + + +-+-+-+ + + + + + + +
+|! ! !| | | |     | | | |! ! ! !|
++ + + + + + + +-+ + + + + + + + +
+|! ! !| | | | |N| | | | |! ! ! !|
++ + + + + + + +-+ + + + + + + + +
+|! ! !| | | |  .| | | | |! ! ! !|
++ + + + + + +-+-+ + + + + + + + +
+|! ! !| | |  |    | | | |! ! ! !|
++ + + + + +-+-+-+-+ + + + + + + +
+|! ! !| |        |  | | |  ! !  |
++-+-+-+ +-+-+-+-+-+-+ + + +-+-+ +
+| | | | |^ .          | | | | | |
++-+-+-+ +-+-+-+-+-+-+-+ +-+-+-+-+
+|      !               ! !    | |
++-+-+-+ +-+-+-+-+-+-+-+ +-+-+-+-+
+|     | "!| |.| |.| |!" |     | |
++ +-+ + +-+ +-+ +-+ +-+ + +-+ +-+
+| |   | "!|  !| |!  |!" |  .| | |
++ +-+-+ +-+ + + + + +-+ +-+-+ +-+
+|     " "  !  |^|  !  " "!    <.|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Doom:
+(14,13)A GRUESOME STATUE SAYS: "START AT 15-7 AND WALK TO DOOM!"
+(5,4)  A BANNER READS: THE ENDLESS SPIRAL!!!
+(12,3) A SIGN ABOVE THE DOOR READS: MONSTER BREEDING GROUNDS, KEEP OUT!
+A LOUD MACHINE PULSATES RHYTHMICALLY.
+A METALIC BOX ECHOES: "INTRUDER ALERT!"
+SCRATCHED ON THE WALL: SEARCH AFTER THE CANINE REWARDS YOU!
+SCRAWLED ON THE WALL: FOR THE WORLD IS HOLLOW AND I HAVE TOUCHED THE 
+SKY!
+(1,14) A SMALL CHILD SHIVERS FEARFULLY AS YOU APPROACH. 
+OPTIONS:  1) TORMENT THE PRISONER.  €2) SET PRISONER FREE.    €3) LEAVE 
+WITHOUT DISTURBING.
+THE PRISONER CRIES!
+THE PRISONER STAYS!
+(4,4) (6,0) A PASSAGE LEADS OUTSIDE, TAKE IT (Y/N)?
+(1,1)  ETCHED IN SILVER, MESSAGE D READS: //SV/21;-22R,;DU1RS0
+(7,7)  A GOLDEN DOOR REPELS YOU!
+(13,1) WRITTEN IN BLUE BLOOD: THE CANINE HAS THE KEY!
+(7,8)  SUSPENDED IN A FORCEFIELD IS THE BODY OF A MAN ENCLOSED IN AN 
+IRON SUIT. TELEPATHIC COMMUNICATION:"I AM THE TRUE KING ALAMAR, 
+IMPRISONED BY A DEMONIC ALIEN BEING! CONFRONT HIM WITH THIS EYE OF GOROS 
+AND YOU SHALL SEE HIS TRUE SELF.  THE FATE OF THE REALM IS AT STAKE."
+(15,0) ETCHED IN SILVER: MESSAGE INTERLEAVE 'FEDBAC'
+(15,15)ETCHED IN GOLD: MESSAGE INTERLEAVE '8,5,3,9,1,4,6,2,7'
+(5,4)  WRITTEN ON THE WALL: JUMP THREE TIMES TO REACH CENTER
+
+City of Gold l. 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                               |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+| |                           | |
++ + +-+-+-+ +-+ +-+ +-+-+-+-+ + +
+| | | | | | | | |!| |   | |.| | |
++ +-+-+-+-+ + + + + +-+ + + +-+ +
+|         | | | | | |           |
++ +-+-+ +-+ + +-+ + +-+ +-+-+-+ +
+| | |  !|   |     |   |.  |   | |
++ + + + + +-+ + + +-+ + + +-+ + +
+| | |   | | |  !  | | |   | | | |
++ + +-+-+ +-+-+ +-+-+ +-+-+ + + +
+| |         |  .  |       | | | |
++ +-+-+-+-+ + + + + +-+-+-+-+ + +
+| | | | | | |     | |   |   | | |
++ + + + + + + + + + + + +-+-+ + +
+| | | | | | |     | |!  |     | |
++ +-+-+-+-+ + + + + + +-+-+-+-+ +
+|         | |     | |           |
++ +-+-+-+ + + + + + + +-+-+-+-+ +
+| | | |  !| |     | |!  | |!| | |
++ + + + + + + + + + + + + + + + +
+| | | |   | |  !  | |   | |v| | |
++ +-+-+-+-+ +-+ +-+ +-+-+ + + + +
+| |!|         |.|         | | | |
++ +-+-+-+ +-+-+ +-+-+ +-+-+-+ + +
+| | |   | |   | |   | |   |.| | |
++ + + + + + + + + + + + + + + + +
+| | |  !| |  !| |!  | |!  | | | |
++ +-+-+ +-+-+ + + +-+-+ +-+-+-+ +
+|^     .     .   .     .        |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+City of gold, level 1:
+(10,10)ETCHED IN GOLD, MESSAGE 7 READS: THESE-AND-THAT-MUST-CAN-
+DIFFERENT- SHALL-HAVE-FROM-A-JVC
+(7,9)  CLUB DEAD... THE ANTIDOTE TO HUMANIZATION!
+(7,3)  TEMPLE OF THE OLD ORDER
+(3,0)  GLASS ROOM
+(6,0)  RUBY ROOM
+(8,0)  TWINKLE ROOM
+(11,0) RAINBOW ROOM
+(0,0)  A PASSAGE LEADS OUTSIDE, TAKE IT (Y/N)?
+(13,4) STAIRS GOING DOWN, TAKE THEM (Y/N)?
+(13,12)THE ROOM IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE 
+CHECKERED PATTERN!
+(13,2) THE CRYSTAL GRATE REPELS YOU!
+
+City of Gold l. 2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+||"       |   |   |     |   "!|.|
++ +-+-+-+ + + + + + +-+ + + + + +
+| |       | | | | |   |   |!" | |
++ + +-+-+-+ + + + +-+ +-+-+-+ + +
+| |    .|   |   |     |     | | |
++ +-+-+ + +-+-+-+-+-+-+ +-+ + + +
+| |   | |             |   |   | |
++ + + + + +-+-+-+-+-+ +-+ +-+-+ +
+| | | | | |         |   |     | |
++ + + + + + +-+-+-+ +-+ +-+-+ + +
+| | | | | |       |   |     | | |
++ + + + + +-+-+-+ +-+ +-+-+ + + +
+| | | | | |     |   |     | | | |
++ + + + + + +-+ +-+ +-+-+ + + + +
+| | | | | |   |   |     | | | | |
++ + + + + +-+ +-+ +-+-+ + + + + +
+| | |   |   |   |       | | | | |
++ + +-+-+ + +-+ +-+-+-+-+ + + + +
+| |     | |   |       |   |   | |
++ +-+-+ + +-+ +-+-+-+ + +-+-+-+ +
+| |     |   |         |!"     | |
++ + +-+-+ + +-+-+-+-+-+-+-+-+ + +
+| |      !| |       |   |     | |
++ +-+-+-+ + + +-+-+ + + + +-+-+ +
+|v|^      | |     | | | |  !  | |
++-+-+-+-+ + +-+-+ + + + +-+-+ + +
+|         |       |   |       | |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|!  |   "!  |!|   "!  |   "!  | |
++ + + + + + +-+ + + + + + + + + +
+|   "!  |   "!    |   "!  |   "!|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+City of Gold, level 2
+STAIRS GOING DOWN, TAKE THEM (Y/N)?
+STAIRS GOING UP, TAKE THEM (Y/N)?
+
+THE WALL IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE CHECKERED 
+PATTERN!
+WITHOUT EXPERIMENTAL SUBSTANCE THERE IS NO HOPE...POOF!
+
+City of Gold l. 3
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+||| |     | | |         " | |! .|
++ +-+ +-+ +-+ + +-+ +-+ +-+-+ + +
+|     | |     >   | |   " |!"   |
++ +-+ +-+ + +-+ +-+ +-+ +-+ +-+-+
+| | |  .    | | |   |   " | |   |
++ +-+ + + + +-+ +-+ +-+ +-+ + + +
+|             |   |     " | |   |
++ + +-+ + +-+ + +-+ +-+-+-+ + +-+
+|   | |   | | | |   |           |
++ + +-+ + +-+ + +-+ + +-+-+-+-+-+
+|             |   | | |   |   | |
++ +-+ + +-+ + + +-+ + + + + + +-+
+| | |   | |   | |   | |   |   | |
++ +-+ + +-+ + + +-+ + +-+ + +-+ +
+|             |   | |           |
++ + + +-+ + + + +-+ + +-+-+-+-+-+
+|     | |     | |   | |         |
++ +-+ +-+ +-+ + +-+ + + +-+-+-+ +
+| | |     | | |   | | | |     | |
++ +-+ + + +-+ + +-+ + + + +^+ + +
+|             | |   | |!| | | | |
++ + + +-+ + + + +-+ + + + +-+ + +
+|     | |!    |   | | | |     | |
++-+ + +-+ + + + +-+ + + + +-+-+ +
+|v|^          |     | |    !    |
++v+ + + +-+ +^+-+-+^+ +-+-+-+-+-+
+| |     | | |       |           |
++ +-+-+-+-+-+ +-+-+ + +-+ +-+ + +
+|!       !   !    |!| |   |!  | |
++ + + + + +-+ +-+-+ + + + + + +-+
+| | |!| | | "!      > |!  |   |!|
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+City of Gold, level 3
+YOU HAVE BEEN SUMMONED...POOF!
+STAIRS GOING UP, TAKE THEM (Y/N)?
+THE ROOM IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE CHECKERED 
+PATTERN!
+
+City of Gold l. 4
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|$|   | |                       |
++ + + +-+ + + + + + +-+ + + + + +
+|!|                 | |     "   |
++ + + + + +-+-+-+ + +-+ + + + + +
+|!|       |     |               |
++ + + + + + +v+ + + + + +-+-+-+ +
+|!|       | |!| |       |     | |
++ + + +^+ + +-+ + + + + + +v+ + +
+|!|       |  !  |       |!|!| | |
++ + + + + +-+-+-+ + + + + +-+ + +
+|                       |     | |
++ + + +-+ + + + + + + + +-+-+-+ +
+|     | |                       |
++ +-+ +-+ + + + + +-+ + + + + + +
+| >               | |         > |
++ +-+ + + + +-+ + +-+ + + + + + +
+|      !<   | |       "         |
++ + + + + + +-+ + + + + +v+ + + +
+|   >                           |
++^+ + + + + +^+ + + + + +-+ +-+ +
+|                       |  .  | |
++ + +-+-+-+ + + +-+ + + + + + + +
+|   |    !|     | |     |  ^  | |
++ + + +-+ + + + +-+ + + + + + + +
+|   | >!| |             |    .| |
++ + + +-+ + + + + + + + +-+-+ + +
+|   |     |       "             |
++ + +-+-+-+ + + + + + + + + + +-+
+|                           > | |
++ + + + + + +-+ + + + +-+ + + +-+
+|           | |   "   | |       |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+City of Gold, level 4
+DANGER! DONGEON UNDER CONSTRUCTION.
+A LADDER GOING UP, CLIMB IT (Y/N)?
+THE WALL IS PAINTED IN A BLACK AND WHITE CHECKERED PATTERN!
+
+Raven's Lair l. 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|!  |  !|   |       |!  |!  |   |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|                               |
++-+-+-+-+-+ +-+-+-+-+ +-+-+-+-+-+
+|!        |!|       |!|         |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|!|      !"     |     "!  "!  | |
++ + +-+-+-+ + + + + + +-+-+ + + +
+|!| |     |  *  |     |   |   | |
++ +-+ + + + + + + + + + + +-+-+ +
+|!| |     |     |     |     | | |
++ +-+ +-+-+-+-+-+-+-+-+-+-+ + + +
+|!| | |     | |   | |     | | | |
++ +-+ + +-+-+-+ + +-+-+-+ + +-+-+
+|1| | | |   |  !|!  |   | | |!  |
++ +-+ + +-+-+-+ + +-+-+-+ + + + +
+|!| | |     | | | | |     | |   |
++ +-+ +-+-+ +-+ + +-+ +-+-+ +-+-+
+|!| |     | |  !|!  | |       | |
++ +-+-+-+-+ +-+ + +-+ +-+-+ + + +
+|!| > >     | |   | |     |   | |
++ +-+-+ +-+-+ +-+-+ +-+-+ + +-+-+
+|1|*| | |     | | |     | | |  !|
++ +-+ + +-+-+ + + + +-+-+ + + + +
+|!| | |     | | | | |     | |   |
++ +-+ +-+-+ +-+ + +-+ +-+-+ +-+-+
+|!| |     | |   |   | |     | | |
++ + +-+-+-+ + + + + + +-+-+-+ + +
+|!|   "!  | |  ^|v  | |  !"   | |
++ +-+-+ + + +-+-+-+-+ + + +-+-+ +
+|!    |  .>           |   |     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Raven's Wood(level 1):
+(4,0)  ETCHED IN GOLD, MESSAGE 6 READS: BOOK-DONE.-A-SELF-THAT-FROM-HE-
+YOU- BE-TO-SEEMS
+(6,11) IN THE CENTER OF THE ROOM, A HUGE RUBY STANDS ATOP A PEDESTAL. 
+HEXOGONALLY SHAPED, IT GLOWS RHYTMICALLY! MESMERIZED BY ITS LIGHT, YOU 
+HEAR: GLASS THAT GLITTERS, RUBIES THAT GLOW WHEN I TWINKLE, I CAST A 
+RAINBOW WHAT AM I? :> ...............
+[CRYSTAL:]  You get the crystal key.
+[WRONG:]  WRONG!  A BRIGHT FLASH
+(1,4)  A SILVER DOOR REPELS YOU! / A SILVER DOOR, YOUR SILVER KEY GLOWS!
+(7,1)  STAIRS TO SURFACE, TAKE THEM (Y/N)?
+(8,1)  STAIRS DOWN, TAKE THEM (Y/N)?
+(?,?)  THE ROOM IS PAINTED IN A BLACK AND WHITE CHECKERED PATTERN!
+
+Raven's Lair l. 2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|   "!  |                       |
++ +-+ + + +-+ +-+-+-+-+-+-+-+-+-+
+| | |  .| | |   |            -  |
++ + +-+-+ + +-+-+-+-+-+-+-+-+ +-+
+| |   |   | |   |           |s| |
++ + + + +-+ + + +-+-+-+-+-+-+ +-+
+|-|   | |   |   |            s  |
++ + + + + + +-+-+-+-+-+-+-+-+ +-+
+| |   | |   |   |           |s| |
++ + + + + + + + +-+-+-+-+-+-+ +-+
+| |   | |   |   |            s  |
++ + + + + + +-+-+-+-+-+-+-+-+ +-+
+|-|   | |   |   |           |s| |
++ + + + + + + + +-+-+-+-+-+-+ +-+
+| |   | |   |   |            s  |
++ + + + + + +-+-+-+-+-+-+-+-+ +-+
+| |   | |   |   |           |s| |
++ + + + + + + + +-+-+-+-+-+-+ +-+
+|-|   | |   |   |            s .|
++ + + + + + +-+-+-+-+-+-+-+-+ +-+
+| |   | |                   |s| |
++ +-+-+ +-+-+-+-+-+-+-+-+-+-+ +-+
+|        .                   s ?|
++ +-+-+-+-+-+-+-+-+-+-+ +-+-+ +-+
+| |   |   |   |   |   | |   |s| |
++ + + + + + + + + + + + + + + + +
+| |  !|  !|  !|   |!  | |   |s| |
++ +-+-+-+-+-+-+ +-+-+-+ + +-+-+-+
+| | | | | | | | |^  | | | |  !  |
++ + + + + + + +-+ + + + + + + + +
+|                   | | | |  s  |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Raven's Wood(level 2):
+(15,6) ETCHED IN GOLD, MESSAGE 2 READS: ONE,-RIDDLES-VALUE-YOU-YOU-5-
+CARD-MUST- CLAIMED.-DREAMS,-...
+(14,1) I AM LORD ARCHER, THE RAVEN, I TAKE FROM THOSE WHO HAVE AND GIVE 
+TO THOSE WHO HAVE NOT! SUBMIT (Y/N)?"
+(0,12) (2,15)GIANTS HURL BOULDERS!
+(15,4) A BUTTON ON THE WALL, PUSH IT (Y/N)?
+(14,14)SQUISH! THE PARTY IS IMPALED ON A WALL OF SPEARS!
+(3,14) A BOULDER SAYS:"THERE SHOULD BE 5 TESTS"
+(6,14) THE FIRST TEST
+(6,12) THE SECOND TEST
+(6,10) THE THIRD TEST
+(6,8)  THE FOURTH TEST
+(1,8)  STAIRS GOING UP, TAKE THEM (Y/N)?
+(14,2) to (14,14): CONVEYOR BELT
+
+Okrim's l. 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|$         !   !     !          |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+|v| | |!|!|!|!| |   |   |$ $ .| |
++ + +-+-+-+-+-+-+ + + + + + + + +
+| | |               "!  |     | |
++ + + + +-+-+-+-+-+-+-+-+ + + + +
+| | |   |              ."&    | |
++-+-+-+-+ +-+-+-+-+-+-+-+ + + + +
+|!  |   | |   |   |   | |     | |
++ + +-+-+ + + + + + + + +-+-+-+ +
+|   "     |   |   |   | |$|$|$| |
++-+-+-+-+-+-+-+-+-+-+-+ + +-+-+ +
+| |                     |       |
++v+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|     | | | |             | |   |
++-+-+ + + + +-+-+-+-+-+ +-+ + + +
+|   | | | |           | |   |  !|
++-+ + + + +-+^+-+-+-+-+-+-+ +-+-+
+|v| | | |     |  !|   |   |   | |
++ + + + +-+-+-+ + +-+-+ + + + + +
+| | | | |     |   |   |  !|   | |
++ + + + +-+-+-+-+-+-+ +-+-+ +-+-+
+| | | |   |   |  !  |   | | |   |
++ + + +-+-+ + +-+-+-+-+-+ + + + +
+| | | |   |       |   |  !| |  !|
++ + +v+-+-+-+-+-+-+ + +-+-+ +-+-+
+| | |^            |!  |       | |
++ + +-+-+-+-+-+-+-+ + +-+-+-+-+ +
+| |               |   |         |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|        . .                    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Wizard's Lair(level 1):
+ETCHED IN GOLD, MESSAGE 1 READS: COMPLETION-MUST-EACH-KINGS-OF-ASTRAL- 
+WITH-9TH-SANCTUM-AND-WONDROUS
+(12,12)A GHOSTLIKE FIGURE RISES FROM THE BODY OF OKRIM AND SPEAKS,"IN 
+EXCHANGE FOR MY RING, FORFEIT A LIFE, ACCEPT (Y/N)?"
+[Y]:  "MAY THE SHADOW OF DEATH GREET YOU WITH OPEN ARMS!"
+(11,12)A GEM ENCRUSTED ARCHWAY READS: LAIR OF THE OMNIPOTENT WIZARD 
+OKRIM
+(2,2)  AN OPENING ABOVE LEADS OUTSIDE, CLIMB OUT (Y/N)?
+(0,7) (0,14)  STAIRS GOING DOWN, TAKE THEM (Y/N)?
+(14,14)THE FLOOR SPINS!
+(0,15) THE WALL IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE 
+CHECKERED PATTERN! [Search for idol]
+
+Okrim's l. 2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|      .         |             .|
++ +-+-+ +-+-+-+-+-+v+-+v+-+-+-+ +
+| |   | >     |       |!      |^|
++ + + + + +-+ + +-+-+ + +-+-+ +-+
+| | | | |   |||     | | ||      |
++ + + + +-+ + +-+-+ + + +-+-+-+^+
+| | | |   | | |     |||     |   |
++ + + +-+-+-+ + +-+-+ +-+-+-+ + +
+| |||         |     | |     |  !|
++ + +-+-+-+-+-+-+-+ + + +-+-+v+-+
+||| |   |   |       | | |     |||
++ + + + + + + +-+-+ + + + +-+ + +
+| |   |   |   |     | | | "!| | |
++ +^+-+-+-+-+ + +-+-+ + +-+-+ + +
+|.          |  !|     |       | |
++ +-+-+-+-+-+-+^+-+-+-+-+-+-+-+ +
+| |   |   |          |         .|
++ + + + + +v+-+-+-+-+-+v+ +-+-+ +
+| | |   |  !|          !| |   |^|
++ + +-+-+ + + +-+ +-+-+-+ + + +-+
+| | | | | | |   | |     | | |   |
++ + + + + + +-+ + + +-+ + +-+-+ +
+|||!  | | |  |  |   |   | |   | |
++ +^+-+ + +-+-+-+-+-+-+-+ + + + +
+|       | |         |    || |   |
++ +v+-+-+ + +-+-+-+ +-+-+ + +-+-+
+| |!      | |     |     | |     |
++ + +-+-+-+ + +-+-+-+-+ + +-+-+ +
+| |        !" |.   |    | |     |
++ +-+-+-+-+-+ +-+-+-+-+-+ + +-+-+
+|    |                   .>|    |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Wizard's Lair(level 2):
+ETCHED IN GOLD, MESSAGE 4 READS: OF-BE-HAS-TRUE-KNOWLEDGE-PLANE-A-LEVEL- 
+TO-REALITY-IT
+(15,7) A BANNER READS: THE LABYRINTH OF LAZZERUTH... FEW HAVE ENTERED, 
+NONE HAVE RETURNED!
+(0,8)  INSET IN THE WALL, A STONE FACE YELLS: "MY BRAIN HURTS!"
+(3,15) INSET IN THE WALL, A STONE FACE SPEAKS: "I WOULD PAY HIGHLY FOR A 
+GREEN HANDLED, PEARL ENCRUSTED ABELNUSKI."
+(12,0) INSET IN THE WALL, A STONE FACE SPEAKS: "I SEE ALL, HEAR ALL, 
+KNOW NOTHING..."
+(15,15)INSET IN THE WALL, A STONE FACE PROCLAIMS: "OKRIM IS WATCHING. HE 
+STUDIES YOUR WEAKNESSES!"
+(15,14)STAIRS GOING UP, TAKE THEM (Y/N)?
+(7,1)  THE WALL IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE 
+CHECKERED PATTERN!
+A STRANGE RINGING SOUND STARTLES THE PARTY. YOU ARE TELEPORTED!
+
+Minotaur's l. 1
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+| | | |.|   |   | | |.| |   | | |
++-+ +-+ + + + + + + +-+ + + + +-+
+| |     |   "& .| |     |  &| | |
++-+ + + +-+-+ + + + + + +-+ + +-+
+| |             | |        .  | |
++-+-+-+-+-+-+-+-+ +-+-+-+-+-+-+-+
+|    v   !|   | | | |   |!   v  |
++-+-+-+-+ + + + + + + + + +-+-+-+
+|       | |   | | | |   | |     |
++ + + + + + + + + + + + + + + + +
+|       | |   | | | |   | |     |
++ +-+-+ + + + +-+-+-+ + + + +-+-+
+| |   | | |   |     |   | | |   |
++ + + +-+ +-+-+ + + +-+-+ +-+ + +
+| |  !"  .    "  ^  "    .  "!  |
++ + + +-+ +-+-+ + + +-+-+ +-+ + +
+| |   | | |   |     |   | | |   |
++ +-+-+ + + +-+ + + +-+ + + +-+-+
+|       | | |   | |   | | |     |
++-+-+-+-+ + + +-+ +-+ + + +-+-+-+
+|&        | | | | | | | |      &|
++-+-+-+-+ + + + + + + + + +-+-+-+
+|       | | | | | | | | | |     |
++ +-+-+ + +-+ + + + + +-+ + +-+-+
+| |   | | |  &| |.| |&  | | |   |
++ + + +-+ + + +-+ +-+^+ + +-+ + +
+| |  &".  |      &      |  ."&  |
++ + + +-+ +-+-+ + + +-+-+ +-+ + +
+| |   | | |   |     |   | | |   |
++ +-+-+ + + + + + + + + + + +-+-+
+|       | |   |     |   | |     |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Minotaur's Lair(level 1):
+(10,15)ETCHED IN GOLD, MESSAGE 3 READS: FOR-TASKS-AND-RATING.-BE-FROM-
+6TH- FRUSTRATIONS!-THE-TO-IN
+(12,9) MINOTAUR DUNG SLUSHES BENEATH YOU!
+A SIGN ON THE DOOR READS:
+(3,2)  THE ENCHANTED CHAMBER
+(13,13)CLEPTOMIAN GUILD, DO NOT DISTURB!
+(8,3)  THE COUNCIL OF STRENGTH IS IN SESSION
+(12,2) THE UGLIES CLUB - MEMBERS ONLY!
+(6,14) SPECIMEN TANK - KEEP CLOSED
+(8,9)  SPIRALLING STAIRS GO UP,TAKE THEM (Y/N)?
+(14,12)STAIRS GOING DOWN, TAKE THEM (Y/N)?
+(2,15) THE ROOM IS PAINTED FROM CEILING TO FLOOR IN A BLACK AND WHITE 
+CHECKERED PATTERN!
+(0,5)  A TAPESTRY ON THE WALL DEPICTS A GRAY MINOTAUR STOMPING ON A 
+GROUP OF KNIGHTS.
+(15,5) A TAPESTRY ON THE WALL DEPICTS A KINGDOM RULED BY MINOTAURS
+
+Minotaur's l. 2
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+|       | |$         $| |       |
++ +-+-+-+ +-+ + + + +-+ +-+-+-+ +
+| | | | |   |    &  |   |. !| | |
++ + +-+-+ + +-+-+-+-+ + +-+-+ + +
+| |           |   |           | |
++ +-+ +-+-+ +-+-+-+-+ +-+-+ +-+ +
+|  ^| |   | |    s  | |   | |^  |
++ +-+ + + + + + + + + + + + +-+ +
+| |   |!  | | |s s|s| |  !|   | |
++ +-+-+-+-+ + + + + + +-+-+-+-+ +
+|         | |   |s s| |         |
++ +-+-+-+-+ + + + + + +-+-+-+-+ +
+| |   |  !| |s|   |s| |!  |   | |
++ + + + + + + + + + + + + + + + +
+| |   |   | |s s|  s| |   |   | |
++ + + +-+-+ + + + + + +-+-+ + + +
+| |         |s|   |s|         | |
++-+-+-+-+-+-+ + + + +-+-+-+-+-+-+
+|!  |       |s  |s s|   |   |  !|
++ + +-+-+-+ + + + + + + + +-+ + +
+|   |     | |s|  s|s| | | | |   |
++-+-+-+-+ + + + + + + + + + +-+-+
+| | |  *| | |s s s s|.|   | | | |
++ + + +-+ + +-+-+-+-+-+-+-+ + + +
+| | |     |  .|.|.|.        | | |
++ + +-+-+-+-+-+ + +-+-+-+-+-+ + +
+| |             |             | |
++ +-+-+-+-+-+-+-+-+-+-+-+-+-+-+ +
+| |             |             | |
++ +-+-+-+-+-+-+ + +-+-+-+-+-+-+ +
+|               |               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Minotaur's Lair(level 2):
+ETCHED IN GOLD, MESSAGE 9 READS: SUCCESSFUL-THAT-TRAINING,-THE-WORTHY- 
+THE-VISIT-YET-INNER-REALITY,-ORDER,
+(8,14) THE MASTER OF THIS STRONGHOLD HAS BEEN DEFEATED!
+(6 7 8 9,3)ENTER THE MAZE OF THE MINOTAUR... IF YOU DARE!
+(14,12)STAIRS GOING UP, TAKE THEM (Y/N)?
+(3,4)  STANDING ATOP A PEDESTAL IN THE CENTER OF THE ROOM IS A STATUE OF 
+A SMALL SABLE AND WHITE DOG.  IT COMES TO LIFE AND 
+SPEAKS,"CONGRATULATIONS, YOU'VE COMPLETED A MAJOR QUEST (+10000 EXP) 
+REMEMBER B.J.!"  DESECRATE IT (Y/N)?
+
+Soul Maze
++-+ +-+-+ +-+-+-+-+ +-+ +-+-+ +-+
+|                                
++ + + + + +-+ + + +-+ +-+ + + +-+
+|   | | |   |   |   |   | | | |  
++ + + + + +-+ + + + + +-+ +-+ +-+
+    | | |   |   |   |   | | |   |
++ + +-+-+ +-+ +-+-+ + +-+ + + +-+
+|                                
++-+ + +-+ + + +-+ + +-+ +-+ +-+-+
+|   |   | | | |   | |     |     |
++ +-+ +-+ + + +-+ + +-+ + + +-+ +
+    | |   |     | | |   |     |  
++ +-+ + +-+-+ +-+ + + +-+ +-+ +-+
+|                                
++ +-+ + + + + + +-+ + + +-+ + + +
+|   | | | | | | | | |   |   | | |
++ +-+ + + + +-+ + + + + +-+ + + +
+    | | | | | | | | |   | | | | |
++ +-+ +-+-+ +-+ + +-+ + + + +-+-+
+|                                
++ +-+-+ +-+ + + +-+-+ +-+ +-+ +-+
+      | |   | | |     |   | | |  
++ + + + + + +-+ + +-+-+ +-+ + +-+
+| | |     |                      
++^+ +-+ +-+-+ + + + +-+ + + +-+ +
+      |   "   | | | |   |   | | |
++-+ +^+ + + +^+ +-+ +-+ + + +-+ +
+  |     "       | | |   |   |    
++-+ +-+-+ + +-+ + + +-+ +-+ + +^+
+  | >     | |   |               |
++ + + +-+ + + + + + +-+ + +-+ +-+
+|       |   |?  | | "   | "   |  
++-+ +-+ +-+ +-+-+ +-+ +-+ +-+ +-+
+
+
+Soul maze:
+(6,0)  A STRANGE ALIEN BEING IN A SHIMMERING SILVER JUMPSUIT PROCLAIMS, 
+"THIS IS A SOUL MAZE AND YOU ARE ITS PRISONER! TO ESCAPE, YOU MUST FIND 
+YOUR CAPTOR'S NAME HIDDEN WITHIN THESE WALLS." ANSWER:> ...............
+[Wrong:]  KEEP LOOKING!
+[Sheltem:]  AGENT ORANGO SEVENTEEN REPORTING: IMPOSTER XX21A7-3 VOIDED! 
+STARPHASE 5281.6 AT 120-VARN-161 POD #41YOU ARE NOW RANK 1 AND ELIGIBLE 
+FOR TRANSFER. FIND INNER SANCTUM FOR NEW ASSIGNMENT. THE WALLS BEGIN TO 
+FADE... (PRESS SPACE)
+
+Astral Plane
++-+-+-+-+ +-+-+-+-+-+-+-+-+-+-+-+
+|   |   |               |   |   |
++ + + + + +-+ +-+ +-+ + + + + + +
+  |   |     | ||| |   |   |   |  
++ +-+-+-+-+ + +-+ + +-+-+-+-+-+ +
+|           |     |           | |
++ +-+-+-+-+ +-+-+-+ +-+-+-+-+ + +
+| |       | |   | | |       | | |
++ + +-+-+ + + + + + + +-+-+ + + +
+  |     | | | |   | | |   | | | |
++ +-+-+ +-+ + + + + +-+ + + + + +
+| |     |||   |.|   ||| |   | | |
++ + +-+-+-+-+-+v+-+-+-+ +-+-+ + +
+| |           |.|   <       | |  
++ +-+-+-+-+-+ + + + +-+-+-+ + + +
+| |           | | | |     | | | |
++ + +-+-+-+-+-+ + + + +-+ + + + +
+  |         |*  | | |   |   | | |
++ +v+-+-+-+ +-+-+ + +-+ +-+-+ + +
+| |   | |||     | | |||     | | |
++ + + + +-+-+-+ + + +-+-+-+ + + +
+| | |     |   | | | | |   | | |  
++ + +-+-+-+ + + + + + + + + + + +
+| |   |   | | | | | |   | | | | |
++ +-+ + + + + + + + +-+-+ + + + +
+    | | |   | | | |       | | | |
++ + + + +-+-+^+^+^+-+-+-+-+ + + +
+| | |   |   | | | | >       | | |
++ + +-+-+ + + + + + +-+-+-+-+ + +
+| |       |                   |  
++ +-+-+-+-+-+ + + +-+-+-+-+-+-+ +
+|             | |               |
++-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+-+
+
+
+Astral plane:
+(4,6)  ASTRAL PROJECTOR # 1, ZAP!
+(4,10) ASTRAL PROJECTOR # 2, ZAP!
+(7,14) ASTRAL PROJECTOR # 3, ZAP!
+(10,10)ASTRAL PROJECTOR # 4, ZAP!
+(10,6) ASTRAL PROJECTOR # 5, ZAP!
+(7,10) THERE'S A SMALL SLOT IN THE DOOR.
+[No Key Card:]  NO ADMITTANCE!
+[Not been to all 5 projectors:]  KEY CARD IS REJECTED!
+[Been to all 5 projectors:]  KEY CARD IS ACCEPTED!
+(7,9)  THE METALLIC ROOM IS DIMLY LIT BY A PULSATING WHITE GLOW!
+(6,7)  A METALLIC PANEL SLIDES OPEN, REVEALING A MYSTERIOUS MAN IN A 
+WHITE COAT... (PRESS SPACE TO COMMUNICATE)
+IN A SERENE VOICE, THE DATA KEEPER SAYS,"WELCOME TO YOUR INNER SANCTUM 
+VARNLINGS! I AM VERY PLEASED THAT YOU'VE MADE IT THIS FAR. YOU ARE TO BE 
+COMMENDED. I'VE BEEN MONITORING YOUR    PROGRESS." TURNING TO THE 
+STRANGE MECHANICAL DEVICE, HE INSERTS A FLAT OBJECT INTO A SLOT. YOUR 
+PARTY'S CURRENT PERFORMANCE TOTAL=[You get 400000 if you have "defeated 
+the imposter." [sic]
+"YOU ARE NOT YET WORTHY FOR TRANSFER. RETURN AFTER DEFEATING THE 
+IMPOSTER."
+EXCELLENT RATING! THIS IS A RARE OCCASION, FOR ONLY A PRIVILEGED FEW ARE 
+GIVEN THE OPPORTUNITY FOR TRANSFER TO ANOTHER V.A.R.N. (VEHICULAR 
+ASTROPOD RESEARCH NACELLE). RETURN NOW TO THE    INN OF SORPIGAL FOR 
+REST AND CELEBRATION THEN CONTINUE ON TO YOUR NEW ASSIGNMENT AT THE 
+GATES TO ANOTHER WORLD..."(+500,000 EXP FOR YOUR ACCOMPLISHMENT!) ------
+----------------------------------PLEASE SEND YOUR PERFORMANCE TOTAL TO   
+NEW WORLD COMPUTING,INC. P.O. BOX 491415 LA, CA 90049
+:::INNER SANCTUM:::
+
+
+*************************
+
+Credits:  ftp://ftp.apple.asimov.net had this game and an emulator.
+New World Computing for making a very intricate game despite its faults.
+People who've asked me about the game and encouraged me.
+
+Versions:
+0.2.0 submitted 10/22/2000 contains the very basics of the town and 
+outside scripts
+0.5.0 submitted 10/25/2000 contains maps with outside/towns very 
+accurate
+
+
