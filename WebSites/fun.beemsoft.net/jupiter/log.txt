@@ -1,0 +1,53 @@
+I haven't been keeping a log since the beginning but I will recall what I have done.
+
+came up with the Idea for Jupiter Web page because I wanted to make a web page that people would have a reason to go to.
+quickly wrote up a minor page using PrintMaster, this page included a index with a link to information and pictures, there were some pictures on it but no informaiton.
+went looking on the web for a free web page, tested Anglefire and some others but they didn't allow the use of the web publishing wizzard, geocities did so I went with them.
+checked out a book from the Library called HTML the definitive guide, I read through most of it and learned enough to create a web page using notepad rather than an automatic web page builder.
+went ahead and designed the Juper Web Page, uploaded it using Web publishing wizzard, and here it is.
+added a page rating, by desing two logos using paint, the BSRC and The R one.
+wrote a page with reasons why it was rated r and information about the BSRC.
+deleted all the stuff about being too embarrased to learn.
+
+Here is where the log begins.
+
+10/9/99 Changes the Rating so the R logo is not at the bottom of the page.
+	Added this file.
+	-Why? So people would not be as easlily confused.
+
+1/xx/00 Added FAQ.htm
+	-Why? To only answer questions one time.
+ 
+2/5/00 	Changed the background color to grey so printing the material would become
+	Easier. I also added a frequently asked questions section. And a place to
+	Download the pictures.
+	Why? Somebody complained.
+
+2/21/00 Added Jupiter Statistics (stats.htm)
+	-Why? To stop stupid questions
+
+2/22/00 Jupiter Moved to http://members.networld.com/blaine/
+	-Why? No advertisements with Stupid Geocities.
+	-Regrets counter gone. Oh well I found a new one not as nice though.
+
+2/23/00 Added goto search box also some minor updates to index.htm
+	-Why? Merely to see if just maybe I could pick up some extra cash.  Although it's 
+	 only 5 bucks for 1000 visitors.
+
+2/23/00 Added -Why's to my log.
+	-Why? To explain stuff.
+
+2/23/00 I am seriously contemplating removing the E-mail links so I will not be asked so 
+	many questions.  I hate answering them. Usually I don't. It's nice to get E-mail
+	any how. I'm also thinking a lot about changing index.htm to a better looking page
+	I am quite dissatisfied with how it looks.  The rest of the site is fine.  I am also 
+	Thinking about adding a pricture of Christina Aguilera just for the heck of it. I 
+	will. I am also thinking about making a page with tips for web designers.
+	-Why? I hate E-mail. I'm dissatisfied. Christina is hot!
+
+2/24/00 I have to change the color of the links so my site can win an award. I added the 
+	Table I made to Composition and Structure. I hope it is good. I must sleep now.
+
+9/9/00	I removed the goto search boxes.  What did I need them for anyway my web site is the 	best site abou Jupiter.
+
+7/6/01	Jupiter web officially shut down no longer supported by creators.

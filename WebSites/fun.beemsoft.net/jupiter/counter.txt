@@ -1,0 +1,10 @@
+<!-- Counter code version 1.0. Do NOT alter this code!
+       http://counter.mycomputer.com -->
+<SCRIPT language=JavaScript
+       src="http://counter.mycomputer.com/get_counter.html?u=B_myers0&c=1">
+</SCRIPT>
+<NOSCRIPT>
+       <a href="http://counter.mycomputer.com/"><img alt="Counter"
+src="http://counter.mycomputer.com/c.count?u=B_myers0&c=1" border=0></a>
+</NOSCRIPT> 
+<!-- End of Counter Code -->

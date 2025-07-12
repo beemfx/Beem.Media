@@ -1,0 +1,37 @@
+<!-- BEGIN GoTo.com Search Box -->
+<SCRIPT language=javascript type=text/javascript>
+<!--
+if ((parseInt(navigator.appVersion) >= 3)
+&& (navigator.appName != "Netscape")) {
+document.write("<IFRAME marginheight=0 frameborder=0 ");
+document.write("marginwidth=0 scrolling=no width=234 height");
+document.write("=60 ");
+document.write("SRC=http://www.goto.com/d/ssn/dynconsole/?t");
+document.write("ype=html&size=234x60&url=http://www.goto.co");
+document.write("m/d/search/ssn/&target=info&Partner=SSNF5C2");
+document.write("300EBDC298FC></IFRAME>");
+} else if ((parseInt(navigator.appVersion) > 3)
+&& (navigator.appName == "Netscape")) {
+document.write("<SCRIPT language=javascript type=text/javas");
+document.write("cript ");
+document.write("SRC=http://www.goto.com/d/ssn/dynconsole/?t");
+document.write("ype=js&size=234x60&url=http://www.goto.com/");
+document.write("d/search/ssn/&target=info&Partner=SSNF5C230");
+document.write("0EBDC298FC></SC");
+document.write("RIPT>");
+} else {
+document.write("<A TARGET=_blank ");
+document.write("HREF=http://www.goto.com/d/search/ssn/?from");
+document.write("GIF=true>");
+document.write("<IMG ismap ");
+document.write("SRC=http://www.goto.com/d/ssn/dynconsole/?t");
+document.write("ype=gif&size=234x60></A>");
+}
+// -->
+</SCRIPT>
+<NOSCRIPT>
+<A HREF=http://www.goto.com/d/search/ssn/?fromGIF=true TARGET=_blank>
+<IMG SRC=http://www.goto.com/d/ssn/dynconsole/?type=gif&size=234x60 border=0 width=234 height=60 ismap>
+</A>
+</NOSCRIPT>
+<!-- END GoTo.com Search Box -->

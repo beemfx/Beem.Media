@@ -1,0 +1,61 @@
+<HTML>
+<head><title>Contact Jupiter</title>
+</head>
+<body background="formbg.gif" text="yellow">
+<h1>Contact Jupiter Form:</h1>
+<font color=lightgreen>
+<small><i>If your browser does not support mailto URL or is not set up to use it please email a similar document to</i><b> jupiter@networld.com</b></small></font>
+<p>
+<table border=0>
+<form method=post action="mailto:jupiter@networld.com" enctype=text/plain
+	onSubmit="window.alert ( 'This form is being sent by email, even though it may not appear that anything has happened...')">
+<tr>	
+	<th align=right valign=top>Name:
+		<td align=left><input type=text name=name size=32 maxlength=80>
+	<p>
+<tr>
+	<th align=right valign=top>Email:
+		<td align=left><input type=text name=email size=32 value=" " maxlenthh=80>
+	<p>
+<tr>
+	<th align=right valign=top>You are contacting us to:
+		<td align=left><select name=purpose size=1>
+			<option selected>Ask a Question
+			<option>Compliment/Complain
+			<option>Make a Suggestion
+		</select>
+	<p>
+<tr>
+	<th align=right valign=top>Level of education:
+		<td align=left><select name=education size=1>
+			<option selected>Please select...
+			<option>Attend Elementary Shcool
+			<option>Attend Middle School/J.H.
+			<option>Attend High School
+			<option>H.S. Graduate
+			<option>College/University
+			<option>College Graduate
+		</select>
+	<p>
+<tr>
+	<th align=right valign=top>You visited this site because:
+		<td align=left><input type=radio name=visit value="Help on report">You need information for a shcool report.
+	<br>
+		<input type=radio name=visit value="Curious">You want to expound your knowledge of the universe.
+	<br>
+		<input type=radio name=visit value="boredom">You were bored and didn't have anything else to look up.
+	<br>
+		<input type=radio name=visit value="other">Other. Explain:<input type=text name=visit size=40 maxlengh=100>
+	<p>
+</table>
+	<h4>Type your message in the box provided:</h4>
+<center>
+	<textarea name=contact cols=60 rows=14>
+	</textarea>
+	<p>
+	
+<input type=submit value="Transmit to Jupiter"> <input type=reset></center>
+	
+	
+</form>
+</body></HTML>

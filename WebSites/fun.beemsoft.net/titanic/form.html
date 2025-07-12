@@ -1,0 +1,54 @@
+<html>
+<head>
+<title>Titanic Survey</title>
+</head>
+<body link="yellow" vlink="orange" text="lightgreen" background="bgsurvey.jpg">
+<center>
+<a name="top">
+<font size=+5><i><b>Titanic Survey</b></i></font>
+</a>
+</center>
+<hr width=75% align="center">
+<h3>Please enter the following information:</h3>
+<form method=post action="mailto:titanic@networld.com" enctype=text/plain
+	onSubmit="window.alert ( 'This form is being sent by email, even though it may not appear that anything has happened...')">
+Enter your First Name:<input type="text" name ="First Name" size=20><br>
+Enter your E-mail address:<input type=text name="email" value=" "size = 20><p>
+<hr>
+I rate Titanic as:<br>
+<input type=radio name=rating value="Best">The Best Movie Ever<br>
+<input type=radio name=rating value="Best Romance">The Best Romance Movie Ever<br>
+<input type=radio name=rating value="Confused">I can't really make a decision<br>
+<input type=radio name=rating value="Boring">It was way to boring<br>
+<input type=radio name=rating value="County Dump">It belongs in the county dump<p>
+<hr>
+Please check all the reasons why you like Titanic:<br>
+<input type="checkbox" name="Rose is hot">Rose is hot<br>
+<input type="checkbox" name="Jack's Sketches">Jack's Sketches<br>
+<input type="checkbox" name="It is Romantic">It is Romantic<br>
+<input type="checkbox" name="Jack is cute">Jack is cute<br>
+<input type="checkbox" name="Jack and Rose make a good couple">Jack and Rose make a good couple<br>
+<input type="checkbox" name="Jack Dies">Jack Dies<p>
+<input type="checkbox" name="I did not like Titanic">I did not like Titanic<p>
+<hr>
+How many times have you seen Titanic<br>
+<select name="Times Seen">
+	<option selected>0
+	<option>1
+	<option>2
+	<option>3
+	<option>4
+	<option>5	
+	<option>6 or more
+</select><p>
+<hr>
+You may type some final words on how you feel about Titanic below<br>
+<textarea name="Description" type="text" cols=60 rows=10>
+</textarea>
+<hr>
+<input type="submit" value="Send to Titanic">
+<input type="reset" value="Clear Information">
+</form>
+<a href="#top">Back to the Top</a>
+</body>
+</html>

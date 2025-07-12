@@ -1,0 +1,168 @@
+<html>
+<head>
+<title>Might and Magic Technical Support</title>
+</head>
+<body bgcolor=black>
+<font color=white>
+<h1>Might and Magic Technical Support</h1>
+</font>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Notes on my Technical Support
+</th></tr>
+<tr><td bgcolor=white>
+If you need support on something not provided here please use my <a href="contact.htm">Contact Page</a>.  Please note that I provide this technical support information as a courtesy, and that I cannot garuantee an answer to any questions that you may have.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic I and II
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> You should not use MO'SLO or any other processor dampening program as these cause undesirable results.
+<p>
+<b>XP:</B> I have not experience problems running these games in Windows XP.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic III
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> On most newer systems you will probably encounter audio errors during the dialog at the begining of the game.  You should skip the intro by pressing the escape key.   The same thing will happen at the end of the game, but you can't skip it.  You should not use MO'SLO or any other processor dampening program as these cause undesirable results.
+<p>
+<b>Memory:</b> Requires 565K of conventional memory and 2048K of extended (XMS) memory.  (See "Memory Configuration" below.)
+<p>
+<b>XP:</B> In the configuration program select "PC Speaker" for sound.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic IV, V, World of Xeen, and Swords of Xeen
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> You should not use MO'SLO or any other processor dampening program as these cause undesirable results.
+<p>
+<b>Memory:</b>
+<br>IV requires 510K of conventional memory and 2048K of extended (XMS) memory.  (See "Memory Configuration" below.)
+<br>V requires 515K of conventional memory and 2048K of extended (XMS) memory.  (See "Memory Configuration" below.)
+<br>World of Xeen requires 520K of conventional memory and 2048K of extended (XMS) memory.  (See "Memory Configuration" below.)
+<br>Swords of Xeen requires 520K of conventional memory and 2048K of expanded (EMS) memory.  (See "Memory Configuration" below.)
+<p>
+<b>XP:</B> I know of no method to get World of Xeen CD-ROM to work under Windows XP.  For the other games check out VDMSound below.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic VI
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> Be sure to patch the game to the latest version.  There is one quest in the game that is sometimes is impossible to complete, it involves getting some kind of urn or something, anyway it is not you do not need to complete this quest to finish the game.
+<p>
+<b>XP:</b> Get a system running Windows 98.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic VII
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> Be sure to patch the game to the latest version.  I have experienced few problems running this game.
+<p>
+<b>XP:</b> Get a system running Windows 98.  Failing that, edit the registry:
+<br>
+Using regedit locate the key [HKEY_LOCAL_MACHINE/SOFTWARE/New World Computing/Might and Magic VII/1.0/]
+<font face="Courier" size=1>
+<ul>
+<li>Set 3DSoundAvailable to 0
+<li>Set D3DAvailable to 0
+<li>Set Disable3DSound to 1
+<li>Set Use D3D to 0
+</ul>
+</font>
+Try running the game both with compatibility mode and without it.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic VIII
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> I have experienced few problems running this game.
+<p>
+<b>XP:</b> Using EAX caused audio problems, use DirectSound instead.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=lightblue>
+Might and Magic IX
+</th></tr>
+<tr><td bgcolor=white>
+<b>General:</b> Be sure to patch the game to the latest version.  I have experienced few problems running this game.
+<p>
+<b>XP:</b> Using EAX caused audio problems, use DirectSound instead.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=green>
+Memory Configuration
+</th></tr>
+<tr><td bgcolor=white>
+In the root directory of you file system (Usually C:\) find the file called "config.sys" open this file with a text editor and make sure the following two lines appear within it:
+<p>
+<font face="Courier" size=1>
+DEVICE=C:\WINDOWS\HIMEM.SYS<br>
+DEVICE=C:\WINDOWS\EMM386.EXE ON RAM 4096
+</font>
+<p>
+Where C:\WINDOWS represents the directory where windows is installed.<br>
+<b>Note</b> that after modifying "config.sys" you must restart your computer for the settings to take effect.
+<p>
+To change memory settings for any given application go to the directory where the application is installed.  Right click on the application, click properties, click the memory tab.  Modify the settings as required.
+</td></tr>
+</table>
+
+<p>
+
+<table border=0 cellspacing=0>
+<tr><th bgcolor=green>
+VDMSound
+</th></tr>
+<tr><td bgcolor=white>
+
+The exists such an application, <a href=http://ntvdm.cjb.net/>VDMSound</a>, that will allow SoundBlaster emulation in a Windows NT environment (specifically Windows 2000 and Windows XP).  It also resolves memory issues in a Windows NT environment.  VMDSound is for DOS applications.
+<p>
+From the <a href=http://ntvdm.cjb.net/>VDMSound Page</a> download the latest version.  Install it.  Then to run an application go to the directory where that application exists, right click on the application, and click "Run with VDMSound".  This should take care of any memory settings and sound support.  Note that application you are running should be configured to use a SoundBlaster with an IRQ of 5 or 7.
+<p>
+VDMSound works pretty well, but I can't garauntee that it will work for you.  For me it has worked with III, IV, V, "World of Xeen", and "Swords of Xeen"; but it will depend on your computer's configuration.
+
+</td></tr>
+</table>
+
+</body>
+</html>

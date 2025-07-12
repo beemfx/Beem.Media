@@ -1,0 +1,496 @@
+===================================
+=== MIGHT AND MAGIC GAMES GUIDE ===
+===================================
+
+Copyright (C) 2004 Blaine Myers
+
+====================
+=== INTRODUCTION ===
+====================
+
+With this guide I am attempting to document all releases of the various Might and Magic games.  Due to worldwide publishing I cannot possibly document every distribution of each game.  Instead I will attempt to detail each with known platforms, and significant distributions.  All US distributions were published by 3DO (since Might and Magic VI), in other countries the publisher varies and the given publisher was noted on the box.  For various countries the box text and art may have been slightly different, I do not consider these significant distributions.  When I document STANDARD PACKAGING this represents what was included with the US PC release of the games.  Note that the standard packaging usually included various advertising and disk exchange forms I will not mention those, but note that they may have been included.
+
+I believe the original games were published for the Apple II format.  Because I don't know much about the history of Apple Computers I can't be sure of each individual release.  I am not documenting the various clue books and strategy guides that were available for each of the games, but note that I, II, III, IV, and V had a cluebook available published by New World Computing.  Various strategy guides have been published for the rest of the games.
+
+This list list is not organized by release date.  It is listed by series in the following order: Might and Magic Series, Might and Magic Series Compilations, Heroes of Might and Magic Series, Heroes Chronicles Series, Heroes of Might and Magic Series Compilations, Other Might and Magic Games.  The games are generally presented in the order in which they take place (ie. Might and Magic II before Might and Magic III), but this will not always be the case.
+
+PLATFORM CODES:
+PC (DOS): PC running MS-DOS operating system.
+PC (WIN): PC running 32-BIT Windows(tm) operating system.
+PC (WIN/DOS): PC.
+Apple II: Apple II computer.
+Commodore 64/128: Commodore's 64K and 128K computer systems.
+PC Engine: PC Engine System.
+AMIGA: Amiga System (???).
+TURBO GRAPHICS CD: ???
+MAC: Computer running Apple's Macintosh operating system.
+NES: Nintendo Entertainment System.
+SNES: Super NES.
+SFC: Super Famicom, Japanese SNES.
+GENESIS: Sega Genesis/Megadrive.
+PS: Playstation.
+PS2: Playstation 2.
+
+
+Note that some PC (WIN) operating systems are capable of running PC (DOS) games.  I also believe that MAC operating systems are capable of running Apple II games (???).
+
+PC (WIN/DOS) generally means the game uses a windows based installer, but requires DOS compatibility to run the games.
+
+==============================
+=== MIGHT AND MAGIC SERIES ===
+==============================
+
+------------------------------
+--- MIGHT AND MAGIC BOOK I ---
+------------------------------
+
+COMPLETE TITLE: Might and Magic Book One: Secret of the Inner Sanctum
+ORIGINAL RELEASE: 1986
+STANDARD PACKAGING: Disks (3 1/2 OR 5 1/4); Manual; Map; Installation Guide; Grid Paper
+AVAILABLE PLATFORMS: PC (DOS); Apple II; Commodore 64/128; PC Engine; MAC, NES.
+SIGNIFICANT DISTRIBUTIONS:
+
+	NES: The nintendo distribution features much better graphics, a much stronger soundtrack (background music, SFX, etc.).  The control interface is different (gamepad).  The combat system does not have the same rules as the computer versions.  The maps are generally the same, and all the quests are the same.  Converted to the NES by Sammy.
+
+-------------------------------
+--- MIGHT AND MAGIC BOOK II ---
+-------------------------------
+
+COMPLETE TITLE: Might and Magic Book Two: Gates to Another World
+ORIGINAL RELEASE: 1988
+STANDARD PACKAGING: Disks (3 1/2 OR 5 1/4); Manual; Map; Installation Guide.
+AVAILABLE PLATFORMS: PC (DOS); Apple II; Commodore 64/128; PC Engine; MAC; AMIGA; SNES; GENESIS.
+SIGNIFICANT DISTRIBUTIONS:
+
+	SFC (Japanese): The japanese release is a fascinating release of Might and Magic II.  The maps and quests are all the same.  The graphics are very impressive (there is an animated sky).  The background music has a very japanese feel to it.  You could only have five members in your party at a time, but they had Anime-style portraits.
+
+	GENESIS: Same maps and quests.  Background music, SFX.  Combat system is used differently, but the rules are pretty much the same.
+
+	SNES (European): Based off the same engine as the GENESIS release, but the graphics are updated to look significantly better.
+
+---------------------------
+--- MIGHT AND MAGIC III ---
+---------------------------
+
+COMPLETE TITLE: Might and Magic III: Isles of Terra
+ORIGINAL RELEASE: 1991
+STANDARD PACKAGING: Disks (3 1/2 OR 5 1/4); Manual; Map; Reference Card; Notepad.
+AVAILABLE PLATFORMS: PC (DOS); AMIGA; MAC; GENESIS; TURBO GRAPHICS CD; SNES.
+SIGNIFICANT DISTRIBUTIONS:
+
+	SNES, GENESIS: These releases are pretty much exactly the same game except they use a gamepad.  I'm actually not sure if there was a Genesis release, but there are ROM's on the NET that had to be dumped from somewhere.  The graphcis are the same (except they look worse than they do on the PC), the music is different.
+
+-------------------------
+-- MIGHT AND MAGIC IV ---
+-------------------------
+
+COMPLETE TITLE: Might and Magic: Clouds of Xeen
+ORIGINAL RELEASE: 1992
+STANDARD PACKAGING: Disks (3 1/2 OR 5 1/4); Manual; Map; Reference Card; Notepad.
+AVAILABLE PLATFORMS: PC (DOS); MAC (???).
+NOTE: Sometimes published as "Land of Xeen".
+
+-------------------------
+--- MIGHT AND MAGIC V ---
+-------------------------
+
+COMPLETE TITLE: Might and Magic: Darkside of Xeen
+ORIGINAL RELEASE: 1993
+STANDARD PACKAGING: Disks (3 1/2 OR 5 1/4); Manual; Map; Reference Card; Notepad.
+AVAILABLE PLATFORMS: PC (DOS); MAC (???).
+
+---------------------
+--- WORLD OF XEEN ---
+---------------------
+
+COMPLETE TITLE: Might and Magic: World of Xeen
+ORIGINAL RELEASE: 1994
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Maps; Reference Card.
+AVAILABLE PLATFORMS: PC (DOS); MAC.
+NOTE: Combination of IV, V with voices for all characters.  Some distributions did not include either/or box, manuals, maps.
+
+----------------------
+--- SWORDS OF XEEN ---
+----------------------
+
+COMPLETE TITLE: Might and Magic: Swords of Xeen
+NOTE: This was included with "Might and Magic Trilogy" and various other compendiums, I don't know if it was every released as a standalone product.  A company called Catware put it together, it is exceptionally lousy.
+??? I Have no aditional information on this release. ???
+
+--------------------------
+--- MIGHT AND MAGIC VI ---
+--------------------------
+
+COMPLETE TITLE: Might and Magic: The Mandate of Heaven
+ORIGINAL RELEASE: 1998
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Map; Reference Card.
+AVAILABLE PLATFORMS: PC (WIN).
+SIGNIFICANT DISTRIBUTIONS:
+	
+	MIGHT AND MAGIC VI LIMITED EDITION:  Larger sized box; holographic disks; also included mini strategy guide; MM 1-5 on the disk; Maps for 1-6.
+
+	MIGHT AND MAGIC VI SPECIAL EDITION: Similar to Limited Edition; Larger box; claimed to have holographic disks but didn't.
+
+---------------------------
+--- MIGHT AND MAGIC VII ---
+---------------------------
+
+COMPLETE TITLE: Might and Magic VII: For Blood and Honor
+ORIGINAL RELEASE: 1999
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Map; Installation Card; Adventurer's Guide to Role Playing.
+AVAILABLE PLATFORMS: PC (WIN).
+
+----------------------------
+--- MIGHT AND MAGIC VIII ---
+----------------------------
+
+COMPLETE TITLE: Might and Magic VIII: Day of the Destroyer
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Map; Installation Card; Reference Card.
+AVAILABLE PLATFORMS: PC (WIN).
+
+--------------------------
+--- MIGHT AND MAGIC IX ---
+--------------------------
+
+COMPLETE TITLE: Might and Magic IX
+ORIGINAL RELEASE: 2002
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Map.
+AVAILABLE PLATFORMS: PC (WIN).
+
+===========================================
+=== MIGHT AND MAGIC SERIES COMPILATIONS ===
+===========================================
+
+NOTE: Releases that include both IV and V allow you to install the games separately or install the World of Xeen combination.
+
+-------------------------------
+--- MIGHT AND MAGIC 1 AND 2 ---
+-------------------------------
+
+INCLUDED GAMES: Might and Magic Book I; Might and Magic Book II.
+ORIGINAL RELEASE: 1992
+STANDARD PACKAGING: Disks (3 1/4 OR 5 1/2); Combinded Manual; Maps; Combined Hintbook.
+AVAILABLE PLATFORMS: MAC.
+
+---------------------------------------------
+--- THE ULTIMATE MIGHT AND MAGIC ARCHIVES ---
+---------------------------------------------
+
+INCLUDED GAMES: I; II; III; IV; V; Swords of Xeen.
+ORIGINAL RELEASE: 1998
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Maps; Troubleshooting Guide.
+AVAILABLE PLATFORMS: PC (WIN/DOS).
+NOTE: Published by Interplay.
+
+-------------------------------
+--- MIGHT AND MAGIC TRILOGY ---
+-------------------------------
+
+INCLUDED GAMES: III; IV; V; Swords of Xeen.
+ORIGINAL RELEASE: 1996
+STANDARD PACKAGING: Disk (CD-ROM); Maps; Reference Guide; Fantasy Adventures RPG Playing Card.
+AVAILABLE PLATFORMS: PC (WIN/DOS).
+
+-----------------------------------------
+-- MIGHT AND MAGIC MILLENNIUM EDITION ---
+-----------------------------------------
+
+INCLUDED GAMES: World of Xeen CD-ROM; Swords of Xeen; VI; VII.
+ORIGINAL RELEASE: 1999
+STANDARD PACKAGING: Disks (CD-ROM); Installation Card; Maps.
+AVAILABLE PLATFORMS: PC (WIN/DOS).
+
+----------------------------------------
+--- MIGHT AND MAGIC PLATINUM EDITION ---
+----------------------------------------
+
+INCLUDED GAMES: VI; VII; VIII; IX.
+ORIGINAL RELEASE: 2003
+STANDARD PACKAGING: Disks (CD-ROM); Maps; Reference Card.
+AVAILABLE PLATFORMS: PC (WIN).
+
+-------------------------------
+--- MIGHT AND MAGIC SIXPACK ---
+-------------------------------
+
+INCLUDED GAMES: I, II, III, IV, V, VI.
+NOTE: Released in Germany only.
+??? I have no additional information on this release. ???
+
+-------------
+--- OTHER ---
+-------------
+
+World of Xeen was included in Interplay's Ultimate RPG Archives.
+
+========================================
+=== HEROES OF MIGHT AND MAGIC SERIES ===
+========================================
+
+---------------------------------
+--- Heroes of Might and Magic ---
+---------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic: A Strategic Quest
+ORIGINAL RELEASE: 1995
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (DOS); PC (WIN).
+NOTES: A Win32 compatible version was also released under 3DO's Greatest Hits in Jewel Case only.
+
+------------------------------------
+--- Heroes of Might and Magic II ---
+------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic II: The Succession Wars
+ORIGINAL RELEASE: 1996
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN); PC (DOS).
+
+---------------------------------------------------
+--- Heroes of Might and Magic II Expansion Pack ---
+---------------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic II: The Price of Loyalty
+ORIGINAL RELEASE: 1997
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN) PC (DOS).
+
+-----------------------------------------
+--- Heroes of Might and Magic II Gold ---
+-----------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic II Gold
+ORIGINAL RELEASE: 1997
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN). PC (DOS).
+NOTES: Included both Heroes II and Heroes II Expansion, plus bonus maps.
+
+-------------------------------------
+--- Heroes of Might and Magic III ---
+-------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic III: The Restoration of Erathia
+ORIGINAL RELEASE: 1997
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+----------------------------------------------------------
+--- Heroes of Might and Magic III: The Shadow of Death ---
+----------------------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic III: The Shadow of Death
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Includes Restoration of Erathia Campaigns as well as additional Shadow of Death campaigns.
+
+-----------------------------------------------
+--- Heroes of Might and Magic III Expansion ---
+-----------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic III: Armageddon's Blade
+ORIGINAL RELEASE: 1998
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+------------------------------------
+--- Heroes of Might and Magic IV ---
+------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic IV
+ORIGINAL RELEASE: 2002
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+--------------------------------------------------
+--- Heroes of Might and Magic IV Elite Edition ---
+--------------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic IV Elite Edition
+ORIGINAL RELEASE: 2002
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference; Tactical Map.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Sames as Heroes IV, but includes tactical map, and free membership to Might and Magic Guild.
+
+-------------------------------------------------
+--- Heroes of Might and Magic IV Expansion #1 ---
+-------------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic IV: The Gathering Storm
+ORIGINAL RELEASE: 2002
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+-------------------------------------------------
+--- Heroes of Might and Magic IV Expansion #2 ---
+-------------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic IV: Winds of War
+ORIGINAL RELEASE: 2002
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Dependancy Guide; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+
+================================
+=== HEROES CHRONICLES SERIES ===
+================================
+
+----------------------------
+--- Heroes Chronicles #1 ---
+----------------------------
+
+COMPLETE TITLE: Heroes Chronicles: Warlords of the Wasteland
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+----------------------------
+--- Heroes Chronicles #2 ---
+----------------------------
+
+COMPLETE TITLE: Heroes Chronicles: Conquest of the Underworld
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+----------------------------
+--- Heroes Chronicles #3 ---
+----------------------------
+
+COMPLETE TITLE: Heroes Chronicles: Masters of the Elements
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+----------------------------
+--- Heroes Chronicles #4 ---
+----------------------------
+
+COMPLETE TITLE: Heroes Chronicles: Clash of the Dragons
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+
+---------------------------------------
+--- Heroes Chronicles Bonus Game #1 ---
+---------------------------------------
+
+COMPLETE TITLE: Heroes Chronicles: The World Tree
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Only available by download, if two or more Heroes Chronicles games were owned.  I believe it is now impossible to acquire this.
+
+---------------------------------------
+--- Heroes Chronicles Bonus Game #2 ---
+---------------------------------------
+
+COMPLETE TITLE: Heroes Chronicles: The Fiery Moon
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Only available by download, if three or more Heroes Chronicles games were owned. I believe it is now impossible to acquire this.
+
+---------------------------------
+--- Heroes Chronicles #5 & #6 ---
+---------------------------------
+
+COMPLETE TITLE: Heroes Chronicles: The Final Chapters
+ORIGINAL RELEASE: 2000
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Never published in the US, was temporarily available at the 3DO store however, difficult to obtain a copy of.
+
+
+ADDITIONAL NOTES: Other Heroes of Might and Magic games were released for platforms such as game boy color and game boy advance, but I do not yet know what they are.
+
+=====================================================
+=== HEROES OF MIGHT AND MAGIC SERIES COMPILATIONS ===
+=====================================================
+
+--------------------------------------------
+--- Heroes of Might and Magic Compendium ---
+--------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic Compendium
+ORIGINAL RELEASE: 1998
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Includes Heroes; Heroes II; Heroes II Expansion.
+
+----------------------------------------------------
+--- Heroes of Might and Magic Millennium Edition ---
+----------------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic Millennium Edition
+ORIGINAL RELEASE: 1999
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Includes Heroes of Might and Magic; Heroes II; Heroes II Expansion; Heroes III.
+
+------------------------------------------
+--- Heroes of Might and Magic Platinum ---
+------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic III Complete
+ORIGINAL RELEASE: 2001
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Includes Restoration of Erathia; Shadow of Death; and Armageddon's Blade.
+
+------------------------------------------
+--- Heroes of Might and Magic Platinum ---
+------------------------------------------
+
+COMPLETE TITLE: Heroes of Might and Magic Platinum
+ORIGINAL RELEASE: 2002
+STANDARD PACKAGING: Disks (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN).
+NOTES: Includes Heroes of Might and Magic; Heroes II Gold; Heroes III Complete.
+
+
+===================================
+=== OTHER MIGHT AND MAGIC GAMES ===
+===================================
+
+------------------------------------
+--- Crusaders of Might and Magic ---
+------------------------------------
+
+COMPLETE TITLE: Crusaders of Might and Magic
+ORIGINAL RELEASE: 1999
+STANDARD PACKAGING: Disk (CD-ROM); Manual; Quick Reference.
+AVAILABLE PLATFORMS: PC (WIN); PS; PS2.
+NOTES: The PS2 version of the game had better graphics than the PS version, they were not the same release.
+
+-----------------------------------
+--- Warriors of Might and Magic ---
+-----------------------------------
+
+COMPLETE TITLE: Warriors of Might and Magic
+ORIGINAL RELEASE: ???
+STANDARD PACKAGING: Disk (CD-ROM); Manual.
+AVAILABLE PLATFORMS: PS; PS2.
+NOTES: The PS2 version of the game had better graphics than the PS version, they were not the same release.
+
+----------------------------------
+--- Legends of Might and Magic ---
+----------------------------------
+
+COMPLETE TITLE: Legends of Might and Magic
+ORIGINAL RELEASE: 2001
+STANDARD PACKAGING: Disk (CD-ROM); Manual.
+AVAILABLE PLATFORMS: PC (WIN)
+
+========================
+=== Collecting Guide ===
+========================
+
+If you’re looking to obtain each game it is really quite simple. As of now (January 2004) you can generally find a copy of "Might and Magic VI Special Edition" for $10 to $30 this includes Might and Magic I-VI and Swords of Xeen.  Might and Magic VI-IX can be purchased with the "Might and Magic Platinum" collection.
+
+You may also want the "World of Xeen CD-ROM" which is available in the "Might and Magic Millennium Edition" package and as a standalone product.
+
+As 3DO has gone bankrupt all "Might and Magic" and "Heroes of Might and Magic" titles are becoming more and more difficult to obtain.
+
+Originally copies of I-V are fairly rare, the newer titles are starting to become rare.  The titles will occaisionally show up on ebay and usually you can get a good price for them (under $10.00), but it depends on how many people are looking.
