@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Code">
+      <UniqueIdentifier>{77df5807-f56e-4191-9655-13fb56b3f557}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="API">
+      <UniqueIdentifier>{865f6108-afc7-45c0-9aba-7071860f87ba}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared">
+      <UniqueIdentifier>{eb5177c2-c7c5-4aa8-bd83-6b23185fd3b3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shared\Code">
+      <UniqueIdentifier>{a961fb61-a89b-408c-bd13-a850f8e012cf}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Code\DLLTestEngineDllMain.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+    <ClCompile Include="Code\DLLTestBaseClass.cpp">
+      <Filter>Code</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Code\DLLTestEngineForceInclude.h">
+      <Filter>Code</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Shared\Code\DLLTestCore.h">
+      <Filter>Shared\Code</Filter>
+    </ClInclude>
+    <ClInclude Include="API\DLLTestBaseClass.h">
+      <Filter>API</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
