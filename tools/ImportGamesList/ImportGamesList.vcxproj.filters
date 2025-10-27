@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source">
+      <UniqueIdentifier>{a0cea172-92d1-472b-8412-3a3cc78bb2a9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{17b4a2cb-de0d-465a-9061-7ba0a92d69b6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Src\ImportGamesList.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Data\SourceList.txt">
+      <Filter>Data</Filter>
+    </Text>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\JsonData.json">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="Data\GamesDB-Config-2025-10-26T01_47_21.654Z.json">
+      <Filter>Data</Filter>
+    </None>
+    <None Include="Data\GamesDB-Config-2025-10-27T01_20_45.986Z.json">
+      <Filter>Data</Filter>
+    </None>
+  </ItemGroup>
+</Project>
