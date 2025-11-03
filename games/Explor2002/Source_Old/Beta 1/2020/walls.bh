@@ -1,2 +1,0 @@
-DECLARE SUB WallsLoad ()
-DECLARE SUB WallsDrawWall (wallchoice)

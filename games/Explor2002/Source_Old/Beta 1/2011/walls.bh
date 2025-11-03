@@ -1,5 +1,0 @@
-const con = 4.52
-
-declare SUB wallload()
-declare SUB drawwall (wallchoice)
-
